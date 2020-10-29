@@ -88,7 +88,7 @@ const IndexPage = () => {
     <section className="pt-4 pb-4">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-2 w-80 leading-tight">Some great projects I worked on</h2>
-        <p className="leading-relaxed text-lg mb-12 md:w-112">This is a just part of them, have a look at my work! If you have an idea. Contact me.</p>
+        <p className="leading-relaxed text-lg mb-12 md:w-112">This is a just part of them, have a look at my work! If you have an idea. <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="mailto:hello@coderdiaz.me">Contact me</a>.</p>
         <div className="relative bg-gradient-to-l from-neureta-from to-neureta-to rounded-md mb-20 border border-purple ">
           <div className="skewed bg-purple bg-opacity-25" />
           <div className="px-12 lg:px-18 py-16 overflow-hidden">
