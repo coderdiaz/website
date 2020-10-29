@@ -1,4 +1,4 @@
-import useDarkMode from 'use-dark-mode';
+import useDarkMode from "use-dark-mode";
 
 const ColorSwitch = () => {
   const { value, toggle } = useDarkMode(false);

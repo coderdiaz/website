@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import dynamic from 'next/dynamic';
-import SiteMetadata from '@/seo.config';
+import Link from "next/link";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import SiteMetadata from "@/seo.config";
 
 const ColorSwitch = dynamic(() => import('@/components/ColorSwitch'), { ssr: false });
 

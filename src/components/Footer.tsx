@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import dynamic from 'next/dynamic';
+import Image from "next/image";
+import Link from "next/link";
+import dynamic from "next/dynamic";
 
-const ColorSwitch = dynamic(() => import('@/components/ColorSwitch'), { ssr: false });
+const ColorSwitch = dynamic(() => import("@/components/ColorSwitch"), { ssr: false });
 
 const Footer = () => <footer className="py-8">
   <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">

@@ -1,6 +1,6 @@
-import NextHead from 'next/head';
-import { useRouter } from 'next/router';
-import SiteMetadata from '@/seo.config';
+import NextHead from "next/head";
+import { useRouter } from "next/router";
+import SiteMetadata from "@/seo.config";
 
 interface IHeadProps {
   meta?: {
