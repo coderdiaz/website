@@ -12,7 +12,8 @@
     "next-ga": "^2.3.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "tailwindcss": "^1.9.6"
+    "tailwindcss": "^1.9.6",
+    "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
     "@types/node": "^14.14.5",

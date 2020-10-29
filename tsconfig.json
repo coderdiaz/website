@@ -20,7 +20,9 @@
     "jsx": "preserve",
     "paths": {
       "@/*": ["/*"],
-      "@/components/*": ["components/*"]
+      "@/components/*": ["components/*"],
+      "@/images/*": ["images/*"],
+      "@/assets/*": ["assets/*"]
     }
   },
   "include": [

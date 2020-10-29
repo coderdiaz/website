@@ -1,0 +1,12 @@
+.skewed {
+  position: absolute;
+  top: -8px;
+  left: 16px;
+  width: calc(100% - 32px);
+  height: 328px;
+  border-radius: 4px 4px 0 0;
+  background-color: currentColor;
+  transform: skewY(-3deg);
+  transition: all .5s ease-out;
+  z-index: -1;
+}
