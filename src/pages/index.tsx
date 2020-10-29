@@ -72,7 +72,7 @@ const IndexPage = () => {
             </a>
           </div>
           <div className="relative">
-            <div className="lg:absolute right-0 top-0 lg:-mt-102 lg:-mr-32">
+            <div className="lg:absolute right-0 top-0 lg:-mt-96 lg:-mr-32">
               <div className="hidden lg:inline-block">
                 <Image
                   width={512}
