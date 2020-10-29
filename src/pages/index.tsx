@@ -96,12 +96,12 @@ const IndexPage = () => {
               <div className="pr-2 lg:pr-18">
                 <h4 className="text-4xl font-inter font-bold text-white mb-2">Neureta</h4>
                 <p className="leading-relaxed mr-4 text-white text-lg mb-6">A simple Jamstack e-commerce using Stripe and Stripe Checkout to sell special education courses.</p>
-                <a href="#" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
-                  <span className="mr-2">View case</span>
+                <span className="line-through inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+                  <span className="mr-2">Coming soon</span>
                   <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </a>
+                </span>
               </div>
               <div className="hidden md:block w-3/6 flex-shrink-0 relative">
                 <div className="absolute top-0 -mt-10 md:-ml-0 lg:-ml-12">
@@ -122,12 +122,12 @@ const IndexPage = () => {
               <div className="pr-2 lg:pr-18">
                 <h4 className="text-4xl font-inter font-bold text-white mb-2">Bedu</h4>
                 <p className="leading-relaxed mr-4 text-white text-lg mb-6">We are talent trainers: we raise the professional level of our students through an accelerated and flexible learning model.</p>
-                <a href="#" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
-                  <span className="mr-2">View case</span>
+                <span className="line-through inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+                  <span className="mr-2">Coming soon</span>
                   <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </a>
+                </span>
               </div>
               <div className="hidden md:block w-3/6 flex-shrink-0 relative">
                 <div className="absolute top-0 -mt-10 md:-ml-0 lg:-ml-12">
