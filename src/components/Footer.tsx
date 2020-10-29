@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 const ColorSwitch = dynamic(() => import('@/components/ColorSwitch'), { ssr: false });
 
 const Footer = () => <footer className="py-8">
-  <div className="container mx-auto max-w-screen-lg">
+  <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
     <div className="flex justify-between items-center">
       <Link href="/">
         <a className="flex flex-row items-center fill-current transition duration-300 ease-in-out mr-6">
@@ -22,7 +22,7 @@ const Footer = () => <footer className="py-8">
       </Link>
       <div className="flex mx-6 justify-center md:justify-between w-full items-center">
         <p className="dark:text-gray-400">
-          Site created with Next.js 10 and deployed in Vercel <span className="font-inter font-semibold">&copy; 2020 Javier Diaz</span>
+          &copy; 2020 Javier Diaz
         </p>
       </div>
       <ul className="flex items-center">

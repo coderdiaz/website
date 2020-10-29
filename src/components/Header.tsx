@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 const ColorSwitch = dynamic(() => import('@/components/ColorSwitch'), { ssr: false });
 
 const Header = () => <header className="py-10">
-  <div className="container mx-auto max-w-screen-lg">
+  <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
     <div className="flex justify-between">
       <Link href="/">
         <a className="flex flex-row items-center fill-current transition duration-300 ease-in-out mr-6">

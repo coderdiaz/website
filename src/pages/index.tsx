@@ -4,9 +4,9 @@ import Layout from "@/components/Layout";
 const IndexPage = () => {
   return <Layout>
     <section className="pt-2 pb-4">
-      <div className="container mx-auto max-w-screen-lg">
-        <h1 className="text-6xl font-bold font-inter mb-4">Hey! I'm Javier</h1>
-        <div className="mb-6 w-7/12">
+      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
+        <h1 className="text-4xl md:text-6xl font-bold font-inter mb-4">Hey! I'm Javier</h1>
+        <div className="mb-6 md:w-5/6 lg:w-7/12">
           <p className="leading-relaxed text-lg mb-4">
             I'm a developer and creator in Mexico City, Mexico. I work on the <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://bedu.org">BEDU</a> team as a Software Engineer Lead.
           </p>
@@ -18,10 +18,10 @@ const IndexPage = () => {
       </div>
     </section>
     <section className="pt-4 pb-10">
-      <div className="container mx-auto max-w-screen-lg">
-        <h2 className="text-2.5xl font-bold font-inter mb-4">What I do</h2>
-        <div className="grid grid-cols-3 gap-10">
-          <div className="col-span-1">
+      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
+        <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4">What I do</h2>
+        <div className="grid md:grid-cols-4 lg:grid-cols-3 gap-10">
+          <div className="md:col-span-2 lg:col-span-1">
             <div className="bg-primary-500 py-6 px-4 rounded-2xl mb-4 flex justify-center align-middle">
               <svg className="fill-current text-white text-opacity-75 w-28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path
@@ -31,7 +31,7 @@ const IndexPage = () => {
             <span className="inline-block text-lg font-semibold mb-2">Software Development</span>
             <p className="leading-relaxed mr-4">I build awesome software experiences using the best skills and technologies according to product.</p>
           </div>
-          <div className="col-span-1">
+          <div className="md:col-span-2 lg:col-span-1">
             <div className="bg-blue py-6 px-4 rounded-2xl mb-4 flex justify-center align-middle">
               <svg className="fill-current text-white text-opacity-75 w-28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path
@@ -41,7 +41,7 @@ const IndexPage = () => {
             <span className="inline-block text-lg font-semibold mb-2">UI Development</span>
             <p className="leading-relaxed mr-4">I develop user friendly and visually products. I build delightful experiences that let users achieve their goals.</p>
           </div>
-          <div className="col-span-1">
+          <div className="md:col-span-2 md:col-start-2 lg:col-span-1">
             <div className="bg-gray-700 py-6 px-4 rounded-2xl mb-4 flex justify-center align-middle">
               <svg className="fill-current text-white text-opacity-75 w-28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path
@@ -55,43 +55,45 @@ const IndexPage = () => {
       </div>
     </section>
     <section className="pt-4 pb-16">
-      <div className="container mx-auto max-w-screen-lg">
-        <div className="flex overflow-hidden relative bg-gradient-to-l from-blue-300 to-purple rounded-lg p-16">
-          <div className="flex flex-col justify-center w-3/6 mr-32">
-            <h3 className="font-bold font-inter text-2xl text-white mr-10 mb-4 leading-tight">
+      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
+        <div className="flex md:flex-col overflow-hidden relative bg-gradient-to-l from-blue-500 md:from-blue-300 to-purple rounded-lg p-8 md:p-16">
+          <div className="flex flex-col justify-center lg:w-3/6 md:mr-32">
+            <h3 className="font-bold font-inter text-2xl text-white md:mr-10 mb-4 leading-tight">
               Let's learn something new together!
             </h3>
             <p className="leading-relaxed text-lg mb-8 text-white">
               Education is for everyone and <span className="font-semibold">YouTube</span> is a great space to share knowledge. You can access all my content focused on solving problems through technology.
             </p>
-            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center w-4/6 justify-center px-6 py-4 transition duration-200 ease-in-out bg-white text-dark-900 hover:text-purple hover:shadow-md transform hover:-translate-y-1 rounded-md font-semibold">
+            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center md:w-4/6 justify-center px-6 py-4 transition duration-200 ease-in-out bg-white text-dark-900 hover:text-purple hover:shadow-md transform hover:-translate-y-1 rounded-md font-semibold">
               <span className="mr-2">Go to channel</span>
               <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
           </div>
-          <div className="relative w-2/6">
-            <div className="absolute right-0 top-0 -mt-36 -mr-32">
-              <Image
-                width={512}
-                height={512}
-                src="/images/creator-content.png"
-                alt="Education is for everyone" />
+          <div className="relative">
+            <div className="lg:absolute right-0 top-0 lg:-mt-102 lg:-mr-32">
+              <div className="hidden lg:inline-block">
+                <Image
+                  width={512}
+                  height={512}
+                  src="/images/creator-content.png"
+                  alt="Education is for everyone" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section className="pt-4 pb-4">
-      <div className="container mx-auto max-w-screen-lg">
-        <h2 className="text-2.5xl font-bold font-inter mb-2 w-80 leading-tight">Some great projects I worked on</h2>
-        <p className="leading-relaxed text-lg mb-12 w-112">This is a just part of them, have a look at my work! If you have an idea. Contact me.</p>
+      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
+        <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-2 w-80 leading-tight">Some great projects I worked on</h2>
+        <p className="leading-relaxed text-lg mb-12 md:w-112">This is a just part of them, have a look at my work! If you have an idea. Contact me.</p>
         <div className="relative bg-gradient-to-l from-neureta-from to-neureta-to rounded-md mb-20 border border-purple ">
           <div className="skewed bg-purple bg-opacity-25" />
-          <div className="px-18 py-16 overflow-hidden">
+          <div className="px-12 lg:px-18 py-16 overflow-hidden">
             <div className="flex">
-              <div className="pr-18">
+              <div className="pr-2 lg:pr-18">
                 <h4 className="text-4xl font-inter font-bold text-white mb-2">Neureta</h4>
                 <p className="leading-relaxed mr-4 text-white text-lg mb-6">A simple Jamstack e-commerce using Stripe and Stripe Checkout to sell special education courses.</p>
                 <a href="#" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
@@ -101,8 +103,8 @@ const IndexPage = () => {
                   </svg>
                 </a>
               </div>
-              <div className="w-3/6 flex-shrink-0 relative">
-                <div className="absolute top-0 -mt-10 -ml-12">
+              <div className="hidden md:block w-3/6 flex-shrink-0 relative">
+                <div className="absolute top-0 -mt-10 md:-ml-0 lg:-ml-12">
                   <Image
                     width={600}
                     height={382}
@@ -115,9 +117,9 @@ const IndexPage = () => {
         </div>
         <div className="relative bg-gradient-to-l from-gray-500 to-gray-900 rounded-md mb-12 border border-gray-700">
           <div className="skewed bg-gray bg-opacity-25" />
-          <div className="px-18 py-16 overflow-hidden">
+          <div className="px-12 lg:px-18 py-16 overflow-hidden">
             <div className="flex">
-              <div className="pr-18">
+              <div className="pr-2 lg:pr-18">
                 <h4 className="text-4xl font-inter font-bold text-white mb-2">Bedu</h4>
                 <p className="leading-relaxed mr-4 text-white text-lg mb-6">We are talent trainers: we raise the professional level of our students through an accelerated and flexible learning model.</p>
                 <a href="#" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
@@ -127,8 +129,8 @@ const IndexPage = () => {
                   </svg>
                 </a>
               </div>
-              <div className="w-3/6 flex-shrink-0 relative">
-                <div className="absolute top-0 -mt-10 -ml-12">
+              <div className="hidden md:block w-3/6 flex-shrink-0 relative">
+                <div className="absolute top-0 -mt-10 md:-ml-0 lg:-ml-12">
                   <Image
                     width={600}
                     height={382}
@@ -150,12 +152,12 @@ const IndexPage = () => {
       </div>
     </section>
     <section className="pt-4 pb-20">
-      <div className="container mx-auto max-w-screen-lg">
+      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
         <h2 className="text-2.5xl font-bold font-inter mb-2">OSS Contributions</h2>
-        <p className="leading-relaxed text-lg mb-12 w-112">
+        <p className="leading-relaxed text-lg mb-12 md:w-112">
           A compilation of my Open Source projects on GitHub. Many of these projects are centered to solve an specific problem in JavaScript frameworks.
         </p>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-gray-800 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Tiny Pagination</span>
             <p className="leading-relaxed text-white mb-6">A vue component to create a simple pagination using Flexbox</p>
@@ -190,7 +192,7 @@ const IndexPage = () => {
               </svg>
             </a>
           </div>
-          <div className="bg-gray-800 rounded-md px-6 py-5">
+          <div className="hidden md:block bg-gray-800 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Status Indicator</span>
             <p className="leading-relaxed text-white mb-6">
               A vue component to show an indicator as colored dots
@@ -202,7 +204,7 @@ const IndexPage = () => {
               </svg>
             </a>
           </div>
-          <div className="bg-gray-800 rounded-md px-6 py-5">
+          <div className="hidden md:block bg-gray-800 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Scoreboard</span>
             <p className="leading-relaxed text-white mb-6">
               A game scoreboard using Vue based on React project from Treehouse
@@ -214,7 +216,7 @@ const IndexPage = () => {
               </svg>
             </a>
           </div>
-          <div className="bg-gray-800 rounded-md px-6 py-5">
+          <div className="hidden md:block bg-gray-800 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Datasource</span>
             <p className="leading-relaxed text-white mb-6">
               A component to create dynamic tables with Vue 2.x
