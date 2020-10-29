@@ -161,7 +161,7 @@ const IndexPage = () => {
           <div className="bg-gray-800 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Tiny Pagination</span>
             <p className="leading-relaxed text-white mb-6">A vue component to create a simple pagination using Flexbox</p>
-            <a href="#" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+            <a href="https://github.com/coderdiaz/vue-tiny-pagination" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
               <span className="mr-2">View code</span>
               <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -173,7 +173,7 @@ const IndexPage = () => {
             <p className="leading-relaxed text-white mb-6">
               A zero-dependency react hook to show the card brand
             </p>
-            <a href="#" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+            <a href="https://github.com/coderdiaz/react-card-brand" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
               <span className="mr-2">View code</span>
               <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -185,7 +185,7 @@ const IndexPage = () => {
             <p className="leading-relaxed text-white mb-6">
               VS Code theme for dark lovers with accessible colors
             </p>
-            <a href="#" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+            <a href="https://github.com/coderdiaz/yell-vscode-theme" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
               <span className="mr-2">View code</span>
               <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -197,7 +197,7 @@ const IndexPage = () => {
             <p className="leading-relaxed text-white mb-6">
               A vue component to show an indicator as colored dots
             </p>
-            <a href="#" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+            <a href="https://github.com/coderdiaz/vue-status-indicator" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
               <span className="mr-2">View code</span>
               <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -209,7 +209,7 @@ const IndexPage = () => {
             <p className="leading-relaxed text-white mb-6">
               A game scoreboard using Vue based on React project from Treehouse
             </p>
-            <a href="#" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+            <a href="https://github.com/coderdiaz/scoreboard" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
               <span className="mr-2">View code</span>
               <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -221,7 +221,7 @@ const IndexPage = () => {
             <p className="leading-relaxed text-white mb-6">
               A component to create dynamic tables with Vue 2.x
             </p>
-            <a href="#" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+            <a href="https://github.com/coderdiaz/vue-datasource" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
               <span className="mr-2">View code</span>
               <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
