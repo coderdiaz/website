@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
     "target": "es5",
     "lib": [
       "dom",
@@ -19,10 +19,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "@/*": ["/*"],
-      "@/components/*": ["components/*"],
-      "@/images/*": ["images/*"],
-      "@/assets/*": ["assets/*"]
+      "@/*": ["src/*"],
+      "@/components/*": ["src/components/*"],
+      "@/images/*": ["src/images/*"],
+      "@/assets/*": ["src/assets/*"]
     }
   },
   "include": [

@@ -3,21 +3,21 @@ import Layout from "@/components/Layout";
 
 const IndexPage = () => {
   return <Layout>
-    <section className="pt-2 pb-4">
+    <section className="pt-8 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
         <h1 className="text-4xl md:text-6xl font-bold font-inter mb-4">Hey! I'm Javier</h1>
         <div className="mb-6 md:w-5/6 lg:w-7/12">
           <p className="leading-relaxed text-lg mb-4">
-            I'm a developer and creator in Mexico City, Mexico. I work on the <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://bedu.org">BEDU</a> team as a Software Engineer Lead.
+            I'm a developer and creator from Mexico City 🇲🇽 . I work on the <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://bedu.org">BEDU</a> team as a Software Engineer Lead.
           </p>
-          <p className="leading-relaxed text-lg mb-4">Currently, I'm developing platforms and websites using Jamstack. I mostly do <span className="text-">front-end</span> development but also back-end.</p>
+          <p className="leading-relaxed text-lg mb-4">Currently, I'm developing platforms and websites with Jamstack. I mostly do <span className="text-">front-end</span> development but also back-end.</p>
           <p className="leading-relaxed text-lg mb-4">
             I'm <span className="font-semibold">coderdiaz</span> on <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://twitter.com/coderdiaz">Twitter</a> and <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://github.com/coderdiaz">GitHub</a>, also I take <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://vsco.co/coderdiaz">photos</a> and share my designs in <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://dribbble.com/coderdiaz">Dribbble</a>. Come say hello! Let's be internet buddies, or grab a coffee.
           </p>
         </div>
       </div>
     </section>
-    <section className="pt-4 pb-10">
+    <section className="pt-2 pb-10">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4">What I do</h2>
         <div className="grid md:grid-cols-4 lg:grid-cols-3 gap-10">
