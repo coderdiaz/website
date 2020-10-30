@@ -24,29 +24,22 @@ const Header = () => {
                 alt="Avatar of Javier Diaz Chamorro" />
             </a>
           </Link>
-          <ul className="flex items-center">
-            <li className="hidden mr-2">
-              <a href="#" className="py-2 px-4 transition duration-200 ease-in-out hover:bg-gray-50 rounded">
-                Projects
-              </a>
-            </li>
-            <li>
-              <Link href="/about">
-                <a className="py-2 px-4 transition duration-200 ease-in-out dark:text-gray-100 dark-hover:bg-dark-700 hover:bg-gray-50 rounded">
-                  About me
-                </a>
-              </Link>
-            </li>
-          </ul>
         </div>
         <ul className="flex items-center">
-          <li className="md:mr-6">
-            <ColorSwitch />
-          </li>
-          <li className="hidden md:block">
-            <a href={`https://twitter.com/${twitter}`} className="py-2 px-4 transition duration-200 text-white ease-in-out bg-dark bg-opacity-90 hover:bg-opacity-100 rounded">
-              Follow me
+          <li className="hidden mr-4">
+            <a href="#" className="py-2 px-4 transition duration-200 ease-in-out hover:bg-gray-50 rounded">
+              Projects
             </a>
+          </li>
+          <li className="mr-4">
+            <Link href="/about">
+              <a className="py-2 px-4 transition duration-200 ease-in-out dark:text-gray-100 dark-hover:bg-dark-700 hover:bg-gray-50 rounded">
+                About me
+              </a>
+            </Link>
+          </li>
+          <li>
+            <ColorSwitch />
           </li>
         </ul>
       </div>
