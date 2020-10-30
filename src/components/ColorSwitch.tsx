@@ -1,7 +1,7 @@
 import useDarkMode from "use-dark-mode";
 
 const ColorSwitch = () => {
-  const { value, toggle } = useDarkMode(true);
+  const { value, toggle } = useDarkMode(false);
 
   return <button onClick={toggle} className="inline-flex items-center text-dark-500 hover:text-dark-800 bg-gray-50 md:hover:bg-gray-100 dark:text-white dark-hover:text-white dark:bg-dark-500 dark-hover:bg-dark-700 rounded-full p-3 transition duration-300 ease-in-out fill-current outline-none shadow-none" aria-label="Dark Mode">
     { value ? <svg className="w-4 h-4 inline-block align-middle flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
