@@ -26,7 +26,7 @@ const Footer = () => <footer className="py-8">
         </p>
       </div>
       <ul className="flex items-center">
-        <li className="mr-3 md:-mr-4 items-center">
+        <li>
           <ColorSwitch />
         </li>
       </ul>

@@ -26,10 +26,16 @@ const Header = () => {
           </Link>
           <ul className="flex items-center">
             <li className="hidden mr-2">
-              <a href="#" className="py-2 px-4 transition duration-200 ease-in-out hover:bg-gray-50 rounded">Projects</a>
+              <a href="#" className="py-2 px-4 transition duration-200 ease-in-out hover:bg-gray-50 rounded">
+                Projects
+              </a>
             </li>
             <li>
-              <a href="" className="py-2 px-4 transition duration-200 ease-in-out hover:bg-gray-50 rounded">About me</a>
+              <Link href="/about">
+                <a className="py-2 px-4 transition duration-200 ease-in-out hover:bg-gray-50 rounded">
+                  About me
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -13,6 +13,8 @@ module.exports = {
       black: '#000000',
       white: '#FFFFFF',
       darken: '#16161A',
+      notes: '#FEEBC8',
+      purple: '#5c45f8',
       primary: {
         100: '#F0BDCA',
         200: '#DA9BAB',
@@ -86,9 +88,6 @@ module.exports = {
         400: '#DB324B',
         500: '#C93148',
         600: '#B93246'
-      },
-      purple: {
-        default: '#5c45f8',
       },
       neureta: {
         from: '#8256e1',
