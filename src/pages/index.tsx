@@ -115,7 +115,7 @@ const IndexPage = () => {
           <div className="px-12 lg:px-18 py-16 overflow-hidden">
             <div className="flex">
               <div className="pr-2 lg:pr-18">
-                <h4 className="text-4xl font-inter font-bold text-white mb-2">Neureta</h4>
+                <h3 className="text-4xl font-inter font-bold text-white mb-2">Neureta</h3>
                 <p className="leading-relaxed mr-4 text-white text-lg mb-6">A simple Jamstack e-commerce using Stripe and Stripe Checkout to sell special education courses.</p>
                 <span className="line-through inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
                   <span className="mr-2">Coming soon</span>
@@ -141,7 +141,7 @@ const IndexPage = () => {
           <div className="px-12 lg:px-18 py-16 overflow-hidden">
             <div className="flex">
               <div className="pr-2 lg:pr-18">
-                <h4 className="text-4xl font-inter font-bold text-white mb-2">Bedu</h4>
+                <h3 className="text-4xl font-inter font-bold text-white mb-2">Bedu</h3>
                 <p className="leading-relaxed mr-4 text-white text-lg mb-6">We are talent trainers: we raise the professional level of our students through an accelerated and flexible learning model.</p>
                 <span className="line-through inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
                   <span className="mr-2">Coming soon</span>
