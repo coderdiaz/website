@@ -106,7 +106,7 @@ const IndexPage = () => {
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-2 w-80 leading-tight dark:text-white">Some great projects I worked on</h2>
         <p className="leading-relaxed text-lg mb-12 md:w-112 dark:text-gray-100">This is a just part of them, have a look at my work! If you have an idea. <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="mailto:hello@coderdiaz.me">Contact me</a>.</p>
-        <div className="relative bg-gradient-to-l from-neureta-from to-neureta-to rounded-md mb-20 border border-purple ">
+        <div className="relative bg-gradient-to-l from-neureta-from to-neureta-to rounded-md mb-20 border border-neureta-from ">
           <div className="skewed bg-purple bg-opacity-25" />
           <div className="px-12 lg:px-18 py-16 overflow-hidden">
             <div className="flex">
@@ -132,7 +132,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className="relative bg-gradient-to-l from-gray-500 to-gray-900 rounded-md mb-12 border border-gray-700">
+        <div className="relative bg-gradient-to-l from-gray-500 to-gray-900 rounded-md mb-12 border border-gray-600">
           <div className="skewed bg-gray bg-opacity-25" />
           <div className="px-12 lg:px-18 py-16 overflow-hidden">
             <div className="flex">
