@@ -5,9 +5,13 @@ module.exports = {
     content: [
       './src/components/**/*.{ts,tsx}',
       './src/pages/**/*.{ts,tsx,mdx}',
-    ]
+    ],
+    options: {
+      whitelist: ['dark-mode'],
+    }
   },
   theme: {
+    darkSelector: '.dark-mode',
     colors: {
       transparent: 'transparent',
       black: '#000000',
@@ -184,6 +188,15 @@ module.exports = {
       },
     },
   },
+  variants: {
+    backgroundColor: ['dark', 'dark-hover', 'hover', 'responsive', 'focus'],
+    borderColor: ['dark', 'dark-focus', 'dark-focus-within', 'hover', 'responsive', 'focus'],
+    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'focus'],
+    textOpacity: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'focus'],
+  },
+  plugins: [
+    require('tailwindcss-dark-mode')(),
+  ],
   future: {
     purgeLayersByDefault: true,
   },

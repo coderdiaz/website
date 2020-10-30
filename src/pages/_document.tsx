@@ -10,14 +10,16 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;700&display=swap"
             rel="stylesheet"
           />
         </Head>
         <body className="font-display leading-normal antialiased border-t-4 border-primary-400">
           <script src="js/noflash.js" />
-          <Main />
-          <NextScript />
+          <div className="bg-white dark:bg-darken">
+            <Main />
+            <NextScript />
+          </div>
         </body>
       </Html>
     );

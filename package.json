@@ -13,6 +13,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "tailwindcss": "^1.9.6",
+    "tailwindcss-dark-mode": "^1.1.7",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
