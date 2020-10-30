@@ -16,10 +16,8 @@ class MyDocument extends Document {
         </Head>
         <body className="font-display leading-normal antialiased border-t-4 border-primary-400">
           <script src="js/noflash.js" />
-          <div className="bg-white dark:bg-darken">
-            <Main />
-            <NextScript />
-          </div>
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );

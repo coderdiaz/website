@@ -10,3 +10,5 @@
   transition: all .5s ease-out;
   z-index: -1;
 }
+
+.dark-mode { background: #16161A; }
