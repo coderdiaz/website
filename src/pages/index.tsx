@@ -4,9 +4,11 @@ import Layout from "@/components/Layout";
 const IndexPage = () => {
   return <Layout>
     <section className="md:pt-8 pb-2">
-      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
-        <h1 className="text-4xl md:text-6xl font-bold font-inter mb-4 dark:text-white">Hey! I'm Javier</h1>
-        <div className="mb-6 md:w-5/6 lg:w-7/12">
+      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
+        <h1 className="inline-block text-4xl md:text-6xl font-bold font-inter mb-4 dark:text-white relative">
+          Hey! I'm Javier
+        </h1>
+        <div className="mb-6 md:w-5/6 lg:w-7/12 relative">
           <p className="leading-relaxed text-lg mb-4 dark:text-gray-100">
             I'm a developer and creator from Mexico City 🇲🇽 . I work on the <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://bedu.org">BEDU</a> team as a Software Engineer Lead.
           </p>
@@ -14,6 +16,16 @@ const IndexPage = () => {
           <p className="leading-relaxed text-lg mb-4 dark:text-gray-100">
             I'm <span className="font-semibold">coderdiaz</span> on <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://twitter.com/coderdiaz">Twitter</a> and <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://github.com/coderdiaz">GitHub</a>, also I take <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://vsco.co/coderdiaz">photos</a> and share my designs in <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://dribbble.com/coderdiaz">Dribbble</a>. Come say hello! Let's be internet buddies, or grab a coffee.
           </p>
+          <div className="absolute right-0 top-0 -mt-4 -mr-102 w-72 h-full opacity-90">
+            <div className="circle-pink absolute right-0 mr-64 w-18" />
+            <div className="w-pink absolute right-0 mt-48 mr- w-8" />
+            <div className="circle-blue absolute right-0 w-12 mr-32" />
+            <div className="w-blue absolute left-0 mt-48 ml-12 w-6" />
+            <div className="l-blue absolute right-0 mt-10 w-4" />
+            <div className="circle-yellow absolute right-0 mr-20 mt-20 w-32" />
+            <div className="w-yellow absolute right-0 mt-48 w-6 hidden" />
+            <div className="l-yellow absolute right-0 top-0 -mt-20 mr-20 w-18" />
+          </div>
         </div>
       </div>
     </section>
@@ -55,7 +67,7 @@ const IndexPage = () => {
       </div>
     </section>
     <section className="pt-4 pb-16">
-      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
+      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <div className="flex md:flex-col overflow-hidden relative bg-gradient-to-l from-blue-500 md:from-blue-300 to-purple rounded-lg p-8 md:p-16">
           <div className="flex flex-col justify-center lg:w-3/6 md:mr-32">
             <h3 className="font-bold font-inter text-2xl text-white md:mr-10 mb-4 leading-tight">
@@ -83,10 +95,15 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+        <div className="circle-pink opacity-50 dark:opacity-75 absolute left-0 top-0 -ml-48 -mt-12 w-18" />
+        <div className="w-blue opacity-50 dark:opacity-75 absolute left-0 top-0 -ml-32 -mt-32 w-8" />
+        <div className="circle-blue opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-12 w-18" />
+        <div className="w-pink opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-48 w-18" />
+        <div className="l-yellow opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-32 -mb-26 w-12" />
       </div>
     </section>
     <section className="pt-4 pb-4">
-      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
+      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-2 w-80 leading-tight dark:text-white">Some great projects I worked on</h2>
         <p className="leading-relaxed text-lg mb-12 md:w-112 dark:text-gray-100">This is a just part of them, have a look at my work! If you have an idea. <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="mailto:hello@coderdiaz.me">Contact me</a>.</p>
         <div className="relative bg-gradient-to-l from-neureta-from to-neureta-to rounded-md mb-20 border border-purple ">
@@ -148,6 +165,14 @@ const IndexPage = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
           </a>
+        </div>
+        <div className="absolute top-0 left-0 -ml-64 mt-56">
+          <div className="w-blue opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-0 w-18" />
+          <div className="l-yellow opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-32 -mb-26 w-12" />
+        </div>
+        <div className="absolute bottom-0 right-0 -mr-12">
+          <div className="circle-yellow opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-0 w-18" />
+          <div className="l-blue absolute opacity-50 dark:opacity-75 right-0 bottom-0 -mr-32 -mb-26 w-4 transform -rotate-45" />
         </div>
       </div>
     </section>

@@ -186,6 +186,9 @@ module.exports = {
         80: '.8',
         90: '.9',
       },
+      zIndex: {
+        '-10': '-10',
+      },
     },
   },
   variants: {
@@ -193,6 +196,7 @@ module.exports = {
     borderColor: ['dark', 'dark-focus', 'dark-focus-within', 'hover', 'responsive', 'focus'],
     textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'focus'],
     textOpacity: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'focus'],
+    opacity: ['dark', 'dark-hover'],
   },
   plugins: [
     require('tailwindcss-dark-mode')(),
