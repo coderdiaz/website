@@ -1,8 +1,12 @@
 import Image from "next/image";
 import Layout from "@/components/Layout";
+import Head from "@/components/Head";
 
 const AboutPage = () => {
   return <Layout>
+    <Head meta={{
+      title: 'About me — Developer and creator from Mexico City'
+    }} />
     <section className="md:pt-8 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-md">
         <h1 className="text-3xl md:text-5xl font-bold font-inter mb-4 dark:text-white">About me</h1>
