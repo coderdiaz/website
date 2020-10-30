@@ -13,7 +13,6 @@ interface IHeadProps {
 
 const Head = ({ meta = {} }: IHeadProps) => {
   const router = useRouter();
-  console.log(meta);
   const {
     title,
     description,

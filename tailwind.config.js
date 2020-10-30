@@ -200,6 +200,58 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-dark-mode')(),
+    function ({ addBase }) {
+      addBase([
+        {
+          '@font-face': {
+            fontFamily: 'IBM Plex Sans',
+            fontStyle: 'normal',
+            fontWeight: 400,
+            fontDisplay: 'swap',
+            src: 'url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-regular.eot")',
+            src: 'local("IBM Plex Sans"), local("IBMPlexSans"),url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-regular.woff2") format("woff2"), /* Super Modern Browsers */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-regular.woff") format("woff"), /* Modern Browsers */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-regular.svg#IBMPlexSans") format("svg"); /* Legacy iOS */'
+          }
+        },
+        {
+          '@font-face': {
+            fontFamily: 'IBM Plex Sans',
+            fontStyle: 'normal',
+            fontWeight: 600,
+            fontDisplay: 'swap',
+            src: 'url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.eot")',
+            src: 'local("IBM Plex Sans Semibold"), local("IBMPlexSans-Semibold"),url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.woff2") format("woff2"), /* Super Modern Browsers */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.woff") format("woff"), /* Modern Browsers */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.ttf") format("truetype"), /* Safari, Android, iOS */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.svg#IBMPlexSans") format("svg"); /* Legacy iOS */'
+          }
+        },
+        {
+          '@font-face': {
+            fontFamily: 'IBM Plex Sans',
+            fontStyle: 'normal',
+            fontWeight: 700,
+            fontDisplay: 'swap',
+            src: 'url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-700.eot")',
+            src: 'local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"),url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-700.woff2") format("woff2"), /* Super Modern Browsers */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-700.woff") format("woff"), /* Modern Browsers */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-700.ttf") format("truetype"), /* Safari, Android, iOS */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-700.svg#IBMPlexSans") format("svg"); /* Legacy iOS */'
+          }
+        },
+        {
+          '@font-face': {
+            fontFamily: 'Inter',
+            fontStyle: 'normal',
+            fontWeight: 400,
+            fontDisplay: 'swap',
+            src: 'url("/fonts/inter/Inter-Regular.woff") format("woff")',
+          }
+        },
+        {
+          '@font-face': {
+            fontFamily: 'Inter',
+            fontStyle: 'normal',
+            fontWeight: 700,
+            fontDisplay: 'swap',
+            src: 'url("/fonts/inter/Inter-Bold.woff") format("woff")',
+          }
+        }
+      ])
+    },
   ],
   future: {
     purgeLayersByDefault: true,
