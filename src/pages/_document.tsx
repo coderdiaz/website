@@ -14,7 +14,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="font-display leading-normal antialiased border-t-4 border-primary-400">
+        <body className="font-display leading-normal antialiased">
           <script src="js/noflash.js" />
           <Main />
           <NextScript />
