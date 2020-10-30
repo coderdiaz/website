@@ -1,8 +1,12 @@
 import Image from "next/image";
 import Layout from "@/components/Layout";
+import Head from "@/components/Head";
 
 const IndexPage = () => {
   return <Layout>
+    <Head meta={{
+      image: '/images/og-home.jpg',
+    }} />
     <section className="md:pt-8 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <h1 className="inline-block text-4xl md:text-6xl font-bold font-inter mb-4 dark:text-white relative">

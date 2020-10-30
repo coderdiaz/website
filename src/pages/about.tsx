@@ -5,7 +5,8 @@ import Head from "@/components/Head";
 const AboutPage = () => {
   return <Layout>
     <Head meta={{
-      title: 'About me — Developer and creator from Mexico City'
+      title: 'About me — Developer and creator from Mexico City',
+      image: '/images/og-about.jpg',
     }} />
     <section className="md:pt-8 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-md">

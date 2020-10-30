@@ -13,6 +13,7 @@ interface IHeadProps {
 
 const Head = ({ meta = {} }: IHeadProps) => {
   const router = useRouter();
+  console.log(meta);
   const {
     title,
     description,
@@ -35,12 +36,16 @@ const Head = ({ meta = {} }: IHeadProps) => {
     <meta property="og:site_name" content={meta.title || title } />
     <meta property="og:title" content={meta.title || title } />
     <meta property="og:description" content={meta.description ||description } />
+    <meta property="og:image" content={meta.image} />
+    <meta property="og:image:width" content="1440" />
+    <meta property="og:image:height" content="720" />
     {/** End OpenGraph Metadata */}
     {/** Twitter Metadata */}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@coderdiaz" />
     <meta name="twitter:title" content={meta.title || title} />
     <meta name="twitter:description" content={meta.description || description} />
+    <meta name="twitter:image" content={meta.image} />
     {/** End Twitter Metadata */}
   </NextHead>
 }
