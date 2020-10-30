@@ -40,10 +40,10 @@ const Header = () => {
           </ul>
         </div>
         <ul className="flex items-center">
-          <li className="mr-6">
+          <li className="md:mr-6">
             <ColorSwitch />
           </li>
-          <li>
+          <li className="hidden md:block">
             <a href={`https://twitter.com/${twitter}`} className="py-2 px-4 transition duration-200 text-white ease-in-out bg-dark bg-opacity-90 hover:bg-opacity-100 rounded">
               Follow me
             </a>
