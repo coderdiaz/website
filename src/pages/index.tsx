@@ -19,7 +19,7 @@ const IndexPage = () => {
           <div className="absolute right-0 top-0 -mt-4 -mr-102 w-72 h-full opacity-90">
             <div className="circle-pink absolute right-0 mr-64 w-18" />
             <div className="w-pink absolute right-0 mt-48 mr- w-8" />
-            <div className="circle-blue absolute right-0 w-12 mr-32" />
+            <div className="w-blue absolute right-0 w-5 mr-36 transform rotate-180 -mt-4" />
             <div className="w-blue absolute left-0 mt-48 ml-12 w-6" />
             <div className="l-blue absolute right-0 mt-10 w-4" />
             <div className="circle-yellow absolute right-0 mr-20 mt-20 w-32" />
