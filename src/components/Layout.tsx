@@ -5,7 +5,7 @@ import Head from "./Head";
 const Layout = ({ children }) => <>
   <Head />
   <Header />
-  <main className="py-2">
+  <main className="py-2 overflow-x-hidden">
     {children}
   </main>
   <Footer />
