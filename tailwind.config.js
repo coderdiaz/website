@@ -16,7 +16,7 @@ module.exports = {
       transparent: 'transparent',
       black: '#000000',
       white: '#FFFFFF',
-      darken: '#16161A',
+      darken: '#161e2e',
       notes: '#FEEBC8',
       purple: '#5c45f8',
       primary: {
