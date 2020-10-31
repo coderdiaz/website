@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-import SiteMetadata from "@/seo.config";
-
-const ColorSwitch = dynamic(() => import('@/components/ColorSwitch'), { ssr: false });
+import Navigation from "@/components/Navigation";
+import Menu from "@/components/Menu";
+import { useState } from "react";
 
 const Header = () => {
-  const {
-    social: { twitter }
-  } = SiteMetadata;
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+  const close = () => setIsOpen(false);
 
   return <header className="py-10">
     <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
@@ -25,30 +24,11 @@ const Header = () => {
             </a>
           </Link>
         </div>
-        <ul className="flex items-center">
-          <li className="hidden mr-4">
-            <a href="#" className="py-2 px-4 transition duration-200 ease-in-out hover:bg-gray-50 rounded">
-              Projects
-            </a>
-          </li>
-          <li className="mr-4">
-            <Link href="/uses">
-              <a className="py-2 px-4 transition duration-200 ease-in-out dark:text-gray-100 dark-hover:bg-dark-700 hover:bg-gray-50 rounded">
-                Uses
-              </a>
-            </Link>
-          </li>
-          <li className="mr-4">
-            <Link href="/about">
-              <a className="py-2 px-4 transition duration-200 ease-in-out dark:text-gray-100 dark-hover:bg-dark-700 hover:bg-gray-50 rounded">
-                About me
-              </a>
-            </Link>
-          </li>
-          <li>
-            <ColorSwitch />
-          </li>
-        </ul>
+        <Navigation className="items-center hidden md:flex" />
+        <Menu
+          className="block md:hidden dark:text-gray-400 dark-hover:text-gray-500"
+          isOpen={isOpen}
+          onClick={toggle} />
       </div>
     </div>
   </header>
