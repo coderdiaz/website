@@ -10,10 +10,10 @@ const UsesPage = () => {
     <section className="md:pt-6 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-md">
         <h1 className="text-3xl md:text-5xl font-bold font-inter mb-4 dark:text-white">Uses</h1>
-        <p className="leading-loose text-lg mb-12 md:w-4/6 dark:text-gray-100">
+        <p className="leading-loose text-lg mb-6 md:mb-12 md:w-4/6 dark:text-gray-100">
           This page will serve as a living document and a place to point curious developers to when I get asked.
         </p>
-        <div className="relative mb-12">
+        <div className="relative mb-6 md:mb-12">
           <Image
             className="rounded-xl"
             width={1024}
@@ -22,7 +22,7 @@ const UsesPage = () => {
         </div>
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 dark:text-white">Editor + Terminal</h2>
         <div className="leading-loose text-lg mb-16 dark:text-gray-100">
-          <ul className="ml-12 list-disc list-outside">
+          <ul className="ml-6 md:ml-12 list-disc list-outside">
             <li className="mb-4">
               <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://code.visualstudio.com/">Visual Studio Code</a> is my current editor which has been using since 2017.
             </li>
@@ -37,7 +37,7 @@ const UsesPage = () => {
         </div>
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 dark:text-white">Desktop Apps</h2>
         <div className="leading-loose text-lg mb-16 dark:text-gray-100">
-          <ul className="ml-12 list-disc list-outside">
+          <ul className="ml-6 md:ml-12 list-disc list-outside">
             <li className="mb-4">I design almost entirely in <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://figma.com/">Figma</a>.</li>
             <li className="mb-4">
               I use <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://magnet.crowdcafe.com/">Magnet</a> for keep my workspace organized.
@@ -55,7 +55,7 @@ const UsesPage = () => {
         </div>
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 dark:text-white">Desk Setup</h2>
         <div className="leading-loose text-lg mb-16 dark:text-gray-100">
-          <ul className="ml-12 list-disc list-outside">
+          <ul className="ml-6 md:ml-12 list-disc list-outside">
             <li className="mb-4">
               I currently use a 2019 16" MacBook Pro 2.6GHz 6-Core Intel Core i7 with 16Gb memory.
             </li>

@@ -13,11 +13,11 @@ const IndexPage = () => {
           Hey! I'm Javier
         </h1>
         <div className="mb-6 md:w-5/6 lg:w-7/12 relative">
-          <p className="leading-loose text-lg mb-4 dark:text-gray-100">
+          <p className="leading-loose text-lg mb-4 dark:text-gray-300">
             I'm a developer and creator from Mexico City 🇲🇽 . I work on the <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://bedu.org">BEDU</a> team as a Software Engineer Lead.
           </p>
-          <p className="leading-loose text-lg mb-4 dark:text-gray-100">Currently, I'm developing platforms and websites with Jamstack. I mostly do <span className="text-">front-end</span> development but also back-end.</p>
-          <p className="leading-loose text-lg mb-16 dark:text-gray-100">
+          <p className="leading-loose text-lg mb-4 dark:text-gray-300">Currently, I'm developing platforms and websites with Jamstack. I mostly do <span className="text-">front-end</span> development but also back-end.</p>
+          <p className="leading-loose text-lg mb-16 dark:text-gray-300">
             I'm <span className="font-semibold">coderdiaz</span> on <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://twitter.com/coderdiaz">Twitter</a> and <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://github.com/coderdiaz">GitHub</a>, also I take <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://vsco.co/coderdiaz">photos</a> and share my designs in <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://dribbble.com/coderdiaz">Dribbble</a>. Come say hello! Let's be internet buddies, or grab a coffee.
           </p>
           <div className="absolute right-0 top-0 -mt-4 -mr-102 w-72 h-full dark:opacity-90">
@@ -45,7 +45,7 @@ const IndexPage = () => {
               </svg>
             </div>
             <span className="inline-block text-lg font-semibold mb-2 dark:text-white">Software Development</span>
-            <p className="leading-loose mr-4 dark:text-gray-100">I build awesome software experiences using the best skills and technologies according to product.</p>
+            <p className="leading-loose mr-4 dark:text-gray-300">I build awesome software experiences using the best skills and technologies according to product.</p>
           </div>
           <div className="md:col-span-2 lg:col-span-1">
             <div className="bg-blue w-20 h-20 p-4 rounded-2xl mb-4 flex justify-center align-middle">
@@ -55,7 +55,7 @@ const IndexPage = () => {
               </svg>
             </div>
             <span className="inline-block text-lg font-semibold mb-2 dark:text-white">UI Development</span>
-            <p className="leading-loose mr-4 dark:text-gray-100">I develop user friendly and visually products. I build delightful experiences that let users achieve their goals.</p>
+            <p className="leading-loose mr-4 dark:text-gray-300">I develop user friendly and visually products. I build delightful experiences that let users achieve their goals.</p>
           </div>
           <div className="md:col-span-2  lg:col-span-1">
             <div className="bg-yellow-400 w-20 h-20 p-4 rounded-2xl mb-4 flex justify-center align-middle">
@@ -65,7 +65,7 @@ const IndexPage = () => {
               </svg>
             </div>
             <span className="inline-block text-lg font-semibold mb-2 dark:text-white">Mentoring/Teaching</span>
-            <p className="leading-loose mr-4 dark:text-gray-100">Each person has a story and a goal. I will help you achieve your professional growth through software.</p>
+            <p className="leading-loose mr-4 dark:text-gray-300">Each person has a story and a goal. I will help you achieve your professional growth through software.</p>
           </div>
         </div>
       </div>
@@ -109,12 +109,12 @@ const IndexPage = () => {
     <section className="pt-4 pb-4">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 w-80 leading-tight dark:text-white">Some great projects I worked on</h2>
-        <p className="leading-loose text-lg mb-12 md:w-112 dark:text-gray-100">This is a just part of them, have a look at my work! If you have an idea. <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="mailto:hello@coderdiaz.me">Contact me</a>.</p>
+        <p className="leading-loose text-lg mb-12 md:w-112 dark:text-gray-300">This is a just part of them, have a look at my work! If you have an idea. <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="mailto:hello@coderdiaz.me">Contact me</a>.</p>
         <div className="bg-gradient-to-l from-neureta-from to-neureta-to rounded-md mb-10 border border-neureta-from ">
           <div className="p-8 lg:p-16 overflow-hidden">
             <div className="flex">
               <div className="pr-2 lg:pr-18">
-                <h3 className="text-4xl font-inter font-bold text-white mb-2">Neureta</h3>
+                <h3 className="text-3xl md:text-4xl font-inter font-bold text-white mb-4 leading-none">Neureta</h3>
                 <p className="leading-loose mr-4 text-white text-lg mb-6">A simple Jamstack e-commerce using Stripe and Stripe Checkout to sell special education courses.</p>
                 <span className="line-through inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
                   <span className="mr-2">Coming soon</span>
@@ -139,7 +139,7 @@ const IndexPage = () => {
           <div className="p-8 lg:p-16 overflow-hidden">
             <div className="flex">
               <div className="pr-2 lg:pr-18">
-                <h3 className="text-4xl font-inter font-bold text-white mb-2">Bedu</h3>
+                <h3 className="text-3xl md:text-4xl font-inter font-bold text-white mb-4 leading-none">Bedu</h3>
                 <p className="leading-loose mr-4 text-white text-lg mb-6">We are talent trainers: we raise the professional level of our students through an accelerated and flexible learning model.</p>
                 <span className="line-through inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
                   <span className="mr-2">Coming soon</span>
@@ -180,12 +180,12 @@ const IndexPage = () => {
     </section>
     <section className="pt-4 pb-20">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
-        <h2 className="text-2.5xl font-bold font-inter mb-4 dark:text-white">OSS Contributions</h2>
-        <p className="leading-loose text-lg mb-16 md:w-112 dark:text-gray-100">
+        <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 dark:text-white">OSS Contributions</h2>
+        <p className="leading-loose text-lg mb-16 md:w-112 dark:text-gray-300">
           A compilation of my Open Source projects on GitHub. Many of these projects are centered to solve an specific problem in JavaScript frameworks.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-dark-600 rounded-md px-6 py-5">
+          <div className="bg-dark-100 dark:bg-dark-700 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Tiny Pagination</span>
             <p className="leading-loose text-white mb-6">A vue component to create a simple pagination using Flexbox</p>
             <a href="https://github.com/coderdiaz/vue-tiny-pagination" className="inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-white opacity-75 hover:opacity-100 tracking-wide">
@@ -195,7 +195,7 @@ const IndexPage = () => {
               </svg>
             </a>
           </div>
-          <div className="bg-dark-600 rounded-md px-6 py-5">
+          <div className="bg-dark-100 dark:bg-dark-700 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Card Brand</span>
             <p className="leading-loose text-white mb-6">
               A zero-dependency react hook to show the card brand
@@ -207,7 +207,7 @@ const IndexPage = () => {
               </svg>
             </a>
           </div>
-          <div className="bg-dark-600 rounded-md px-6 py-5">
+          <div className="bg-dark-100 dark:bg-dark-700 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Yell Theme</span>
             <p className="leading-loose text-white mb-6">
               VS Code theme for dark lovers with accessible colors
@@ -219,7 +219,7 @@ const IndexPage = () => {
               </svg>
             </a>
           </div>
-          <div className="hidden md:block bg-dark-600 rounded-md px-6 py-5">
+          <div className="hidden md:block bg-dark-100 dark:bg-dark-700 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Status Indicator</span>
             <p className="leading-loose text-white mb-6">
               A vue component to show an indicator as colored dots
@@ -231,7 +231,7 @@ const IndexPage = () => {
               </svg>
             </a>
           </div>
-          <div className="hidden md:block bg-dark-600 rounded-md px-6 py-5">
+          <div className="hidden md:block bg-dark-100 dark:bg-dark-700 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Scoreboard</span>
             <p className="leading-loose text-white mb-6">
               A game scoreboard using Vue based on React project from Treehouse
@@ -243,7 +243,7 @@ const IndexPage = () => {
               </svg>
             </a>
           </div>
-          <div className="hidden md:block bg-dark-600 rounded-md px-6 py-5">
+          <div className="hidden md:block bg-dark-100 dark:bg-dark-700 rounded-md px-6 py-5">
             <span className="inline-block font-inter font-semibold text-white mb-2">Datasource</span>
             <p className="leading-loose text-white mb-6">
               A component to create dynamic tables with Vue 2.x

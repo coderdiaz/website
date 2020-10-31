@@ -11,10 +11,10 @@ const AboutPage = () => {
     <section className="md:pt-6 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-md">
         <h1 className="text-3xl md:text-5xl font-bold font-inter mb-4 dark:text-white">About me</h1>
-        <p className="leading-loose text-lg mb-12 md:w-4/6 dark:text-gray-100">
+        <p className="leading-loose text-lg mb-6 md:mb-12 md:w-4/6 dark:text-gray-100">
           Hey, I'm Javier a.k.a. <span className="px-2 py-1 bg-gray-50 dark:bg-dark-600 dark:text-gray-100 rounded-md">coderdiaz</span> a developer and creator building amazing platforms and websites with Jamstack. I live in Mexico City <span className="inline-block mx-1">🇲🇽</span> with my wife <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://www.instagram.com/manzanita_becky/">Becky</a>.
         </p>
-        <div className="relative mb-12">
+        <div className="relative mb-6 md:mb-12">
           <Image
             className="rounded-xl"
             width={1024}
@@ -54,48 +54,48 @@ const AboutPage = () => {
           My favorite libraries and frameworks are Vue, React, Nest.js, Next.js, Gatsby and Echo. Actually, I create my web designs using <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://figma.com">Figma</a> and implementing on web using <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://tailwindcss.com">TailwindCSS</a>, a utility-first CSS framework designed to rapid UI development.
         </p>
         <div className="grid grid-cols-6 md:grid-cols-12 gap-4 md:gap-8 mb-16">
-          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             Next.js
           </div>
-          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             React
           </div>
-          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             Node
           </div>
-          <div className="inline-flex items-center justify-center col-span-3 md:col-span-3 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-3 md:col-span-3 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             GraphQL
           </div>
-          <div className="inline-flex items-center justify-center col-span-3 md:col-span-3 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-3 md:col-span-3 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             Vue
           </div>
-          <div className="inline-flex items-center justify-center col-span-3 md:col-span-3 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-3 md:col-span-3 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             HTML &amp; CSS
           </div>
-          <div className="inline-flex items-center justify-center col-span-3 md:col-span-3 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-3 md:col-span-3 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             Nest.js
           </div>
-          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             PostgreSQL
           </div>
-          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             Gatsby
           </div>
-          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-3 md:col-span-4 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             TailwindCSS
           </div>
-          <div className="inline-flex items-center justify-center col-span-6 md:col-span-6 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-6 md:col-span-6 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             Microservices Architecture
           </div>
-          <div className="inline-flex items-center justify-center col-span-6 md:col-span-6 bg-notes dark:bg-dark-500 dark:text-gray-100 rounded-lg px-6 py-4">
+          <div className="inline-flex items-center justify-center col-span-6 md:col-span-6 bg-notes dark:bg-dark-700 dark:text-gray-100 rounded-lg px-6 py-4">
             Jamstack
           </div>
         </div>
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 dark:text-white">Teaching</h2>
-        <p className="leading-loose text-lg mb-12 dark:text-gray-100">
+        <p className="leading-loose text-lg mb-6 md:mb-12 dark:text-gray-100">
           Have I already mentioned I like sharing knowledge? I enjoy teaching and really like to see people growing. In 2017, I join BEDU as an Mentor in the Web Development Bootcamp where I teach about JavaScript, Node and React.
         </p>
-        <div className="relative mb-12">
+        <div className="relative mb-12 md:mb-12">
           <Image
             className="rounded-xl"
             width={1024}
