@@ -21,7 +21,7 @@ const UsesPage = () => {
             src="/images/setup-coderdiaz.png" />
         </div>
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 dark:text-white">Editor + Terminal</h2>
-        <div className="leading-loose text-lg mb-10 dark:text-gray-100">
+        <div className="leading-loose text-lg mb-16 dark:text-gray-100">
           <ul className="ml-12 list-disc list-outside">
             <li className="mb-4">
               <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://code.visualstudio.com/">Visual Studio Code</a> is my current editor which has been using since 2017.
@@ -36,7 +36,7 @@ const UsesPage = () => {
           </ul>
         </div>
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 dark:text-white">Desktop Apps</h2>
-        <div className="leading-loose text-lg mb-10 dark:text-gray-100">
+        <div className="leading-loose text-lg mb-16 dark:text-gray-100">
           <ul className="ml-12 list-disc list-outside">
             <li className="mb-4">I design almost entirely in <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://figma.com/">Figma</a>.</li>
             <li className="mb-4">
@@ -54,7 +54,7 @@ const UsesPage = () => {
           </ul>
         </div>
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 dark:text-white">Desk Setup</h2>
-        <div className="leading-loose text-lg mb-4 dark:text-gray-100">
+        <div className="leading-loose text-lg mb-16 dark:text-gray-100">
           <ul className="ml-12 list-disc list-outside">
             <li className="mb-4">
               I currently use a 2019 16" MacBook Pro 2.6GHz 6-Core Intel Core i7 with 16Gb memory.
