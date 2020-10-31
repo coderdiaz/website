@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import Navigation from "./Navigation";
+const ColorSwitch = dynamic(() => import('@/components/ColorSwitch'), { ssr: false });
 
 interface IMenuProps {
   className?: string;
@@ -10,12 +12,17 @@ interface IMenuProps {
 
 const Menu = ({ isOpen, onClick, className }: IMenuProps) => {
   return <>
-    <button className={`dark:text-white p-2 -mr-2 ${className}`} onClick={onClick}>
-      <svg className="fill-current w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-    { isOpen ? <div className="py-12 md:hidden bg-white dark:bg-dark-500 top-0 left-0 fixed w-full h-full z-50">
+    <div className="flex md:hidden items-center">
+      <div className="block md:hidden mr-4">
+        <ColorSwitch />
+      </div>
+      <button className={`dark:text-white p-2 -mr-2 ${className}`} onClick={onClick}>
+        <svg className="fill-current w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    { isOpen ? <div className="py-10 md:hidden bg-white dark:bg-dark-500 top-0 left-0 fixed w-full h-full z-50">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <div className="flex items-center justify-between mb-12">
           <Link href="/">

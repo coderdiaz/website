@@ -1,8 +1,8 @@
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import Menu from "@/components/Menu";
-import { useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
