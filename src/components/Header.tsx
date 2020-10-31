@@ -32,6 +32,13 @@ const Header = () => {
             </a>
           </li>
           <li className="mr-4">
+            <Link href="/uses">
+              <a className="py-2 px-4 transition duration-200 ease-in-out dark:text-gray-100 dark-hover:bg-dark-700 hover:bg-gray-50 rounded">
+                Uses
+              </a>
+            </Link>
+          </li>
+          <li className="mr-4">
             <Link href="/about">
               <a className="py-2 px-4 transition duration-200 ease-in-out dark:text-gray-100 dark-hover:bg-dark-700 hover:bg-gray-50 rounded">
                 About me
