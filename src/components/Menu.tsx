@@ -42,8 +42,8 @@ const Menu = ({ isOpen, onClick, className }: IMenuProps) => {
           </button>
         </div>
         <Navigation className="flex flex-col items-left mb-12 -mx-6" />
-        <div className="flex justify-left space-x-6 md:order-2 mb-4">
-          <span className="dark:text-gray-400">Follow me</span>
+        <div className="flex items-center justify-left space-x-6 md:order-2 mb-4">
+          <span className="text-lg dark:text-gray-400">Follow me</span>
           <a href="https://twitter.com/coderdiaz" className="text-dark-100 hover:text-dark-500 dark:text-gray-400 dark-hover:text-gray-500">
             <span className="sr-only">Twitter</span>
             <svg className="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
