@@ -6,7 +6,7 @@ const AboutPage = () => {
   return <Layout>
     <Head meta={{
       title: 'About me — Developer and creator from Mexico City',
-      image: '/images/og-about.jpg',
+      image: 'https://coderdiaz.me/images/og-about.jpg',
     }} />
     <section className="md:pt-0 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-md">

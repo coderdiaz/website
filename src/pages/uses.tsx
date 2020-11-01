@@ -6,7 +6,7 @@ const UsesPage = () => {
   return <Layout>
     <Head meta={{
       title: 'Uses — Developer and creator from Mexico City',
-      image: '/images/setup-coderdiaz.jpg',
+      image: 'https://coderdiaz.me/images/setup-coderdiaz.jpg',
     }} />
     <section className="md:pt-0 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-md">

@@ -5,7 +5,7 @@ import Head from "@/components/Head";
 const IndexPage = () => {
   return <Layout>
     <Head meta={{
-      image: '/images/og-home.jpg',
+      image: 'https://coderdiaz.me/images/og-home.jpg',
     }} />
     <section className="md:pt-2 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">

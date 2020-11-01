@@ -5,7 +5,7 @@ import Head from "@/components/Head";
 const Books = () => {
   return <Layout>
     <Head meta={{
-      image: '/images/my-books.jpg',
+      image: 'https://coderdiaz.me/images/my-books.jpg',
     }} />
     <section className="md:pt-0 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-md">
