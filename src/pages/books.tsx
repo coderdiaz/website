@@ -10,7 +10,7 @@ const Books = () => {
     <section className="md:pt-0 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-md">
         <h1 className="text-3xl md:text-5xl font-bold font-inter mb-4 dark:text-white">Books</h1>
-        <p className="leading-loose text-lg mb-6 md:mb-12 md:w-4/6 dark:text-gray-100">A working list of all of the books I'm reading in 2020. </p>
+        <p className="leading-loose text-lg mb-6 md:mb-12 md:w-4/6 dark:text-gray-100">A working list of all of the books I'm reading in 2020. Ranging from algorithms to beign better developer and manager, I try to dedicate my early mornings to exploring this variety of topics.</p>
         <div className="relative mb-6 md:mb-12">
           <Image
             className="rounded-xl"
@@ -18,9 +18,6 @@ const Books = () => {
             height={576}
             src="/images/my-books.jpg" />
         </div>
-        <p className="leading-loose text-lg mb-6 md:mb-8 dark:text-gray-100">
-          Ranging from algorithms to beign better developer and manager, I try to dedicate my early mornings to exploring this variety of topics.
-        </p>
         <ul className="mb-16">
           <li className="mb-4">
             <a className="inline-flex flex-col md:flex-row w-full p-4 rounded-lg bg-gray-50 hover:bg-gray-100 dark:bg-dark-600 dark-hover:bg-dark-700" href="https://www.smashingmagazine.com/printed-books/design-systems/">
