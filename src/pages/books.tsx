@@ -88,7 +88,7 @@ const Books = () => {
             </a>
           </li>
           <li className="mb-4">
-            <a className="inline-flex w-full p-4 rounded-lg bg-dark-600 hover:bg-dark-700" href="">
+            <a className="inline-flex w-full p-4 rounded-lg bg-dark-600 hover:bg-dark-700" href="https://www.smashingmagazine.com/printed-books/smashing-book-6-new-frontiers-in-web-design/">
               <div className="relative w-38 h-38 mr-4 overflow-hidden flex-shrink-0">
                 <Image
                   className="absolute object-cover"
