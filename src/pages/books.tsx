@@ -15,7 +15,7 @@ const Books = () => {
             className="rounded-xl"
             width={1024}
             height={576}
-            src="/images/my-books.png" />
+            src="/images/my-books.jpg" />
         </div>
         <p className="leading-loose text-lg mb-6 md:mb-8 dark:text-gray-100">
           A working list of all of the books I'm reading in 2020. Ranging from algorithms to beign better developer and manager, I try to dedicate my early mornings to exploring this variety of topics.
