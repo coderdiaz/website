@@ -179,7 +179,7 @@ const IndexPage = () => {
       </div>
     </section>
     <section className="pt-4 pb-20">
-      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
+      <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 dark:text-white">OSS Contributions</h2>
         <p className="leading-loose text-lg mb-16 md:w-112 dark:text-gray-300">
           A compilation of my Open Source projects on GitHub. Many of these projects are centered to solve an specific problem in JavaScript frameworks.
@@ -255,6 +255,14 @@ const IndexPage = () => {
               </svg>
             </a>
           </div>
+        </div>
+        <div className="absolute top-0 left-0 -ml-64 mt-56">
+          <div className="w-pink opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-0 w-18" />
+          <div className="l-yellow opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-32 -mb-26 w-12" />
+        </div>
+        <div className="absolute bottom-0 right-0 -mr-12">
+          <div className="circle-blue opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-12 mb-10 w-18" />
+          <div className="l-yellow absolute opacity-50 dark:opacity-75 right-0 bottom-0 -mr-32 -mb-8 w-20 transform -rotate-45" />
         </div>
       </div>
     </section>
