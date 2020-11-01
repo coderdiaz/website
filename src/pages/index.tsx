@@ -7,7 +7,7 @@ const IndexPage = () => {
     <Head meta={{
       image: '/images/og-home.jpg',
     }} />
-    <section className="md:pt-8 pb-2">
+    <section className="md:pt-2 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <h1 className="inline-block text-4xl md:text-6xl font-bold font-inter mb-4 dark:text-white relative">
           Hey! I'm Javier

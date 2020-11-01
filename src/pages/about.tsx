@@ -8,7 +8,7 @@ const AboutPage = () => {
       title: 'About me — Developer and creator from Mexico City',
       image: '/images/og-about.jpg',
     }} />
-    <section className="md:pt-6 pb-2">
+    <section className="md:pt-0 pb-2">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-md">
         <h1 className="text-3xl md:text-5xl font-bold font-inter mb-4 dark:text-white">About me</h1>
         <p className="leading-loose text-lg mb-6 md:mb-12 md:w-4/6 dark:text-gray-100">
