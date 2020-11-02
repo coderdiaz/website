@@ -21,7 +21,7 @@ const Books = () => {
         <ul className="mb-16">
           <li className="mb-4">
             <a className="inline-flex flex-col md:flex-row w-full p-4 rounded-lg bg-gray-50 hover:bg-gray-100 dark:bg-dark-600 dark-hover:bg-dark-700" href="https://www.smashingmagazine.com/printed-books/design-systems/">
-              <div className="relative rounded-lg w-full h-48 md:w-38 md:h-38 mb-4 md:mb-0 mr-4 overflow-hidden flex-shrink-0">
+              <div className="relative rounded-lg w-full h-48 md:w-42 md:h-42 mb-4 md:mb-0 mr-4 overflow-hidden flex-shrink-0">
                 <Image
                   className="absolute object-cover rounded-lg"
                   width={380}
@@ -39,7 +39,7 @@ const Books = () => {
           </li>
           <li className="mb-4">
             <a className="inline-flex flex-col md:flex-row w-full p-4 rounded-lg bg-gray-50 hover:bg-gray-100 dark:bg-dark-600 dark-hover:bg-dark-700" href="https://www.amazon.com/Monolith-Microservices-Evolutionary-Patterns-Transform/dp/1492047848">
-              <div className="relative rounded-lg w-full h-48 md:w-38 md:h-38 mb-4 md:mb-0 mr-4 overflow-hidden flex-shrink-0">
+              <div className="relative rounded-lg w-full h-48 md:w-42 md:h-42 mb-4 md:mb-0 mr-4 overflow-hidden flex-shrink-0">
                 <Image
                   className="absolute object-cover rounded-lg"
                   width={380}
@@ -55,7 +55,7 @@ const Books = () => {
           </li>
           <li className="mb-4">
             <a className="inline-flex flex-col md:flex-row w-full p-4 rounded-lg bg-gray-50 hover:bg-gray-100 dark:bg-dark-600 dark-hover:bg-dark-700" href="https://www.smashingmagazine.com/printed-books/form-design-patterns/">
-              <div className="relative rounded-lg w-full h-48 md:w-38 md:h-38 mb-4 md:mb-0 mr-4 overflow-hidden flex-shrink-0">
+              <div className="relative rounded-lg w-full h-48 md:w-42 md:h-42 mb-4 md:mb-0 mr-4 overflow-hidden flex-shrink-0">
                 <Image
                   className="absolute object-cover rounded-lg"
                   width={380}
@@ -71,7 +71,7 @@ const Books = () => {
           </li>
           <li className="mb-4">
             <a className="inline-flex flex-col md:flex-row w-full p-4 rounded-lg bg-gray-50 hover:bg-gray-100 dark:bg-dark-600 dark-hover:bg-dark-700" href="https://www.amazon.com/Introducing-Go-Reliable-Scalable-Programs/dp/1491941952">
-              <div className="relative rounded-lg w-full h-48 md:w-38 md:h-38 mb-4 md:mb-0 mr-4 overflow-hidden flex-shrink-0">
+              <div className="relative rounded-lg w-full h-48 md:w-42 md:h-42 mb-4 md:mb-0 mr-4 overflow-hidden flex-shrink-0">
                 <Image
                   className="absolute object-cover rounded-lg"
                   width={380}
@@ -87,7 +87,7 @@ const Books = () => {
           </li>
           <li className="mb-4">
             <a className="inline-flex flex-col md:flex-row w-full p-4 rounded-lg bg-gray-50 hover:bg-gray-100 dark:bg-dark-600 dark-hover:bg-dark-700" href="https://www.smashingmagazine.com/printed-books/smashing-book-6-new-frontiers-in-web-design/">
-              <div className="relative rounded-lg w-full h-48 md:w-38 md:h-38 mb-4 md:mb-0 mr-4 overflow-hidden flex-shrink-0">
+              <div className="relative rounded-lg w-full h-48 md:w-42 md:h-42 mb-4 md:mb-0 mr-4 overflow-hidden flex-shrink-0">
                 <Image
                   className="absolute object-cover rounded-lg"
                   width={380}
