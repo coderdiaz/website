@@ -8,4 +8,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
 }
 
-export default withGa("G-4FBBV9EDXB", Router)(MyApp);
+export default withGa("UA-169353371-1", Router)(MyApp);
