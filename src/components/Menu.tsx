@@ -16,7 +16,7 @@ const Menu = ({ isOpen, onClick, className }: IMenuProps) => {
       <div className="block md:hidden mr-4">
         <ColorSwitch />
       </div>
-      <button className={`dark:text-white p-2 -mr-2 ${className}`} onClick={onClick}>
+      <button className={`dark:text-white p-2 -mr-2 ${className}`} aria-label="Hamburger" onClick={onClick}>
         <svg className="fill-current w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -35,7 +35,7 @@ const Menu = ({ isOpen, onClick, className }: IMenuProps) => {
                 alt="Avatar of Javier Diaz Chamorro" />
             </a>
           </Link>
-          <button onClick={onClick} className="focus:outline-none dark:text-gray-400 dark-hover:text-gray-500 p-2 -mr-2">
+          <button aria-label="Close" onClick={onClick} className="focus:outline-none dark:text-gray-400 dark-hover:text-gray-500 p-2 -mr-2">
             <svg className="fill-current w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>

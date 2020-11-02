@@ -7,7 +7,6 @@ import Menu from "@/components/Menu";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  const close = () => setIsOpen(false);
 
   return <header className="py-10">
     <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg">
