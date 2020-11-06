@@ -195,7 +195,7 @@ module.exports = {
   },
   variants: {
     backgroundColor: ['dark', 'dark-hover', 'hover', 'responsive', 'focus'],
-    borderColor: ['dark', 'dark-focus', 'dark-focus-within', 'hover', 'responsive', 'focus'],
+    borderColor: ['dark', 'dark-hover', 'dark-focus', 'dark-focus-within', 'hover', 'responsive', 'focus'],
     textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'focus'],
     textOpacity: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'focus'],
     opacity: ['dark', 'dark-hover'],
