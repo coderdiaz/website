@@ -1,17 +1,9 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: {
-    content: [
-      './src/components/**/*.{ts,tsx}',
-      './src/pages/**/*.{ts,tsx,mdx}',
-    ],
-    options: {
-      whitelist: ['dark-mode'],
-    }
-  },
+  purge: ['./src/**/*.{ts,tsx,mdx}'],
+  darkMode: 'class',
   theme: {
-    darkSelector: '.dark-mode',
     colors: {
       transparent: 'transparent',
       black: '#000000',
@@ -42,7 +34,7 @@ module.exports = {
         900: '#1E7853'
       },
       dark: {
-        default: '#161e2e',
+        DEFAULT: '#161e2e',
         100: '#3c465b',
         200: '#2f384b',
         300: '#222a3a',
@@ -54,7 +46,7 @@ module.exports = {
         900: '#030a1e'
       },
       gray: {
-        default: '#94A1B2',
+        DEFAULT: '#94A1B2',
         50: '#EFEFEF',
         100: '#E3E4E5',
         200: '#D9DBDE',
@@ -67,7 +59,7 @@ module.exports = {
         900: '#445263'
       },
       blue: {
-        default: '#05C1E7',
+        DEFAULT: '#05C1E7',
         100: '#99EDFD',
         200: '#66E4FD',
         300: '#33DBFC',
@@ -76,7 +68,7 @@ module.exports = {
         600: '#0AB2D3'
       },
       yellow: {
-        default: '#EAB509',
+        DEFAULT: '#EAB509',
         100: '#FFE79B',
         200: '#FFDB69',
         300: '#FFCF37',
@@ -85,7 +77,7 @@ module.exports = {
         600: '#D6A60E'
       },
       red: {
-        default: '#C93148',
+        DEFAULT: '#C93148',
         100: '#FAA8AE',
         200: '#F77D86',
         300: '#F5525E',
@@ -193,15 +185,7 @@ module.exports = {
       },
     },
   },
-  variants: {
-    backgroundColor: ['dark', 'dark-hover', 'hover', 'responsive', 'focus'],
-    borderColor: ['dark', 'dark-hover', 'dark-focus', 'dark-focus-within', 'hover', 'responsive', 'focus'],
-    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'focus'],
-    textOpacity: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'focus'],
-    opacity: ['dark', 'dark-hover'],
-  },
   plugins: [
-    require('tailwindcss-dark-mode')(),
     function ({ addBase }) {
       addBase([
         {
@@ -255,7 +239,4 @@ module.exports = {
       ])
     },
   ],
-  future: {
-    purgeLayersByDefault: true,
-  },
 };

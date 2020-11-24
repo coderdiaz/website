@@ -11,7 +11,7 @@
   z-index: -1;
 }
 
-.dark-mode { background: #161e2e; }
+.dark { background: #161e2e; }
 
 /** Svg elements */
 .circle-pink::before {

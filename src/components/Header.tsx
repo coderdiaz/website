@@ -25,7 +25,7 @@ const Header = () => {
         </div>
         <Navigation className="items-center hidden md:flex" />
         <Menu
-          className="block md:hidden dark:text-gray-400 dark-hover:text-gray-500"
+          className="block md:hidden dark:text-gray-400 dark:hover:text-gray-500"
           isOpen={isOpen}
           onClick={toggle} />
       </div>
