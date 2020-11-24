@@ -19,7 +19,7 @@ const Footer = () => <footer className="py-8">
       </Link>
       <div className="flex mx-6 mb-6 md:mb-0 justify-start w-full items-center">
         <p className="dark:text-gray-400 leading-relaxed">
-          &copy; 2020 Javier Diaz ― Site build with <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://nextjs.org">Next.js</a> &amp; <a className="border-b-2  border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://tailwindcss.com">TailwindCSS</a> and hosted in <a className="border-b-2 border-gray-200transition duration-200 ease-in-out hover:border-gray-400" href="https://vercel.com">Vercel</a>
+          &copy; 2020 Javier Diaz
         </p>
       </div>
       <div className="flex w-full md:justify-end md:w-80 items-center">
