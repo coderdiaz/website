@@ -139,52 +139,56 @@ const IndexPage = () => {
     <section className="pt-4 pb-4">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 w-80 leading-tight dark:text-white">Some great projects I worked on</h2>
-        <p className="leading-loose text-lg mb-12 md:w-112 dark:text-gray-300">This is a just part of them, have a look at my work! If you have an idea. <a className="text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink" href="mailto:hello@coderdiaz.me">Contact me</a>.</p>
-        <div className="bg-gradient-to-l from-neureta-from to-neureta-to rounded-md mb-10 border border-neureta-from ">
-          <div className="p-8 lg:p-16 overflow-hidden">
-            <div className="flex">
-              <div className="pr-2 lg:pr-18">
-                <h3 className="text-3xl md:text-4xl font-inter font-bold text-white mb-4 leading-none">Neureta</h3>
-                <p className="leading-loose mr-4 text-white text-lg mb-6">A simple Jamstack e-commerce using Stripe and Stripe Checkout to sell special education courses.</p>
-                <span className="line-through inline-flex items-center font-semibold text-white border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
-                  <span className="mr-2">Coming soon</span>
-                  <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
-              </div>
-              <div className="hidden md:block w-3/6 flex-shrink-0 relative">
-                <div className="absolute top-0 -mt-10 md:-ml-0 lg:-ml-12">
-                  <Image
-                    width={600}
-                    height={382}
-                    src="/images/projects/neureta-cover.png"
-                    alt="Website of Neureta" />
+        <p className="leading-loose text-lg md:w-112 dark:text-gray-300 mb-12">This is a just part of them, have a look at my work! If you have an idea. <a className="text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink" href="mailto:hello@coderdiaz.me">Contact me</a>.</p>
+        <div className="mb-20">
+          <div className="mb-6">
+            <div className="overflow-hidden pt-20 pb-0">
+              <div className="flex p-8 lg:p-16 bg-gradient-to-l from-neureta-from to-neureta-to rounded-md border border-neureta-from">
+                <div className="pr-2 lg:pr-18">
+                  <h3 className="text-3xl md:text-4xl font-inter font-bold text-white mb-4 leading-none">Neureta</h3>
+                  <p className="leading-loose mr-4 text-white text-lg mb-6">A simple Jamstack e-commerce using Stripe and Stripe Checkout to sell special education courses.</p>
+                  <span className="line-through inline-flex items-center font-semibold text-white border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+                    <span className="mr-2">Coming soon</span>
+                    <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </span>
+                </div>
+                <div className="hidden md:block w-3/6 flex-shrink-0 relative">
+                  <div className="w-130 absolute top-0 md:-ml-0 lg:-ml-12 transform -translate-y-25">
+                    <Image
+                      className="rounded"
+                      width={840}
+                      height={920}
+                      src="/images/projects/neureta-screenshot.png"
+                      alt="Website of Neureta" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="bg-gradient-to-l from-gray-700 to-gray-900 rounded-md mb-24 border border-gray-600">
-          <div className="p-8 lg:p-16 overflow-hidden">
-            <div className="flex">
-              <div className="pr-2 lg:pr-18">
-                <h3 className="text-3xl md:text-4xl font-inter font-bold text-white mb-4 leading-none">Bedu</h3>
-                <p className="leading-loose mr-4 text-white text-lg mb-6">We are talent trainers: we raise the professional level of our students through an accelerated and flexible learning model.</p>
-                <span className="line-through inline-flex items-center font-semibold text-white border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
-                  <span className="mr-2">Coming soon</span>
-                  <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
-              </div>
-              <div className="hidden md:block w-3/6 flex-shrink-0 relative">
-                <div className="absolute top-0 -mt-10 md:-ml-0 lg:-ml-12">
-                  <Image
-                    width={600}
-                    height={382}
-                    src="/images/projects/bedu-cover.png"
-                    alt="Website of Bedu" />
+          <div className="mb-6">
+            <div className="overflow-hidden pt-20 pb-0">
+              <div className="flex p-8 lg:p-16 bg-gradient-to-l from-gray-700 to-gray-900 rounded-md border border-gray-600">
+                <div className="pr-2 lg:pr-18">
+                  <h3 className="text-3xl md:text-4xl font-inter font-bold text-white mb-4 leading-none">Bedu</h3>
+                  <p className="leading-loose mr-4 text-white text-lg mb-6">We raise the professional level of our students through an accelerated and flexible learning model.</p>
+                  <span className="line-through inline-flex items-center font-semibold text-white border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+                    <span className="mr-2">Coming soon</span>
+                    <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </span>
+                </div>
+                <div className="hidden md:block w-1/2 flex-shrink-0 relative">
+                  <div className="w-130 absolute top-0 md:-ml-0 lg:-ml-12 transform -translate-y-25">
+                    <Image
+                      className="rounded"
+                      width={840}
+                      height={920}
+                      src="/images/projects/bedu-screenshot.png"
+                      alt="Website of Bedu" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,7 +254,7 @@ const IndexPage = () => {
             </p>
           </a>
         </div>
-        <a href="https://github.com/coderdiaz" className="my-12 text-lg inline-flex items-center text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink">
+        <a href="https://github.com/coderdiaz" className="my-12 lg:text-lg inline-flex items-center text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink">
             <span className="mr-2">Go to GitHub</span>
             <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
