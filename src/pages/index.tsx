@@ -7,24 +7,24 @@ const IndexPage = () => {
     <Head meta={{
       image: 'https://coderdiaz.me/images/og-home.jpg',
     }} />
-    <section className="md:pt-2 pb-2">
+    <section className="md:pt-2 pb-16">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <div className="grid md:grid-cols-12">
-          <div className="md:col-span-8 lg:col-span-6 relative lg:mt-12 lg:mb-16">
+          <div className="md:col-span-8 lg:col-span-6 relative lg:mt-24 lg:mb-16">
             <h1 className="inline-block text-3.5xl md:text-6xl font-bold font-inter mb-4 dark:text-white relative">
               Hey! I'm Javier
             </h1>
             <p className="leading-loose text-lg mb-4 dark:text-gray-300">
-              I'm a developer and creator from Mexico City 🇲🇽 . I work on the <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://bedu.org">BEDU</a> team as a Software Engineer Lead.
+              I'm a developer and creator from Mexico City 🇲🇽 . I work on the <a className="text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink" href="https://bedu.org">BEDU</a> team as a Software Engineer Lead.
             </p>
             <p className="leading-loose text-lg mb-4 dark:text-gray-300">Currently, I'm developing platforms and websites with Jamstack. I mostly do <span className="text-">front-end</span> development but also back-end.</p>
             <p className="leading-loose text-lg mb-4 dark:text-gray-300">
-              I'm <span className="font-semibold">coderdiaz</span> on <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://twitter.com/coderdiaz">Twitter</a> and <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://github.com/coderdiaz">GitHub</a>, also I take <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://vsco.co/coderdiaz">photos</a> and share my designs in <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://dribbble.com/coderdiaz">Dribbble</a>. Come say hello! Let's be internet buddies, or grab a <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="https://www.buymeacoffee.com/coderdiaz">coffee</a>.
+              I'm <span className="font-semibold">coderdiaz</span> on <a className="text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink" href="https://twitter.com/coderdiaz">Twitter</a> and <a className="text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink" href="https://github.com/coderdiaz">GitHub</a>, also I take <a className="text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink" href="https://vsco.co/coderdiaz">photos</a> and share my designs in <a className="text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink" href="https://dribbble.com/coderdiaz">Dribbble</a>. Come say hello! Let's be internet buddies, or grab a <a className="text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink" href="https://www.buymeacoffee.com/coderdiaz">coffee</a>.
             </p>
             <div className="pt-4 pb-4">
               <ul className="flex items-center">
                 <li className="mr-6 md:mr-8">
-                  <a className="inline-flex items-center font-semibold tracking-wide py-1 text-blue-600 dark:text-blue-300 border-b-2 border-transparent hover:border-blue-600 dark:hover:text-blue-300 transition duration-200 ease-in-out" href="https://twitter.com/coderdiaz">
+                  <a className="inline-flex items-center font-semibold tracking-wide py-1 text-blue-600 dark:text-blue-300 border-b-2 border-transparent hover:border-blue-600 dark:hover:text-blue-300" href="https://twitter.com/coderdiaz">
                     <svg className="h-6 w-6 mr-2" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                     </svg>
@@ -32,7 +32,7 @@ const IndexPage = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="inline-flex items-center font-semibold tracking-wide py-1 text-yellow-700 dark:text-yellow-400 border-b-2 border-transparent hover:border-yellow-700 dark:hover:border-yellow-400 transition duration-200 ease-in-out" href="mailto: hello@coderdiaz.me">
+                  <a className="inline-flex items-center font-semibold tracking-wide py-1 text-yellow-600 dark:text-yellow-400 border-b-2 border-transparent hover:border-yellow-600 dark:hover:border-yellow-400" href="mailto: hello@coderdiaz.me">
                     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z" clipRule="evenodd" />
                     </svg>
@@ -110,7 +110,7 @@ const IndexPage = () => {
             <p className="leading-loose text-lg mb-8 text-white">
               Education is for everyone and <span className="font-semibold">YouTube</span> is a great space to share knowledge. You can access all my content focused on solving problems through technology.
             </p>
-            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center md:w-4/6 justify-center px-6 py-4 transition duration-200 ease-in-out bg-white text-dark-900 hover:text-purple hover:shadow-md transform hover:-translate-y-1 rounded-md font-semibold">
+            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center md:w-4/6 justify-center px-6 py-4 bg-white text-dark-900 hover:text-purple hover:shadow-md transform hover:-translate-y-1 rounded-md font-semibold transition ease-in-out">
               <span className="mr-2">Go to channel</span>
               <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -139,14 +139,14 @@ const IndexPage = () => {
     <section className="pt-4 pb-4">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <h2 className="text-xl md:text-2.5xl font-bold font-inter mb-4 w-80 leading-tight dark:text-white">Some great projects I worked on</h2>
-        <p className="leading-loose text-lg mb-12 md:w-112 dark:text-gray-300">This is a just part of them, have a look at my work! If you have an idea. <a className="border-b-2 border-gray-200 transition duration-200 ease-in-out hover:border-gray-400" href="mailto:hello@coderdiaz.me">Contact me</a>.</p>
+        <p className="leading-loose text-lg mb-12 md:w-112 dark:text-gray-300">This is a just part of them, have a look at my work! If you have an idea. <a className="text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink" href="mailto:hello@coderdiaz.me">Contact me</a>.</p>
         <div className="bg-gradient-to-l from-neureta-from to-neureta-to rounded-md mb-10 border border-neureta-from ">
           <div className="p-8 lg:p-16 overflow-hidden">
             <div className="flex">
               <div className="pr-2 lg:pr-18">
                 <h3 className="text-3xl md:text-4xl font-inter font-bold text-white mb-4 leading-none">Neureta</h3>
                 <p className="leading-loose mr-4 text-white text-lg mb-6">A simple Jamstack e-commerce using Stripe and Stripe Checkout to sell special education courses.</p>
-                <span className="line-through inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+                <span className="line-through inline-flex items-center font-semibold text-white border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
                   <span className="mr-2">Coming soon</span>
                   <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -171,7 +171,7 @@ const IndexPage = () => {
               <div className="pr-2 lg:pr-18">
                 <h3 className="text-3xl md:text-4xl font-inter font-bold text-white mb-4 leading-none">Bedu</h3>
                 <p className="leading-loose mr-4 text-white text-lg mb-6">We are talent trainers: we raise the professional level of our students through an accelerated and flexible learning model.</p>
-                <span className="line-through inline-flex items-center font-semibold text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
+                <span className="line-through inline-flex items-center font-semibold text-white border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
                   <span className="mr-2">Coming soon</span>
                   <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -191,7 +191,7 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="hidden text-center">
-          <a href="#" className="inline-flex w-72 rounded-lg py-4 px-2 justify-center items-center border-2 border-dark-500 font-semibold transition duration-200 ease-in-out transform hover:-translate-y-1">
+          <a href="#" className="inline-flex w-72 rounded-lg py-4 px-2 justify-center items-center border-2 border-dark-500 font-semibold transform hover:-translate-y-1">
             <span className="mr-2">Go to projects</span>
             <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -215,77 +215,47 @@ const IndexPage = () => {
           A compilation of my Open Source projects on GitHub. Many of these projects are centered to solve an specific problem in JavaScript frameworks.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-gray-50 dark:bg-dark-600 rounded-md px-6 py-5">
-            <span className="inline-block font-inter font-semibold dark:text-white mb-2">Tiny Pagination</span>
-            <p className="leading-loose dark:text-white mb-6">A vue component to create a simple pagination using Flexbox</p>
-            <a href="https://github.com/coderdiaz/vue-tiny-pagination" className="inline-flex items-center font-semibold dark:text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
-              <span className="mr-2 uppercase text-sm">View code</span>
-              <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-          <div className="bg-gray-50 dark:bg-dark-600 rounded-md px-6 py-5">
-            <span className="inline-block font-inter font-semibold dark:text-white mb-2">Card Brand</span>
-            <p className="leading-loose dark:text-white mb-6">
+          <a target="_blank" href="https://github.com/coderdiaz/vue-tiny-pagination" className="bg-gray-50 dark:bg-dark-300 dark:hover:bg-dark-200 focus:outline-none rounded-md px-6 py-5 transition duration-200 ease-in-out">
+            <span className="inline-block font-inter font-bold dark:text-white text-lg mb-2">Tiny Pagination</span>
+            <p className="leading-loose dark:text-white">A vue component to create a simple pagination using Flexbox</p>
+          </a>
+          <a target="_blank" href="https://github.com/coderdiaz/react-card-brand" className="bg-gray-50 dark:bg-dark-300 dark:hover:bg-dark-200 focus:outline-none rounded-md px-6 py-5 transition duration-200 ease-in-out">
+            <span className="inline-block font-inter font-bold dark:text-white text-lg mb-2">Card Brand</span>
+            <p className="leading-loose dark:text-white">
               A zero-dependency react hook to show the card brand
             </p>
-            <a href="https://github.com/coderdiaz/react-card-brand" className="inline-flex items-center font-semibold dark:text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
-              <span className="mr-2 uppercase text-sm">View code</span>
-              <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-          <div className="bg-gray-50 dark:bg-dark-600 rounded-md px-6 py-5">
-            <span className="inline-block font-inter font-semibold dark:text-white mb-2">Yell Theme</span>
-            <p className="leading-loose dark:text-white mb-6">
+          </a>
+          <a target="_blank" href="https://github.com/coderdiaz/yell-vscode-theme" className="bg-gray-50 dark:bg-dark-300 dark:hover:bg-dark-200 focus:outline-none rounded-md px-6 py-5 transition duration-200 ease-in-out">
+            <span className="inline-block font-inter font-bold dark:text-white text-lg mb-2">Yell Theme</span>
+            <p className="leading-loose dark:text-white">
               VS Code theme for dark lovers with accessible colors
             </p>
-            <a href="https://github.com/coderdiaz/yell-vscode-theme" className="inline-flex items-center font-semibold dark:text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
-              <span className="mr-2 uppercase text-sm">View code</span>
-              <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-          <div className="hidden md:block bg-gray-50 dark:bg-dark-600 rounded-md px-6 py-5">
-            <span className="inline-block font-inter font-semibold dark:text-white mb-2">Status Indicator</span>
-            <p className="leading-loose dark:text-white mb-6">
+          </a>
+          <a target="_blank" href="https://github.com/coderdiaz/vue-status-indicator" className="hidden md:block bg-gray-50 dark:bg-dark-300 dark:hover:bg-dark-200 focus:outline-none rounded-md px-6 py-5 transition duration-200 ease-in-out">
+            <span className="inline-block font-inter font-bold dark:text-white text-lg mb-2">Status Indicator</span>
+            <p className="leading-loose dark:text-white">
               A vue component to show an indicator as colored dots
             </p>
-            <a href="https://github.com/coderdiaz/vue-status-indicator" className="inline-flex items-center font-semibold dark:text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
-              <span className="mr-2 uppercase text-sm">View code</span>
-              <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-          <div className="hidden md:block bg-gray-50 dark:bg-dark-600 rounded-md px-6 py-5">
-            <span className="inline-block font-inter font-semibold dark:text-white mb-2">Scoreboard</span>
-            <p className="leading-loose dark:text-white mb-6">
+          </a>
+          <a target="_blank" href="https://github.com/coderdiaz/scoreboard" className="hidden md:block bg-gray-50 dark:bg-dark-300 dark:hover:bg-dark-200 focus:outline-none rounded-md px-6 py-5 transition duration-200 ease-in-out">
+            <span className="inline-block font-inter font-bold dark:text-white text-lg mb-2">Scoreboard</span>
+            <p className="leading-loose dark:text-white">
               A game scoreboard using Vue based on React project from Treehouse
             </p>
-            <a href="https://github.com/coderdiaz/scoreboard" className="inline-flex items-center font-semibold dark:text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
-              <span className="mr-2 uppercase text-sm">View code</span>
-              <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-          <div className="hidden md:block bg-gray-50 dark:bg-dark-600 rounded-md px-6 py-5">
-            <span className="inline-block font-inter font-semibold dark:text-white mb-2">Datasource</span>
-            <p className="leading-loose dark:text-white mb-6">
+          </a>
+          <a target="_blank" href="https://github.com/coderdiaz/vue-datasource" className="hidden md:block bg-gray-50 dark:bg-dark-300 dark:hover:bg-dark-200 focus:outline-none rounded-md px-6 py-5 transition duration-200 ease-in-out">
+            <span className="inline-block font-inter font-bold dark:text-white text-lg mb-2">Datasource</span>
+            <p className="leading-loose dark:text-white">
               A component to create dynamic tables with Vue 2.x
             </p>
-            <a href="https://github.com/coderdiaz/vue-datasource" className="inline-flex items-center font-semibold dark:text-white transition duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-500 dark:hover:border-white opacity-75 hover:opacity-100 tracking-wide">
-              <span className="mr-2 uppercase text-sm">View code</span>
-              <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          </a>
+        </div>
+        <a href="https://github.com/coderdiaz" className="my-12 text-lg inline-flex items-center text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink">
+            <span className="mr-2">Go to GitHub</span>
+            <svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </a>
-          </div>
-        </div>
+          </a>
         <div className="absolute top-0 left-0 -ml-72 mt-56">
           <div className="w-pink opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-0 w-18" />
           <div className="l-blue opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-32 -mb-26 w-2 transform -rotate-45" />

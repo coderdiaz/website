@@ -11,6 +11,9 @@ module.exports = {
       darken: '#161e2e',
       notes: '#FEEBC8',
       purple: '#5c45f8',
+      alternative: {
+        DEFAULT: '#0e7490',
+      },
       primary: {
         100: '#F0BDCA',
         200: '#DA9BAB',
@@ -85,6 +88,18 @@ module.exports = {
         500: '#C93148',
         600: '#B93246'
       },
+      cyan: {
+        50: '#ECFEFF',
+        100: '#CFFAFE',
+        200: '#A5F3FC',
+        300: '#67E8F9',
+        400: '#22D3EE',
+        500: '#06B6D4',
+        600: '#0891B2',
+        700: '#0E7490',
+        800: '#155E75',
+        900: '#164E63',
+      },
       neureta: {
         from: '#8256e1',
         to: '#6340b6',
@@ -126,6 +141,10 @@ module.exports = {
     extend: {
       inset: {
         full: '100%',
+      },
+      boxShadow: {
+        link: 'inset 0 -0.125em 0 0 #fff, inset 0 -0.375em 0 0 rgba(165, 243, 252, 0.4)',
+        darkLink: 'inset 0 -0.125em 0 0 #161e2e, inset 0 -0.375em 0 0 rgba(165, 243, 252, 0.2)',
       },
       spacing: {
         16: '4rem',
@@ -185,6 +204,11 @@ module.exports = {
       },
     },
   },
+  variants: {
+    extend: {
+      boxShadow: ['dark']
+    },
+  },
   plugins: [
     function ({ addBase }) {
       addBase([
@@ -206,6 +230,16 @@ module.exports = {
             fontDisplay: 'swap',
             src: 'url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.eot")',
             src: 'url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.woff2") format("woff2"), /* Super Modern Browsers */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.woff") format("woff"), /* Modern Browsers */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.ttf") format("truetype"), /* Safari, Android, iOS */ url("/fonts/ibm-plex-sans/ibm-plex-sans-v8-latin-600.svg#IBMPlexSans") format("svg"); /* Legacy iOS */'
+          }
+        },
+        {
+          '@font-face': {
+            fontFamily: 'IBM Plex Sans',
+            fontStyle: 'normal',
+            fontWeight: 500,
+            fontDisplay: 'swap',
+            src: 'url("/fonts/ibm-plex-sans/IBMPlexSans-Medium.eot")',
+            src: 'url("/fonts/ibm-plex-sans/IBMPlexSans-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff2") format("woff2"), /* Super Modern Browsers */ url("/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff") format("woff"), /* Modern Browsers */ url("/fonts/ibm-plex-sans/IBMPlexSans-Medium.ttf") format("truetype"), /* Safari, Android, iOS */'
           }
         },
         {
