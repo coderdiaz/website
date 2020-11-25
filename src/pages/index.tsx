@@ -129,11 +129,11 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className="circle-pink opacity-50 dark:opacity-75 absolute left-0 top-0 -ml-48 -mt-12 w-18" />
-        <div className="w-blue opacity-50 dark:opacity-75 absolute left-0 top-0 -ml-32 -mt-32 w-8" />
-        <div className="circle-blue opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-12 w-18" />
-        <div className="w-pink opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-48 w-18" />
-        <div className="l-yellow opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-32 -mb-26 w-12" />
+        <div className="circle-pink absolute left-0 top-0 -ml-48 -mt-12 w-18" />
+        <div className="w-blue absolute left-0 top-0 -ml-32 -mt-32 w-8" />
+        <div className="circle-blue absolute right-0 bottom-0 -mr-48 -mb-12 w-18" />
+        <div className="w-pink absolute right-0 bottom-0 -mr-48 -mb-48 w-18" />
+        <div className="l-yellow absolute right-0 bottom-0 -mr-32 -mb-26 w-12" />
       </div>
     </section>
     <section className="pt-4 pb-4">
@@ -203,12 +203,12 @@ const IndexPage = () => {
           </a>
         </div>
         <div className="absolute top-0 left-0 -ml-64 mt-56">
-          <div className="w-blue opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-0 w-18" />
-          <div className="l-yellow opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-32 -mb-26 w-12" />
+          <div className="w-blue absolute right-0 bottom-0 -mr-48 -mb-0 w-18" />
+          <div className="l-yellow absolute right-0 bottom-0 -mr-32 -mb-26 w-12" />
         </div>
         <div className="absolute bottom-0 right-0 -mr-12">
-          <div className="circle-yellow opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-0 w-18" />
-          <div className="l-blue absolute opacity-50 dark:opacity-75 right-0 bottom-0 -mr-32 -mb-26 w-4 transform -rotate-45" />
+          <div className="circle-yellow absolute right-0 bottom-0 -mr-48 -mb-0 w-18" />
+          <div className="l-blue absolute right-0 bottom-0 -mr-32 -mb-26 w-4 transform -rotate-45" />
         </div>
       </div>
     </section>
@@ -261,12 +261,12 @@ const IndexPage = () => {
               </svg>
           </a>
         <div className="absolute top-0 left-0 -ml-72 mt-56">
-          <div className="w-pink opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-48 -mb-0 w-18" />
-          <div className="l-blue opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-32 -mb-26 w-2 transform -rotate-45" />
+          <div className="w-pink absolute right-0 bottom-0 -mr-48 -mb-0 w-18" />
+          <div className="l-blue absolute right-0 bottom-0 -mr-32 -mb-26 w-2 transform -rotate-45" />
         </div>
         <div className="absolute bottom-0 right-0 -mr-24 -mb-00">
-          <div className="circle-pink opacity-50 dark:opacity-75 absolute right-0 bottom-0 -mr-12 mb-10 w-18" />
-          <div className="l-yellow absolute opacity-50 dark:opacity-75 right-0 bottom-0 -mr-32 -mb-8 w-20 transform -rotate-45" />
+          <div className="circle-pink absolute right-0 bottom-0 -mr-12 mb-10 w-18" />
+          <div className="l-yellow absolute right-0 bottom-0 -mr-32 -mb-8 w-20 transform -rotate-45" />
         </div>
       </div>
     </section>
