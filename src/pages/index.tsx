@@ -12,7 +12,7 @@ const IndexPage = () => {
         <div className="grid md:grid-cols-12">
           <div className="md:col-span-8 lg:col-span-6 relative lg:mt-24 lg:mb-16">
             <h1 className="inline-block text-3.5xl md:text-6xl font-bold font-inter mb-4 dark:text-white relative">
-              Hey! I'm Javier
+              Hola! Soy Javier
             </h1>
             <p className="leading-loose text-lg mb-4 dark:text-gray-300">
               I'm a developer and creator from Mexico City 🇲🇽 . I work on the <a className="text-cyan-700 dark:text-cyan-300 font-medium shadow-link dark:shadow-darkLink" href="https://bedu.org">BEDU</a> team as a Software Engineer Lead.
