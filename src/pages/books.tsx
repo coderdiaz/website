@@ -7,7 +7,7 @@ const Books = () => {
     <Head meta={{
       image: 'https://coderdiaz.me/images/my-books.jpg',
     }} />
-    <section className="md:pt-0 pb-2">
+    <section className="md:pt-12 pb-8">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-md">
         <h1 className="text-3xl md:text-5xl font-bold font-inter mb-4 dark:text-white">Books</h1>
         <p className="leading-loose text-lg mb-6 md:mb-12 md:w-4/6 dark:text-gray-100">A working list of all of the books I'm reading in 2020. Ranging from algorithms to beign better developer and manager, I try to dedicate my early mornings to exploring this variety of topics.</p>
