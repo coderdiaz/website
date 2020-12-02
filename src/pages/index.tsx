@@ -10,7 +10,7 @@ const IndexPage = () => {
     <section className="md:pt-2 pb-16">
       <div className="container mx-auto px-6 md:px-8 lg:px-4 xl:px-0 max-w-screen-lg relative">
         <div className="grid md:grid-cols-12">
-          <div className="md:col-span-8 lg:col-span-6 relative lg:mt-24 lg:mb-16">
+          <div className="md:col-span-8 lg:col-span-6 relative lg:my-20">
             <h1 className="inline-block text-3.5xl md:text-6xl font-bold font-inter mb-4 dark:text-white relative">
               Hey! I'm Javier
             </h1>
