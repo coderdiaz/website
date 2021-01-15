@@ -1,7 +1,5 @@
 # Directories
 node_modules/
-.next/
 
 # Files
-.env
 .DS_Store
