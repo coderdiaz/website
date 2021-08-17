@@ -7,7 +7,7 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "strict": false,
     "forceConsistentCasingInFileNames": true,
@@ -19,15 +19,12 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "@/*": ["src/*"],
       "@/components/*": ["src/components/*"],
-      "@/images/*": ["src/images/*"],
-      "@/assets/*": ["src/assets/*"]
     }
   },
   "include": [
-    "next-env.d.ts",
     "@types/*",
+    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],
