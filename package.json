@@ -1,7 +1,7 @@
 {
-  "name": "coderdiaz-me",
+  "name": "website",
   "version": "0.0.0",
-  "description": "Creator and Software Engineer",
+  "description": "A software engineer that designs and teaches based on Mexico City",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,5 +18,15 @@
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.19",
     "typescript": "^4.4.4"
+  },
+  "author": {
+    "name": "Javier Diaz",
+    "email": "hey@coderdiaz.me",
+    "url": "https://coderdiaz.me"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderdiaz/website.git"
   }
 }
