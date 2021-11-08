@@ -19,10 +19,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "@/*": ["src/*"],
-      "@/components/*": ["src/components/*"],
-      "@/images/*": ["src/images/*"],
-      "@/assets/*": ["src/assets/*"]
+      "@/components/*": ["components/*"],
+      "@/assets/*": ["assets/*"]
     }
   },
   "include": [
