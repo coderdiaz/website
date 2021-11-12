@@ -1,7 +1,8 @@
 {
-  "name": "website",
+  "name": "coderdiaz.me",
   "version": "0.0.0",
   "description": "A software engineer that designs and teaches based on Mexico City",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
