@@ -24,6 +24,9 @@
       ],
       "@/assets/*": [
         "assets/*"
+      ],
+      "@/lib/*": [
+        "lib/*"
       ]
     },
     "incremental": true
