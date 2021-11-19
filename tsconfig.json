@@ -19,14 +19,20 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "@/components/*": [
+      "@content/*": [
+        "content/*"
+      ],
+      "@components/*": [
         "components/*"
       ],
-      "@/assets/*": [
+      "@assets/*": [
         "assets/*"
       ],
-      "@/lib/*": [
+      "@lib/*": [
         "lib/*"
+      ],
+      "@layouts/*": [
+        "layouts/*"
       ]
     },
     "incremental": true
