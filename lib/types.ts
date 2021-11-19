@@ -1,8 +1,10 @@
+export type Frontmatter = {
+  [key: string]: any
+}
+
 export type BundlerResult = {
   code: string
-  frontmatter: {
-    [key: string]: any
-  }
+  frontmatter: Frontmatter
 }
 
 export type CommonProps = {

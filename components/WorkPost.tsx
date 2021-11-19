@@ -39,13 +39,11 @@ export default function WorkPost(props: Props) {
         </div>
       </div>
       <div className="hidden md:inline-block lg:col-span-4 relative w-full h-64 md:h-96 lg:h-full">
-        <CustomLink href={props.href}>
-          <Image
-            className="w-full h-full rounded-lg"
-            src={props.thumbnail}
-            layout="fill"
-            objectFit="cover" />
-        </CustomLink>
+        <Image
+          className="w-full h-full rounded-lg"
+          src={props.thumbnail}
+          layout="fill"
+          objectFit="cover" />
       </div>
     </div>
   )

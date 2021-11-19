@@ -10,8 +10,13 @@ import Video from '@components/Video'
 import PostWithImage from '@components/PostWithImage'
 import Post from '@components/Post'
 import WorkPost from '@components/WorkPost'
+import type { Frontmatter } from '@lib/types'
 
-export default function HomePageLayout() {
+type Props = {
+  latestWork: Frontmatter
+}
+
+export default function HomePageLayout({ latestWork }: Props) {
   return (
     <>
       <section className="py-5 mb-4 md:mb-6 lg:mb-11">
@@ -102,12 +107,12 @@ export default function HomePageLayout() {
             </div>
             <div className="relative">
               <WorkPost
-                title="Performance: Expanish.com"
-                description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, tempore tempora, dolorum aut excepturi quibusdam pariatur tenetur voluptates aperiam inventore."
+                title={latestWork.title}
+                description={latestWork.summary}
                 href="/work/performance-expanish-com/"
-                link="https://expanish.com"
-                thumbnail="/static/images/website-expanish-com.png"
-                tech={['Next.js', 'Prismic', 'TailwindCSS']} />
+                link={latestWork.links?.[0].href}
+                thumbnail={latestWork.image}
+                tech={latestWork.tech} />
             </div>
           </Container>
         </section>
