@@ -8,6 +8,7 @@ import Avatar from '@assets/images/avatar.png'
 import Video from '@components/Video'
 import PostWithImage from '@components/PostWithImage'
 import Post from '@components/Post'
+import WorkPost from '@components/WorkPost'
 
 export default function HomePageLayout() {
   return (
@@ -85,6 +86,22 @@ export default function HomePageLayout() {
                   title="Verifying Your Shopify Webhooks in Next.js APIs"
                   summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
               </div>
+            </div>
+          </Container>
+        </section>
+        <section className="pt-11 pb-4">
+          <Container className="max-w-screen-lg">
+            <div className="flex flex-col space-y-1 mb-4 md:mb-6">
+              <h2 className="text-2xl font-bold">Último Proyecto</h2>
+              <p className="leading-relaxed text-gray-500">Algunas cosas que he construido, échale un vistazo a mi trabajo</p>
+            </div>
+            <div className="relative">
+              <WorkPost
+                title="Performance: Expanish.com"
+                description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, tempore tempora, dolorum aut excepturi quibusdam pariatur tenetur voluptates aperiam inventore."
+                href="/work/performance-expanish-com/"
+                thumbnail="/static/images/website-expanish-com.png"
+                tech={['Next.js', 'Prismic', 'TailwindCSS']} />
             </div>
           </Container>
         </section>
