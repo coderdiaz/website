@@ -6,6 +6,8 @@ import { RoughNotation } from 'react-rough-notation'
 import Container from '@components/partials/Container'
 import Avatar from '@assets/images/avatar.png'
 import Video from '@components/Video'
+import PostWithImage from '@components/PostWithImage'
+import Post from '@components/Post'
 
 export default function HomePageLayout() {
   return (
@@ -42,7 +44,7 @@ export default function HomePageLayout() {
         <section className="py-6 md:py-8 lg:py-11">
           <Container className="max-w-screen-lg">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
-              <h2 className="text-2xl font-bold">Vídeos destacados</h2>
+              <h2 className="text-2xl font-bold">Vídeos Destacados</h2>
               <p className="leading-relaxed text-gray-500">Vídeos sobre lo que estoy construyendo y aprendiendo</p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
@@ -54,6 +56,35 @@ export default function HomePageLayout() {
                 title="Diseñando una aplicación de viajes en Figma"
                 summary="Crea una aplicación de viajes en Figma, en este vídeo te cuento sobre el proceso que llevo acabo para diseñar aplicaciones."
                 thumbnail="/static/images/thumbs/disenando-una-aplicacion-de-viajes-thumb.png" />
+            </div>
+          </Container>
+        </section>
+        <section className="py-11">
+          <Container className="max-w-screen-lg">
+            <div className="flex flex-col space-y-1 mb-4 md:mb-6">
+              <h2 className="text-2xl font-bold">Publicaciones Destacadas</h2>
+              <p className="leading-7 text-gray-500">Reflexiones sobre lo que estoy construyendo y aprendiendo</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <PostWithImage
+                title="Como he construído mi sitio web"
+                summary="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis facere repudiandae esse iure! Deleniti, nostrum natus. Laborum, consequuntur."
+                thumbnail="/static/images/como-he-construido-mi-sitio-web.jpg"
+                href="/blog/como-he-construido-mi-sitio-web/" />
+              <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-8">
+                <Post
+                  title="Verifying Your Shopify Webhooks in Next.js APIs"
+                  summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
+                <Post
+                  title="Verifying Your Shopify Webhooks in Next.js APIs"
+                  summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
+                <Post
+                  title="Verifying Your Shopify Webhooks in Next.js APIs"
+                  summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
+                <Post
+                  title="Verifying Your Shopify Webhooks in Next.js APIs"
+                  summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
+              </div>
             </div>
           </Container>
         </section>
