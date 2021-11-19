@@ -5,7 +5,7 @@ import { getMDXComponent } from 'mdx-bundler/client'
 import type { PageProps } from '@lib/types'
 import components from '@components/MDXComponents'
 import Container from '@components/partials/Container'
-import Avatar from '@assets/avatar.png'
+import Avatar from '@assets/images/avatar.png'
 
 type Props = {} & PageProps
 
