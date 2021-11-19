@@ -21,7 +21,7 @@ const WorkPageLayout = ({ code, frontmatter }: Props) => {
             <div className="flex space-x-4 items-center text-gray-700 mb-4 md:mb-5">
               <time dateTime="" className="inline-block">Noviembre 19, 2021</time>
               <div className="w-1 h-1 rounded-full bg-gray-900" />
-              <span className="inline-block">5 min. de lectura</span>
+              <span className="inline-block">{Math.ceil(frontmatter.readingTime.time/1000/60)} min. de lectura</span>
             </div>
             <p className="leading-loose mb-6 md:mb-10">{frontmatter.summary}</p>
             <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-20 mb-6 md:mb-10">

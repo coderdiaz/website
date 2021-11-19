@@ -3,12 +3,12 @@ const { spacing } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: [
-    './pages/*.{ts,tsx,mdx}',
-    './components/*.{ts,tsx,mdx}',
+    './pages/**/*.{ts,tsx,mdx}',
+    './components/**/*.{ts,tsx,mdx}',
     './layouts/*.{ts,tsx,mdx}',
-    './content/*.mdx'
+    './content/**/*.mdx'
   ],
-  darkMode: false,
+  darkMode: 'class',
   theme: {
     extend: {
       spacing: {
