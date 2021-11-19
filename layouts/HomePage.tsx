@@ -28,7 +28,9 @@ export default function HomePageLayout() {
             <p className="leading-relaxed md:text-lg">
               Un <span className="font-semibold text-rose-700">ingeniero de software</span> que diseña y enseña en Ciudad de México.
             </p>
-            <p className="leading-relaxed md:text-lg">Interesado en <RoughNotation type="highlight" iterations={1} show={true} color="#C7D2FE">sistemas de diseño</RoughNotation>, jamstack y experiencia de <RoughNotation type="highlight" iterations={1} show={true} color="#FDE68A">usuario/dev</RoughNotation>. Me fascina crear herramientas que sean user-friendly, simples y encantadoras. Trabajo como Engineering Manager en <span className="font-semibold">Bedu</span> — con un enfoque en mejorar nuestro ecosistema ed-tech y la entrega de proyectos de software. Mi objetivo principal es crear <RoughNotation type="highlight" iterations={1} show={true} color="#BAE6FD">experiencias</RoughNotation> web rápidas, simples y accesibles.</p>
+            <p className="leading-relaxed md:text-lg">
+              Interesado en <RoughNotation type="highlight" iterations={1} show={true} color="#C7D2FE">sistemas de diseño</RoughNotation>, jamstack y experiencia de <RoughNotation type="highlight" iterations={1} show={true} color="#FDE68A">usuario/dev</RoughNotation>. Me fascina crear herramientas que sean user-friendly, simples y encantadoras. Trabajo como Engineering Manager en <span className="font-semibold">Bedu</span> — con un enfoque en mejorar nuestro ecosistema ed-tech y la entrega de proyectos de software. Mi objetivo principal es crear <RoughNotation type="highlight" iterations={1} show={true} color="#BAE6FD">experiencias</RoughNotation> web rápidas, simples y accesibles.
+            </p>
             <p className="leading-relaxed md:text-lg">Estoy disponible para <RoughNotation type="highlight" iterations={1} show={true} color="#A7F3D0">freelance</RoughNotation> y abierto a nuevos retos.</p>
           </div>
           <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">

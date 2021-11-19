@@ -26,7 +26,7 @@ const WorkPageLayout = ({ code, frontmatter }: Props) => {
             <p className="leading-loose mb-6 md:mb-10">{frontmatter.summary}</p>
             <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-20 mb-6 md:mb-10">
               <div className="flex flex-col space-y-2">
-                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Project Type</span>
+                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Tipo de proyecto</span>
                 <nav>
                   <ul className="flex flex-col space-y-2">
                     { frontmatter.type.map((item: string) => <li>{item}</li>) }
@@ -34,7 +34,7 @@ const WorkPageLayout = ({ code, frontmatter }: Props) => {
                 </nav>
               </div>
               <div className="flex flex-col space-y-2">
-                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Technology Stack</span>
+                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Tech Stack</span>
                 <nav>
                   <ul className="flex flex-col space-y-2">
                     { frontmatter.tech.map((item: string) => <li>{item}</li>) }
@@ -42,7 +42,7 @@ const WorkPageLayout = ({ code, frontmatter }: Props) => {
                 </nav>
               </div>
               <div className="flex flex-col space-y-2">
-                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Live Preview</span>
+                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Vista previa</span>
                 { frontmatter.links.map((item: { label: string, href: string }) => <a href={item.href} className="text-rose-500 font-medium mb-6" target="_blank" rel="noopener noreferrer">
                   <span className="inline-flex space-x-3 items-center">
                     {item.label} <ArrowUpRight className="ml-1 w-5 h-5" />
