@@ -33,7 +33,7 @@ export default function WorkPost(props: Props) {
             <ArrowRight className="w-6 h-6" />
           </CustomLink>
           {props.link ? <a href={props.link} target="_blank" className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold text-gray-900 bg-white md:bg-transparent hover:bg-white hover:text-gray-900 rounded-lg">
-            <span>Ir al proyecto</span>
+            <span>Ver en vivo</span>
             <ArrowUpRight className="w-6 h-6" />
           </a> : null}
         </div>
