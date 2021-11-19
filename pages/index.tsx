@@ -1,7 +1,16 @@
-const IndexPage = () => {
+import BaseLayout from '@layouts/BaseLayout'
+import HomePageLayout from '@layouts/HomePage'
+
+export default function IndexPage() {
   return (
-    <div />
-  );
+    <HomePageLayout />
+  )
 }
 
-export default IndexPage;
+IndexPage.getLayout = (page: React.ReactElement) => {
+  return (
+    <BaseLayout>
+      {page}
+    </BaseLayout>
+  )
+}

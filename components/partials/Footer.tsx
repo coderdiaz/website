@@ -22,7 +22,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex">
-              <div className="text-gray-600 text-sm xl:text-base flex items-center space-x-2">
+              <div className="text-gray-600 text-sm flex items-center space-x-2">
                 <span className="inline-block">Desde 2015. Hecho en México</span>
                 <Flag className="rounded-sm" />
               </div>
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
           <div className="flex justify-center md:justify-between">
             <div className="inline-block text-gray-600 text-sm xl:text-base">
-              Hecho con Next.js, Vercel y TailwindCSS
+              Hecho con Next.js, MDX, Vercel y TailwindCSS
             </div>
             <div className="relative">
               <nav className="hidden md:inline-block">
