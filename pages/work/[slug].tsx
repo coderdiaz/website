@@ -2,11 +2,11 @@ import type { InferGetStaticPropsType } from 'next'
 
 import { getPaths, getProjectBySlug } from '@lib/mdx/projects'
 import BaseLayout from '@layouts/BaseLayout'
-import WorkPageLayout from '@layouts/WorkPage'
+import ProjectPageLayout from '@layouts/ProjectPage'
 
-export default function WorkPage({ page }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function ProjectPage({ page }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <WorkPageLayout {...page} />
+    <ProjectPageLayout {...page} />
   )
 }
 
@@ -29,7 +29,7 @@ export async function getStaticPaths() {
   }
 }
 
-WorkPage.getLayout = (page: React.ReactElement) => {
+ProjectPage.getLayout = (page: React.ReactElement) => {
   return (
     <BaseLayout>
       {page}

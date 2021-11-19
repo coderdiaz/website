@@ -9,7 +9,7 @@ import Container from '@components/partials/Container'
 
 type Props = {} & PageProps
 
-const WorkPageLayout = ({ code, frontmatter }: Props) => {
+const ProjectPageLayout = ({ code, frontmatter }: Props) => {
   const Component = useMemo(() => getMDXComponent(code), [code])
 
   return (
@@ -69,4 +69,4 @@ const WorkPageLayout = ({ code, frontmatter }: Props) => {
   )
 }
 
-export default WorkPageLayout
+export default ProjectPageLayout
