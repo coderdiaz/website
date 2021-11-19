@@ -1,11 +1,15 @@
 import Link from 'next/link'
+import useSWR from 'swr'
 import { Headphones, GitHub, Twitter } from 'react-feather'
 
+import fetcher from '@lib/fetcher'
 import Flag from '@components/Flag'
 import Container from '@components/partials/Container'
 import Isotype from '@components/partials/Isotype'
 
 export default function Footer() {
+  const { data } = useSWR('/api/now-playing', fetcher);
+
   return (
     <footer className="py-6 md:pt-14 md:pb-8">
       <Container className="max-w-screen-lg">
@@ -14,7 +18,7 @@ export default function Footer() {
             <div className="flex items-center space-x-3">
               <Headphones className="w-5 h-5 text-green-600" />
               <div className="inline-block text-gray-600 text-sm">
-                Nada reproduciendose ahora
+                {data?.songUrl ? <span>{data.title}</span> : <span>Nada sonando</span>} — {data?.artist ?? 'Spotify'}
               </div>
             </div>
             <div className="flex">
