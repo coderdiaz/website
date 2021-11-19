@@ -8,12 +8,12 @@ import components from '@components/MDXComponents'
 
 type Props = {} & PageProps
 
-export default function AboutPage({ code, frontmatter }: Props) {
+export default function SinglePage({ code, frontmatter }: Props) {
   const Component = useMemo(() => getMDXComponent(code), [code])
 
   return (
     <>
-      <section className="py-4">
+      <section className="pt-6 pb-4">
         <Container className="max-w-3xl">
           <div className="flex flex-col space-y-1 mb-8">
             <h1 className="text-5xl font-extrabold">{frontmatter.title}</h1>

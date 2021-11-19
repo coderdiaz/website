@@ -31,17 +31,17 @@ export default function Header() {
                   <div className="w-1 h-1 rounded-full bg-gray-900" />
                 </li>
                 <li>
-                  <Link href="/about">
+                  <Link href="/about/">
                     <a>Acerca de</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog">
+                  <Link href="/writing/">
                     <a>Blog</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/work">
+                  <Link href="/work/">
                     <a>Proyectos</a>
                   </Link>
                 </li>
