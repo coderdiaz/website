@@ -17,7 +17,7 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
       <section className="pt-8 pb-14 md:py-14">
         <Container className="max-w-3xl">
           <article>
-            <h1 className="font-bold text-3xl md:text-4xl leading-tight mb-4 md:mb-5">{frontmatter.title}</h1>
+            <h1 className="font-bold text-3xl md:text-4xl leading-tight mb-4">{frontmatter.title}</h1>
             <div className="flex justify-between">
               <div className="flex space-x-4 items-center text-gray-700 mb-6 md:mb-10">
                 <div className="flex items-center space-x-2">
@@ -33,7 +33,7 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
               <Image
                 className="w-full h-full rounded-lg"
                 width={976}
-                height={576}
+                height={580}
                 src={frontmatter.image} />
             </div>
             <p className="leading-loose italic mb-6 md:mb-10">

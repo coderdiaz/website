@@ -1,4 +1,5 @@
 import type { InferGetStaticPropsType } from 'next'
+
 import { getPostBySlug } from '@lib/mdx/posts'
 import BaseLayout from '@layouts/BaseLayout'
 import PostPageLayout from '@layouts/PostPage'
