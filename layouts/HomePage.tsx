@@ -5,6 +5,7 @@ import { RoughNotation } from 'react-rough-notation'
 
 import Container from '@components/partials/Container'
 import Avatar from '@assets/images/avatar.png'
+import Video from '@components/Video'
 
 export default function HomePageLayout() {
   return (
@@ -38,6 +39,24 @@ export default function HomePageLayout() {
             </a>
           </div>
         </Container>
+        <section className="py-6 md:py-8 lg:py-11">
+          <Container className="max-w-screen-lg">
+            <div className="flex flex-col space-y-1 mb-4 md:mb-6">
+              <h2 className="text-2xl font-bold">Vídeos destacados</h2>
+              <p className="leading-relaxed text-gray-500">Vídeos sobre lo que estoy construyendo y aprendiendo</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Video
+                title="Rediseñando mi portafolio con Figma | Parte 1"
+                summary="Acompañame en esta experiencia rediseñando mi portafolio web, donde además de darle una sacudida a mi sitio actual podrás ver como realizo el diseño."
+                thumbnail="/static/images/thumbs/redisenando-mi-sitio-web-con-figma-thumb.png" />
+              <Video
+                title="Diseñando una aplicación de viajes en Figma"
+                summary="Crea una aplicación de viajes en Figma, en este vídeo te cuento sobre el proceso que llevo acabo para diseñar aplicaciones."
+                thumbnail="/static/images/thumbs/disenando-una-aplicacion-de-viajes-thumb.png" />
+            </div>
+          </Container>
+        </section>
       </section>
     </>
   )
