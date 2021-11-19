@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType } from 'next'
 
-import { getWorkBySlug } from '@lib/mdx/work'
+import { getPaths, getWorkBySlug } from '@lib/mdx/work'
 import BaseLayout from '@layouts/BaseLayout'
 import WorkPageLayout from '@layouts/WorkPage'
 
@@ -21,10 +21,10 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
+  const paths = getPaths()
+
   return {
-    paths: [
-      { params: { slug: 'performance-expanish-com'} }
-    ],
+    paths,
     fallback: false,
   }
 }

@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType } from 'next'
 
-import { getPostBySlug } from '@lib/mdx/posts'
+import { getPaths, getPostBySlug } from '@lib/mdx/posts'
 import BaseLayout from '@layouts/BaseLayout'
 import PostPageLayout from '@layouts/PostPage'
 
@@ -21,10 +21,10 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
+  const paths = getPaths()
+
   return {
-    paths: [
-      { params: { slug: 'como-he-construido-mi-sitio-web'} }
-    ],
+    paths,
     fallback: false,
   }
 }
