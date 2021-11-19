@@ -81,7 +81,7 @@ export default function HomePageLayout({ latestWork }: Props) {
                 title="Como he construído mi sitio web"
                 summary="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis facere repudiandae esse iure! Deleniti, nostrum natus. Laborum, consequuntur."
                 thumbnail="/static/images/como-he-construido-mi-sitio-web.jpg"
-                href="/blog/como-he-construido-mi-sitio-web/" />
+                href="/writing/como-he-construido-mi-sitio-web/" />
               <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-8">
                 <Post
                   title="Verifying Your Shopify Webhooks in Next.js APIs"
