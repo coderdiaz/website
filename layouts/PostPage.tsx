@@ -3,10 +3,10 @@ import { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import { ArrowLeft } from 'react-feather'
 import type { PageProps } from '@lib/types'
-import components from '@components/MDXComponents';
+import components from '@components/MDXComponents'
 import Container from '@components/partials/Container'
 
-type Props = {} & PageProps;
+type Props = {} & PageProps
 
 const PostPageLayout = ({ code, frontmatter }: Props) => {
   const Component = useMemo(() => getMDXComponent(code), [code])

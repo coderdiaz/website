@@ -1,7 +1,7 @@
-import cn from 'classnames';
-import type { CommonProps } from '@lib/types';
+import cn from 'classnames'
+import type { CommonProps } from '@lib/types'
 
-type Props = {} & CommonProps;
+type Props = {} & CommonProps
 
 export default function Container({ className, children }: Props) {
   return (
