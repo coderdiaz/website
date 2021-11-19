@@ -1,8 +1,9 @@
 import Image from 'next/image'
-import { PaperAirplaneIcon } from '@heroicons/react/outline'
+import { MailIcon } from '@heroicons/react/solid'
 import { Twitter } from 'react-feather'
-import { RoughNotation } from 'react-rough-notation'
+import { RoughNotationGroup } from 'react-rough-notation'
 
+import { RainbowHighlight } from '@components/RainbowHighlight'
 import Container from '@components/partials/Container'
 import Avatar from '@assets/images/avatar.png'
 import Video from '@components/Video'
@@ -23,32 +24,34 @@ export default function HomePageLayout() {
               height={56}
               alt="Avatar de Javier Diaz" />
           </div>
-          <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-6">Hey! Soy Javier.</h1>
-          <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6">
-            <p className="leading-relaxed md:text-lg">
-              Un <span className="font-semibold text-rose-700">ingeniero de software</span> que diseña y enseña en Ciudad de México.
-            </p>
-            <p className="leading-relaxed md:text-lg">
-              Interesado en <RoughNotation type="highlight" iterations={1} show={true} color="#C7D2FE">sistemas de diseño</RoughNotation>, jamstack y experiencia de <RoughNotation type="highlight" iterations={1} show={true} color="#FDE68A">usuario/dev</RoughNotation>. Me fascina crear herramientas que sean user-friendly, simples y encantadoras. Trabajo como Engineering Manager en <span className="font-semibold">Bedu</span> — con un enfoque en mejorar nuestro ecosistema ed-tech y la entrega de proyectos de software. Mi objetivo principal es crear <RoughNotation type="highlight" iterations={1} show={true} color="#BAE6FD">experiencias</RoughNotation> web rápidas, simples y accesibles.
-            </p>
-            <p className="leading-relaxed md:text-lg">Estoy disponible para <RoughNotation type="highlight" iterations={1} show={true} color="#A7F3D0">freelance</RoughNotation> y abierto a nuevos retos.</p>
-          </div>
-          <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
-            <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-rose-600 hover:bg-rose-500 rounded-lg">
-              <PaperAirplaneIcon className="w-5 h-5" />
-              <span>Ponte en contacto</span>
-            </a>
-            <a href="https://twitter.com/coderdiaz/" target="_blank" rel="noopener noreferrer" className="py-5 px-6 flex items-center space-x-3 font-semibold text-gray-900 bg-gray-100 hover:bg-gray-200 md:bg-transparent md:hover:bg-gray-100 rounded-lg">
-              <Twitter className="w-5 h-5" />
-              <span>Sígueme</span>
-            </a>
-          </div>
+          <RoughNotationGroup show={true}>
+            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-6">Hey! Soy Javier.</h1>
+            <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6">
+              <p className="leading-relaxed md:text-lg">
+                Un <span className="text-rose-700 font-semibold">ingeniero de software</span> que diseña y enseña en Ciudad de México.
+              </p>
+              <p className="leading-relaxed md:text-lg">
+                Interesado en <RainbowHighlight color="#C7D2FE">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FDE68A">usuario/dev</RainbowHighlight>. Me fascina crear herramientas que sean user-friendly, simples y encantadoras. Trabajo como Engineering Manager en <span className="font-semibold">Bedu</span> — con un enfoque en mejorar nuestro ecosistema ed-tech y la entrega de proyectos de software. Mi objetivo principal es crear <RainbowHighlight color="#BAE6FD">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
+              </p>
+              <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#A7F3D0">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
+            </div>
+            <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
+              <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-rose-600 hover:bg-rose-500 rounded-lg">
+                <MailIcon className="w-5 h-5" />
+                <span>Ponte en contacto</span>
+              </a>
+              <a href="https://twitter.com/coderdiaz/" target="_blank" rel="noopener noreferrer" className="py-5 px-6 flex items-center space-x-3 font-semibold text-gray-900 bg-gray-100 hover:bg-gray-200 md:bg-transparent md:hover:bg-gray-100 rounded-lg">
+                <Twitter className="w-5 h-5" />
+                <span>Sígueme</span>
+              </a>
+            </div>
+          </RoughNotationGroup>
         </Container>
         <section className="py-6 md:py-8 lg:py-11">
           <Container className="max-w-screen-lg">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
               <h2 className="text-2xl font-bold">Vídeos Destacados</h2>
-              <p className="leading-relaxed text-gray-500">Vídeos sobre lo que estoy construyendo y aprendiendo</p>
+              <p className="leading-relaxed text-gray-600">Vídeos sobre lo que estoy construyendo y aprendiendo</p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               <Video
@@ -66,7 +69,7 @@ export default function HomePageLayout() {
           <Container className="max-w-screen-lg">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
               <h2 className="text-2xl font-bold">Publicaciones Destacadas</h2>
-              <p className="leading-7 text-gray-500">Reflexiones sobre lo que estoy construyendo y aprendiendo</p>
+              <p className="leading-7 text-gray-600">Reflexiones sobre lo que estoy construyendo y aprendiendo</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <PostWithImage
@@ -95,13 +98,14 @@ export default function HomePageLayout() {
           <Container className="max-w-screen-lg">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
               <h2 className="text-2xl font-bold">Último Proyecto</h2>
-              <p className="leading-relaxed text-gray-500">Algunas cosas que he construido, échale un vistazo a mi trabajo</p>
+              <p className="leading-relaxed text-gray-600">Algunas cosas que he construido, échale un vistazo a mi trabajo</p>
             </div>
             <div className="relative">
               <WorkPost
                 title="Performance: Expanish.com"
                 description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, tempore tempora, dolorum aut excepturi quibusdam pariatur tenetur voluptates aperiam inventore."
                 href="/work/performance-expanish-com/"
+                link="https://expanish.com"
                 thumbnail="/static/images/website-expanish-com.png"
                 tech={['Next.js', 'Prismic', 'TailwindCSS']} />
             </div>
