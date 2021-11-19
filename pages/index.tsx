@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType } from 'next'
 
-import { getWorkBySlug } from '@lib/mdx/work'
+import { getProjectBySlug } from '@lib/mdx/projects'
 import BaseLayout from '@layouts/BaseLayout'
 import HomePageLayout from '@layouts/HomePage'
 
@@ -11,7 +11,7 @@ export default function IndexPage({ work }: InferGetStaticPropsType<typeof getSt
 }
 
 export async function getStaticProps() {
-  const { frontmatter } = await getWorkBySlug('performance-expanish-com') // Getting the featured project
+  const { frontmatter } = await getProjectBySlug('performance-expanish-com') // Getting the featured project
 
   return {
     props: {

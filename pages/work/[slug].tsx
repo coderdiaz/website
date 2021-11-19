@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType } from 'next'
 
-import { getPaths, getWorkBySlug } from '@lib/mdx/work'
+import { getPaths, getProjectBySlug } from '@lib/mdx/projects'
 import BaseLayout from '@layouts/BaseLayout'
 import WorkPageLayout from '@layouts/WorkPage'
 
@@ -11,7 +11,7 @@ export default function WorkPage({ page }: InferGetStaticPropsType<typeof getSta
 }
 
 export async function getStaticProps({ params }) {
-  const page = await getWorkBySlug(params.slug)
+  const page = await getProjectBySlug(params.slug)
 
   return {
     props: {

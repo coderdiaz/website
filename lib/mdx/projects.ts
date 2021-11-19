@@ -2,12 +2,12 @@ import { join } from 'path'
 import { readdirSync, readFileSync } from 'fs'
 import { bundler } from '@lib/utils'
 
-export async function getWorkBySlug(slug: string) {
+export async function getProjectBySlug(slug: string) {
   // Getting fullpath to filename
-  const workContentDirectory = join(process.cwd(), 'content/projects', `${slug}.mdx`)
+  const projectContentDirectory = join(process.cwd(), 'content/projects', `${slug}.mdx`)
 
   // Getting content from file
-  const source = readFileSync(workContentDirectory, 'utf-8')
+  const source = readFileSync(projectContentDirectory, 'utf-8')
   return await bundler(source, slug)
 }
 
