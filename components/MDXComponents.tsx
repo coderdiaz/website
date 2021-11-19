@@ -28,7 +28,7 @@ const RoundedImage = (props: ImageProps) => {
       height={props.height}
       alt={props.alt} className="rounded-lg"
       src={props.src} />
-    <figcaption>An elephant at sunset</figcaption>
+    <figcaption>{props.caption}</figcaption>
   </figure>
 }
 
