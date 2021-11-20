@@ -14,10 +14,10 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
   return (
     <>
       <section className="pt-8 md:pt-20">
-        <Container className="max-w-screen-lg border-b border-gray-200">
+        <Container className="max-w-4xl border-b border-gray-200">
           <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-6 md:mb-16">Proyectos.</h1>
           <div className="grid md:grid-cols-12 gap-7 mb-14">
-            <div className="md:col-span-5 lg:col-span-4 flex flex-col space-y-8">
+            <div className="md:col-span-5 lg:col-span-5 flex flex-col space-y-8">
               <div className="flex flex-col space-y-3">
                 <h2 className="font-bold text-2xl text-gray-800">{firstProject.frontmatter.title}</h2>
                 <p className="text-gray-700">{firstProject?.frontmatter.excerpt}</p>
@@ -43,8 +43,8 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
                 <ArrowRight className="w-5 h-5" />
               </CustomLink>
             </div>
-            <div className="hidden md:grid grid-cols-8 lg:grid-cols-10 gap-3 md:col-span-7 lg:col-span-8">
-              <div className="relative col-span-8 lg:col-span-6 row-span-4">
+            <div className="hidden md:grid grid-cols-8 lg:grid-cols-10 gap-3 md:col-span-7 lg:col-span-7">
+              <div className="relative col-span-8 md:col-span-10 row-span-2">
                 <Image
                   className="rounded-lg"
                   layout="fill"
@@ -52,14 +52,14 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
                   objectPosition="top left"
                   src="/static/images/website-expanish-com.png" />
               </div>
-              <div className="relative col-span-4 row-span-2">
+              <div className="relative col-span-10 lg:col-span-5 row-span-2">
                 <Image
                   className="rounded-lg"
                   layout="fill"
                   objectFit="cover"
                   src="/static/images/website-expanish-com.png" />
               </div>
-              <div className="relative col-span-4 row-span-2">
+              <div className="hidden lg:flex relative col-span-5 row-span-2">
                 <Image
                   className="rounded-lg"
                   layout="fill"
@@ -70,7 +70,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
           </div>
         </Container>
         <section className="py-14">
-          <Container className="max-w-screen-lg">
+          <Container className="max-w-4xl">
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
               {restProjects.map((project, index: number) => 
                 <PostWithImage
@@ -88,7 +88,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
   )
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps() {
   const projects = await getProjects()
 
   return {

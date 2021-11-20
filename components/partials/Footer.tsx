@@ -38,8 +38,8 @@ export default function Footer() {
               </span>
             </div>
           </div>
-          <div className="flex justify-center md:justify-between">
-            <div className="inline-block text-gray-600 text-sm xl:text-base">
+          <div className="flex items-center justify-center md:justify-between">
+            <div className="block text-sm leading-none">
               Hecho con Next.js, MDX, Vercel y TailwindCSS
             </div>
             <div className="relative">
