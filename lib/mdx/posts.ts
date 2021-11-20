@@ -17,6 +17,19 @@ export async function getPostBySlug(slug: string) {
   return await bundler(source, slug)
 }
 
+export async function getPosts() {
+  const postsDirectoryContent = join(process.cwd(), 'content/posts')
+  const slugs = readdirSync(postsDirectoryContent)
+
+  return await Promise.all(slugs.map(async slug => {
+    // Getting fullpath to filename
+    const postFullpath = join(postsDirectoryContent, slug)
+    // Getting content from file
+    const source = readFileSync(postFullpath, 'utf-8')
+    return await bundler(source, slug)
+  }))
+}
+
 export function getPaths() {
   const slugs = readdirSync(join(process.cwd(), 'content/posts'))
 

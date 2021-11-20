@@ -15,7 +15,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
     <>
       <section className="pt-8 md:pt-20">
         <Container className="max-w-screen-lg border-b border-gray-200">
-          <h1 className="font-extrabold text-4xl md:text-5xl leading-tight mb-6 md:mb-16">Proyectos.</h1>
+          <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-6 md:mb-16">Proyectos.</h1>
           <div className="grid md:grid-cols-12 gap-7 mb-14">
             <div className="md:col-span-5 lg:col-span-4 flex flex-col space-y-8">
               <div className="flex flex-col space-y-3">
