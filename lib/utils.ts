@@ -18,8 +18,16 @@ export async function bundler(source: string, slug: string): Promise<BundlerResu
     frontmatter: {
       wordCount: source.split(/\s+/gu).length,
       readingTime: readingTime(source),
-      slug,
+      slug: slug.replace('.mdx', ''),
+      excerpt: truncate(frontmatter.summary, 180),
       ...frontmatter,
     },
   }
 }
+
+function truncate(input: string, size: number) {
+  if (input.length > size) {
+     return input.substring(0, size) + '...'
+  }
+  return input
+};

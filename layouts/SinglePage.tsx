@@ -16,8 +16,8 @@ export default function SinglePage({ code, frontmatter }: Props) {
       <section className="pt-6 pb-4">
         <Container className="max-w-3xl">
           <div className="flex flex-col space-y-1 mb-8">
-            <h1 className="text-5xl font-extrabold">{frontmatter.title}</h1>
-            <p className="text-lg leading-relaxed text-gray-600">{frontmatter.summary}</p>
+            <h1 className="text-5xl font-bold">{frontmatter.title}</h1>
+            <p className="text-lg leading-7 text-gray-600">{frontmatter.summary}</p>
           </div>
           <div className="relative md:-mx-10">
             <Image
