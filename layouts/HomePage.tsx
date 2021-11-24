@@ -8,7 +8,7 @@ import Container from '@components/partials/Container'
 import Avatar from '@assets/images/avatar.png'
 import Video from '@components/Video'
 import PostWithImage from '@components/PostWithImage'
-import Post from '@components/Post'
+// import Post from '@components/Post'
 import WorkPost from '@components/WorkPost'
 import CustomLink from '@components/CustomLink'
 import type { Frontmatter } from '@lib/types'
@@ -22,7 +22,7 @@ export default function HomePageLayout({ latestWork }: Props) {
     <>
       <section className="py-5 mb-4 md:mb-6 lg:mb-11">
         <Container className="max-w-screen-lg">
-          <div className="mb-3 md:mb-6">
+          <div className="mb-1">
             <Image
               className="rounded-full"
               src={Avatar}
@@ -62,12 +62,14 @@ export default function HomePageLayout({ latestWork }: Props) {
             <div className="grid md:grid-cols-2 gap-6 mb-4 md:mb-6">
               <Video
                 title="Rediseñando mi portafolio con Figma | Parte 1"
-                summary="Acompañame en esta experiencia rediseñando mi portafolio web, donde además de darle una sacudida a mi sitio actual podrás ver como realizo el diseño."
-                thumbnail="/static/images/thumbs/redisenando-mi-sitio-web-con-figma-thumb.png" />
+                summary="En este vídeo, aprenderás junto conmigo a crear tu portafolio usando Figma, donde además te compartiré algunos tips y consideraciones al momento de decidir como diseñarlo."
+                thumbnail="/static/images/thumbs/redisenando-mi-sitio-web-con-figma-thumb.png"
+                href="https://www.youtube.com/watch?v=vjfUbGmtdaE" />
               <Video
                 title="Diseñando una aplicación de viajes en Figma"
-                summary="Crea una aplicación de viajes en Figma, en este vídeo te cuento sobre el proceso que llevo acabo para diseñar aplicaciones."
-                thumbnail="/static/images/thumbs/disenando-una-aplicacion-de-viajes-thumb.png" />
+                summary="Aprende a aplicar principios de diseño creando una aplicación desde cero donde podrás obtener tus boletos para viajar a diferentes destinos locales."
+                thumbnail="/static/images/thumbs/disenando-una-aplicacion-de-viajes-thumb.png"
+                href="https://www.youtube.com/watch?v=dCdaMYCG0v0" />
             </div>
             <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center space-x-1 font-semibold text-lg hover:text-orange-700" target="_blank">
               <span>Ver todos los vídeos</span>
@@ -79,7 +81,7 @@ export default function HomePageLayout({ latestWork }: Props) {
           <Container className="max-w-screen-lg">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
               <h2 className="text-2xl font-bold">Publicaciones Destacadas</h2>
-              <p className="leading-7 text-gray-600">Reflexiones sobre lo que estoy construyendo y aprendiendo</p>
+              <p className="leading-7 text-gray-600">Notas y reflexiones sobre lo que estoy construyendo y aprendiendo</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <PostWithImage
@@ -117,7 +119,7 @@ export default function HomePageLayout({ latestWork }: Props) {
             <div className="relative">
               <WorkPost
                 title={latestWork.title}
-                description={latestWork.summary}
+                description={latestWork.excerpt}
                 href="/work/performance-expanish-com/"
                 link={latestWork.links?.[0].href}
                 thumbnail={latestWork.image}

@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const plugin = require('tailwindcss/plugin')
 const { spacing, lineHeight } = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -37,6 +38,25 @@ module.exports = {
         rose: colors.rose,
         orange: colors.orange,
       },
+      animation: {
+        blob: 'blob 10s infinite',
+      },
+      keyframes: {
+        blob: {
+          '0%, 100%': {
+            transform: 'translate(0, 0) scale(1)',
+          },
+          '25%': {
+            transform: 'translate(20px, -50px) scale(1.1)',
+          },
+          '50%': {
+            transform: 'translate(0, 20px) scale(1)',
+          },
+          '75%': {
+            transform: 'translate(-20px, -15px) scale(0.9)',
+          },
+        },
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -72,5 +92,15 @@ module.exports = {
   variants: {},
   plugins: [
     require('@tailwindcss/typography'),
+    plugin(function({ addUtilities }) {
+      const classes = {
+        '.bg-blobs': {
+          backgroundImage: 'radial-gradient(#ededed 1px, #FFF 1px)',
+          backgroundSize: '20px 20px'
+        }
+      }
+
+      addUtilities(classes)
+    })
   ],
 };
