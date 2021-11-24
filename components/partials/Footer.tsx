@@ -64,12 +64,12 @@ export default function Footer() {
                     <div className="w-1 h-1 rounded-full bg-gray-900" />
                   </li>
                   <li>
-                    <a className="hover:text-rose-600" rel="noreferrer" href="https://github.com/coderdiaz/" target="_blank">
+                    <a className="hover:text-orange-600" rel="noreferrer" href="https://github.com/coderdiaz/" target="_blank">
                       <GitHub className="w-5 h-5" />
                     </a>
                   </li>
                   <li>
-                    <a className="hover:text-rose-600" rel="noreferrer" href="https://twitter.com/coderdiaz/" target="_blank">
+                    <a className="hover:text-orange-600" rel="noreferrer" href="https://twitter.com/coderdiaz/" target="_blank">
                       <Twitter className="w-5 h-5" />
                     </a>
                   </li>

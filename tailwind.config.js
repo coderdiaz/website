@@ -1,5 +1,5 @@
 const colors = require('tailwindcss/colors')
-const { spacing } = require('tailwindcss/defaultTheme')
+const { spacing, lineHeight } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: [
@@ -13,6 +13,9 @@ module.exports = {
     extend: {
       spacing: {
         144: '36rem',
+      },
+      boxShadow: {
+        'link': 'inset 0 -0.125em 0 0 #f7ccb5fa, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
       },
       fontSize: {
         xs: '.75rem',
@@ -38,12 +41,18 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.gray.800'),
+            lineHeight: lineHeight[8],
+            '.tech-stack p': {
+              margin: 0,
+            },
             a: {
-              color: theme('colors.rose.500'),
+              color: theme('colors.orange.600'),
+              boxShadow: 'inset 0 -0.125em 0 0 #f7ccb5fa, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
+              textDecoration: 'none',
               '&:hover': {
-                color: theme('colors.rose.700')
+                color: theme('colors.orange.700')
               },
-              code: { color: theme('colors.rose.400') }
+              code: { color: theme('colors.orange.400') }
             },
             'h2, h3, h4': {
               'scroll-margin-top': spacing[32],
@@ -52,7 +61,7 @@ module.exports = {
             thead: {
               borderBottomColor: theme('colors.gray.200')
             },
-            code: { color: theme('colors.rose.500') },
+            code: { color: theme('colors.orange.500') },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false
           }

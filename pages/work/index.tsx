@@ -38,7 +38,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
                 <span className="font-bold inline-block uppercase text-sm tracking-widest text-gray-900">Tipo de project</span>
                 <span className="inline-block">Web Performance</span>
               </div>
-              <CustomLink href={`/work/${firstProject.frontmatter.slug}`} className="py-5 px-6 flex items-center justify-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-700 to-rose-600 hover:bg-rose-500 rounded-lg">
+              <CustomLink href={`/work/${firstProject.frontmatter.slug}`} className="py-5 px-6 flex items-center justify-center space-x-3 font-semibold text-white bg-orange-600 hover:bg-orange-500 rounded-lg">
                 <span>Leer caso de estudio</span>
                 <ArrowRight className="w-5 h-5" />
               </CustomLink>

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { MailIcon } from '@heroicons/react/solid'
+import { ArrowNarrowRightIcon, MailIcon } from '@heroicons/react/solid'
 import { Twitter } from 'react-feather'
 import { RoughNotationGroup } from 'react-rough-notation'
 
@@ -10,6 +10,7 @@ import Video from '@components/Video'
 import PostWithImage from '@components/PostWithImage'
 import Post from '@components/Post'
 import WorkPost from '@components/WorkPost'
+import CustomLink from '@components/CustomLink'
 import type { Frontmatter } from '@lib/types'
 
 type Props = {
@@ -33,7 +34,7 @@ export default function HomePageLayout({ latestWork }: Props) {
             <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-6">Hey! Soy Javier.</h1>
             <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6">
               <p className="leading-relaxed md:text-lg">
-                Un <span className="text-rose-700 font-semibold">ingeniero de software</span> que diseña y enseña en Ciudad de México.
+                Un <span className="text-orange-600 font-semibold">ingeniero de software</span> que diseña y construye productos, y enseña en Ciudad de México.
               </p>
               <p className="leading-relaxed md:text-lg">
                 Interesado en <RainbowHighlight color="#C7D2FE">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FDE68A">usuario/dev</RainbowHighlight>. Me fascina crear herramientas que sean user-friendly, simples y encantadoras. Trabajo como Engineering Manager en <span className="font-semibold">Bedu</span> — con un enfoque en mejorar nuestro ecosistema ed-tech y la entrega de proyectos de software. Mi objetivo principal es crear <RainbowHighlight color="#BAE6FD">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
@@ -41,7 +42,7 @@ export default function HomePageLayout({ latestWork }: Props) {
               <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#A7F3D0">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
             </div>
             <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
-              <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-rose-600 hover:bg-rose-500 rounded-lg">
+              <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-orange-600 hover:bg-orange-500 rounded-lg">
                 <MailIcon className="w-5 h-5" />
                 <span>Ponte en contacto</span>
               </a>
@@ -58,7 +59,7 @@ export default function HomePageLayout({ latestWork }: Props) {
               <h2 className="text-2xl font-bold">Vídeos Destacados</h2>
               <p className="leading-relaxed text-gray-600">Vídeos sobre lo que estoy construyendo y aprendiendo</p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 mb-4 md:mb-6">
               <Video
                 title="Rediseñando mi portafolio con Figma | Parte 1"
                 summary="Acompañame en esta experiencia rediseñando mi portafolio web, donde además de darle una sacudida a mi sitio actual podrás ver como realizo el diseño."
@@ -68,6 +69,10 @@ export default function HomePageLayout({ latestWork }: Props) {
                 summary="Crea una aplicación de viajes en Figma, en este vídeo te cuento sobre el proceso que llevo acabo para diseñar aplicaciones."
                 thumbnail="/static/images/thumbs/disenando-una-aplicacion-de-viajes-thumb.png" />
             </div>
+            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center space-x-1 font-semibold text-lg hover:text-orange-700" target="_blank">
+              <span>Ver todos los vídeos</span>
+              <ArrowNarrowRightIcon className="w-5 h-5" />
+            </a>
           </Container>
         </section>
         <section className="py-11">
@@ -82,7 +87,7 @@ export default function HomePageLayout({ latestWork }: Props) {
                 summary="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis facere repudiandae esse iure! Deleniti, nostrum natus. Laborum, consequuntur."
                 thumbnail="/static/images/como-he-construido-mi-sitio-web.jpg"
                 href="/writing/como-he-construido-mi-sitio-web/" />
-              <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-8">
+              {/* <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-8">
                 <Post
                   title="Verifying Your Shopify Webhooks in Next.js APIs"
                   summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
@@ -95,8 +100,12 @@ export default function HomePageLayout({ latestWork }: Props) {
                 <Post
                   title="Verifying Your Shopify Webhooks in Next.js APIs"
                   summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
-              </div>
+              </div> */}
             </div>
+            <CustomLink href="/writing/" className="hidden items-center space-x-1 font-semibold text-lg hover:text-orange-700">
+              <span>Ver todos las notas</span>
+              <ArrowNarrowRightIcon className="w-5 h-5" />
+            </CustomLink>
           </Container>
         </section>
         <section className="pt-11 pb-4">

@@ -42,11 +42,10 @@ const ProjectPageLayout = ({ code, frontmatter }: Props) => {
                 </nav>
               </div>
               <div className="flex flex-col space-y-2">
-                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Vista previa</span>
-                { frontmatter.links.map((item: { label: string, href: string }, index: number) => <a key={index} href={item.href} className="text-rose-500 font-medium mb-6" target="_blank" rel="noopener noreferrer">
-                  <span className="inline-flex space-x-3 items-center">
-                    {item.label} <ArrowUpRight className="ml-1 w-5 h-5" />
-                  </span>
+                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Enlaces</span>
+                { frontmatter.links.map((item: { label: string, href: string }, index: number) => <a key={index} href={item.href} className="text-orange-600 hover:text-orange-700 font-medium mb-6 inline-flex justify-between space-x-3 items-center shadow-link" target="_blank" rel="noopener noreferrer">
+                  <span>{item.label}</span>
+                  <ArrowUpRight className="w-5 h-5" />
                 </a>) }
               </div>
             </div>

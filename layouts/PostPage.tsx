@@ -37,7 +37,7 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
                 src={frontmatter.image} />
             </div>
             <p className="leading-loose italic mb-6 md:mb-10">
-              <span className="pr-2 uppercase text-sm tracking-widest not-italic font-bold text-rose-600">Resumen »</span> {frontmatter.summary}
+              <span className="pr-2 uppercase text-sm tracking-widest not-italic font-bold text-orange-600">Resumen »</span> {frontmatter.summary}
             </p>
             <div className="prose max-w-none">
               <Component components={{

@@ -18,12 +18,12 @@ export default function Header() {
             <nav className="hidden md:inline-block">
               <ul className="flex items-center space-x-6">
                 <li>
-                  <a className="hover:text-rose-600" rel="noreferrer" href="https://github.com/coderdiaz/" target="_blank">
+                  <a className="hover:text-orange-600" rel="noreferrer" href="https://github.com/coderdiaz/" target="_blank">
                     <GitHub className="w-5 h-5" />
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-rose-600" rel="noreferrer" href="https://twitter.com/coderdiaz/" target="_blank">
+                  <a className="hover:text-orange-600" rel="noreferrer" href="https://twitter.com/coderdiaz/" target="_blank">
                     <Twitter className="w-5 h-5" />
                   </a>
                 </li>
@@ -47,7 +47,7 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
-            <button className="outline-none hover:text-rose-600">
+            <button className="outline-none hover:text-orange-600">
               <Moon className="w-5 h-5" />
             </button>
           </div>

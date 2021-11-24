@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { ArrowRight, ArrowUpRight } from 'react-feather'
+import { ArrowUpRight } from 'react-feather'
+import { ArrowNarrowRightIcon } from '@heroicons/react/solid'
 
 import CustomLink from '@components/CustomLink'
 
@@ -28,9 +29,9 @@ export default function WorkPost(props: Props) {
         </div>
         <p className="leading-7 text-gray-800">{props.description}</p>
         <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
-          <CustomLink className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold text-white bg-rose-600 hover:bg-rose-500 rounded-lg" href={props.href}>
+          <CustomLink className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold text-white bg-orange-600 hover:bg-orange-500 rounded-lg" href={props.href}>
             <span>Leer caso de estudio</span>
-            <ArrowRight className="w-6 h-6" />
+            <ArrowNarrowRightIcon className="w-6 h-6" />
           </CustomLink>
           {props.link ? <a href={props.link} target="_blank" className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold text-gray-900 bg-white md:bg-transparent hover:bg-white hover:text-gray-900 rounded-lg">
             <span>Ver en vivo</span>

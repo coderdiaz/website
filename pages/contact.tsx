@@ -15,7 +15,7 @@ export default function ContactPage() {
           </div>
           <div className="relative mb-12">
             <div className="grid md:grid-cols-2 gap-5">
-              <a href="https://twitter.com/coderdiaz/" target="_blank" rel="noreferer" className="flex space-x-4 bg-gray-50 p-6 rounded-lg items-center transition ease-in">
+              <a href="https://twitter.com/coderdiaz/" target="_blank" rel="noreferer" className="flex space-x-4 bg-gray-50 hover:bg-orange-50 p-6 rounded-lg items-center transition ease-in">
                 <div className="flex items-center align-center p-4 rounded-full text-blue-600">
                   <Twitter className="w-10 h-10" />
                 </div>
@@ -27,7 +27,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </a>
-              <a href="mailto: hey@coderdiaz.me" className="flex space-x-3 bg-gray-50 p-6 rounded-lg items-center transition ease-in">
+              <a href="mailto: hey@coderdiaz.me" className="flex space-x-3 bg-gray-50 hover:bg-orange-50 p-6 rounded-lg items-center transition ease-in">
                 <div className="flex items-center align-center p-4 rounded-full text-purple-600">
                   <MessageSquare className="w-10 h-10" />
                 </div>
@@ -39,7 +39,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </a>
-              <a href="https://github.com/coderdiaz/" target="_blank" rel="noreferer" className="flex space-x-4 bg-gray-50 p-6 rounded-lg items-center transition ease-in">
+              <a href="https://github.com/coderdiaz/" target="_blank" rel="noreferer" className="flex space-x-4 bg-gray-50 hover:bg-orange-50 p-6 rounded-lg items-center transition ease-in">
                 <div className="flex items-center align-center p-4 rounded-full text-gray-800">
                   <GitHub className="w-10 h-10" />
                 </div>
@@ -51,7 +51,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </a>
-              <a href="https://dribbble.com/coderdiaz/" target="_blank" rel="noreferer" className="flex space-x-4 bg-gray-50 p-6 rounded-lg items-center transition ease-in">
+              <a href="https://dribbble.com/coderdiaz/" target="_blank" rel="noreferer" className="flex space-x-4 bg-gray-50 hover:bg-orange-50 p-6 rounded-lg items-center transition ease-in">
                 <div className="flex items-center align-center p-4 rounded-full text-rose-600">
                   <Dribbble className="w-10 h-10" />
                 </div>
@@ -63,7 +63,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </a>
-              <a href="https://linkedin.com/in/coderdiaz/" target="_blank" rel="noreferer" className="flex space-x-4 bg-gray-50 p-6 rounded-lg items-center transition ease-in">
+              <a href="https://linkedin.com/in/coderdiaz/" target="_blank" rel="noreferer" className="flex space-x-4 bg-gray-50 hover:bg-orange-50 p-6 rounded-lg items-center transition ease-in">
                 <div className="flex items-center align-center p-4 rounded-full text-indigo-600">
                   <Linkedin className="w-10 h-10" />
                 </div>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </a>
-              <a href="https://vsco.co/coderdiaz/" target="_blank" rel="noreferer" className="flex space-x-4 bg-gray-50 p-6 rounded-lg items-center transition ease-in">
+              <a href="https://vsco.co/coderdiaz/" target="_blank" rel="noreferer" className="flex space-x-4 bg-gray-50 hover:bg-orange-50 p-6 rounded-lg items-center transition ease-in">
                 <div className="flex items-center align-center p-4 rounded-full text-gray-800">
                   <Aperture className="w-10 h-10" />
                 </div>
@@ -111,12 +111,12 @@ export default function ContactPage() {
               <div className="flex flex-col justify-between space-y-2 p-8 bg-gray-50 rounded-lg">
                 <div className="flex flex-col space-y-2 mb-4">
                   <div className="relative mb-2">
-                  <Columns className="w-8 h-8 text-rose-500" />
+                  <Columns className="w-8 h-8 text-orange-500" />
                   </div>
                   <span className="inline-block text-xl font-semibold">Interfaces de usuario</span>
                   <p className="leading-7 text-gray-700">Desarrollo productos atractivos y amigables con el usuario, así como experiencias agradables que permitan a los usuarios alcanzar sus objetivos.</p>
                 </div>
-                <a href="https://dribbble.com/coderdiaz/" className="flex space-x-1 items-center uppercase font-semibold text-sm tracking-wider text-rose-600">
+                <a href="https://dribbble.com/coderdiaz/" className="flex space-x-1 items-center uppercase font-semibold text-sm tracking-wider text-orange-600">
                   <span>Ir a Dribbble</span>
                   <ArrowRight className="w-5 h-5" />
                 </a>
