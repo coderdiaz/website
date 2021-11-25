@@ -33,6 +33,9 @@
       ],
       "@layouts/*": [
         "layouts/*"
+      ],
+      "@styles/*": [
+        "styles/*"
       ]
     },
     "incremental": true
