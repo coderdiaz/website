@@ -66,10 +66,10 @@ export default function HomePageLayout({ latestWork }: Props) {
                 thumbnail="/static/images/thumbs/redisenando-mi-sitio-web-con-figma-thumb.png"
                 href="https://www.youtube.com/watch?v=vjfUbGmtdaE" />
               <Video
-                title="Diseñando una aplicación de viajes en Figma"
-                summary="Aprende a aplicar principios de diseño creando una aplicación desde cero donde podrás obtener tus boletos para viajar a diferentes destinos locales."
-                thumbnail="/static/images/thumbs/disenando-una-aplicacion-de-viajes-thumb.png"
-                href="https://www.youtube.com/watch?v=dCdaMYCG0v0" />
+                title="No eres tú, soy yo: Diseñadores & Developers"
+                summary="¿Te haz preguntado cómo es que los developers y diseñadores trabajan en conjunto? o ¿Alguna vez haz escuchado acerca de la guerra interminable entre ellos? En este vídeo te contamos."
+                thumbnail="/static/images/thumbs/dimeloencodigo-thumbnail-devspace-003.jpeg"
+                href="https://www.youtube.com/watch?v=woZSVCRIQfo" />
             </div>
             <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center space-x-1 font-semibold text-lg hover:text-orange-700" target="_blank">
               <span>Ver todos los vídeos</span>
@@ -122,7 +122,7 @@ export default function HomePageLayout({ latestWork }: Props) {
                 description={latestWork.excerpt}
                 href="/work/performance-expanish-com/"
                 link={latestWork.links?.[0].href}
-                thumbnail={latestWork.image}
+                thumbnail={latestWork.images[0]}
                 tech={latestWork.tech} />
             </div>
           </Container>

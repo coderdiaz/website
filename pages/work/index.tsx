@@ -27,7 +27,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
                     layout="fill"
                     objectFit="cover"
                     objectPosition="top left"
-                    src="/static/images/website-expanish-com.png" />
+                    src={firstProject.frontmatter.images[0]} />
                 </div>
               </div>
               <div className="flex flex-col space-y-1">
@@ -50,21 +50,21 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
                   layout="fill"
                   objectFit="cover"
                   objectPosition="top left"
-                  src="/static/images/website-expanish-com.png" />
+                  src={firstProject.frontmatter.images[0]} />
               </div>
               <div className="relative col-span-10 lg:col-span-5 row-span-2">
                 <Image
                   className="rounded-lg"
                   layout="fill"
                   objectFit="cover"
-                  src="/static/images/website-expanish-com.png" />
+                  src={firstProject.frontmatter.images[1]} />
               </div>
               <div className="hidden lg:flex relative col-span-5 row-span-2">
                 <Image
                   className="rounded-lg"
                   layout="fill"
                   objectFit="cover"
-                  src="/static/images/website-expanish-com.png" />
+                  src={firstProject.frontmatter.images[2]} />
               </div>
             </div>
           </div>

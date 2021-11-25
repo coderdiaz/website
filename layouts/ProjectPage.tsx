@@ -54,7 +54,7 @@ const ProjectPageLayout = ({ code, frontmatter }: Props) => {
                 className="w-full h-full rounded-lg"
                 width={976}
                 height={580}
-                src={frontmatter.image} />
+                src={frontmatter.images[0]} />
             </div>
             <div className="prose max-w-none">
               <Component components={{
