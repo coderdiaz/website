@@ -31,12 +31,12 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
                 </div>
               </div>
               <div className="flex flex-col space-y-1">
-                <span className="font-bold inline-block uppercase text-sm tracking-widest text-gray-900">Tech Stack</span>
-                <span className="inline-block">Ruby, Next.js, React, PostgreSQL</span>
+                <span className="font-bold inline-block uppercase text-sm tracking-widest text-gray-500">Stack Tecnológico</span>
+                <span className="inline-block">{firstProject.frontmatter.tech.join(", ")}</span>
               </div>
               <div className="flex flex-col space-y-1">
-                <span className="font-bold inline-block uppercase text-sm tracking-widest text-gray-900">Tipo de project</span>
-                <span className="inline-block">Web Performance</span>
+                <span className="font-bold inline-block uppercase text-sm tracking-widest text-gray-500">Tipo de proyecto</span>
+                <span className="inline-block">{firstProject.frontmatter.type.join(", ")}</span>
               </div>
               <CustomLink href={`/work/${firstProject.frontmatter.slug}`} className="py-5 px-6 flex items-center justify-center space-x-3 font-semibold text-white bg-orange-600 hover:bg-orange-500 rounded-lg">
                 <span>Leer caso de estudio</span>

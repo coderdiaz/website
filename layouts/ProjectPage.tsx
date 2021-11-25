@@ -26,7 +26,7 @@ const ProjectPageLayout = ({ code, frontmatter }: Props) => {
             <p className="leading-loose mb-6 md:mb-10">{frontmatter.summary}</p>
             <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-20 mb-6 md:mb-10">
               <div className="flex flex-col space-y-2">
-                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Tópicos</span>
+                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Tipo de proyecto</span>
                 <nav>
                   <ul className="flex flex-col space-y-2">
                     { frontmatter.type.map((item: string, index: number) => <li key={index}>{item}</li>) }
