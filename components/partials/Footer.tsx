@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-      <section className="bg-gray-900 text-gray-200 mt-8 md:mt-4 py-10 md:py-8">
+      <section className="bg-gray-900 text-gray-300 mt-8 md:mt-4 py-10 md:py-8">
         <Container className="max-w-screen-lg">
           <div className="relative">
             <div className="relative flex justify-center">
