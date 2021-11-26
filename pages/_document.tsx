@@ -9,7 +9,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body className="font-display leading-normal antialiased bg-blobs">
+        <body className="font-display leading-normal antialiased bg-blobs overflow-x-hidden">
           <Main />
           <NextScript />
         </body>
