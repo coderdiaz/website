@@ -91,17 +91,17 @@ export default function HomePageLayout({ work, posts }: Props) {
                 title={post.frontmatter.title}
                 summary={post.frontmatter.excerpt}
                 thumbnail={post.frontmatter.image}
-                href={`/writing/${post.frontmatter.slug}`} />
+                href={`/blog/${post.frontmatter.slug}`} />
               <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-8">
                 { otherPosts.map(post => (
                   <Post
                     title={post.frontmatter.title}
-                    href={`/writing/${post.frontmatter.slug}`}
+                    href={`/blog/${post.frontmatter.slug}`}
                     summary={post.frontmatter.excerpt} />)
                 ) }
               </div>
             </div>
-            <CustomLink href="/writing/" className="hidden items-center space-x-1 font-semibold text-lg hover:text-orange-700">
+            <CustomLink href="/blog/" className="hidden items-center space-x-1 font-semibold text-lg hover:text-orange-700">
               <span>Ver todos las notas</span>
               <ArrowNarrowRightIcon className="w-5 h-5" />
             </CustomLink>
