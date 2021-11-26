@@ -9,10 +9,32 @@ El tener este espacio me da la oportunidad de compartir algunas de las anécdota
 
 He creado este sitio con la finalidad de brindar una forma sencilla a los empleadores/clientes de ver mi trabajo y proyectos en los que he estado trabajando.
 
-Dado que este sitio ha superado mis expectativas, quería compartir un poco de como lo he construido: como elegí las tecnologías, como tome las decisiones en su diseño y contenido, los recursos que encuentre útiles y mis planes futuros para el sitio.
+Dado que este sitio ha superado mis expectativas, quería compartir un poco de como lo he construido: como elegí las tecnologías, como tome las decisiones en su diseño y contenido, los recursos que encuentre útiles y mis planes a futuro.
 
 <Image
   width={976}
   height={580}
   src="/static/images/como-he-construido-mi-sitio-web-con-nextjs/coderdiaz-me-last-version.jpg"
-  caption="Última versión de mi sitio web" />
+  caption="Última versión de mi sitio web (De 2020 ‒ 2021)" />
+
+## Stack tecnológico
+Cuando seleccione la herramienta de trabajo en la anterior versión, tome en consideración algunos aspectos:
+- **Velocidad**: Necesito que el sitio se publique rápidamente y sobre todo evitar herramientas con una curva de aprendizaje considerable.
+- **Flexibilidad y escalabilidad**: Quería utilizar herramientas que me permitieran hacer un cambio rápido en caso de necesitarlo y que fuera amigable con el mantenimiento, porque al final el disfrutar hacerlo es esencial.
+- **Gestión de contenido**: Buscar la herramienta adecuada para crear contenido tomando en consideración costos de uso, implementación y mantenimiento.
+
+Al final, mi anterior sitio ya estaba construido utilizando Next.js con TypeScript y TailwindCSS, así que he decidido quedarme con estas herramientas y adicionar MDX para gestionar el contenido.
+
+### Next.js
+[Next.js](https://nextjs.org) es un framework en React que brinda una experiencia de desarrollo con todas las herramientas que necesitas out-the-box.
+
+Algunas de las cosas que a mí me gustan de este framework son:
+- Puedes enfocarte en construir tu sitio y producirlo en lugar de preocuparte por la configuración del proyecto.
+- Provee la flexibilidad necesaria para el mantenimiento del sitio.
+- Relacionado con el primer punto, ofrece una experiencia increíble para desarrolladores con su filosofía zero-config tales como Fast Refresh.
+- Además, está construido con el objetivo de brindar beneficios en el rendimiento tales como code-spliting, procesamiento de images y lazy loading, optimizaciones en carga de scripts de terceros, flexibilidad al utilizar herramientas para data fetching y API routes out-the-box.
+
+Durante los últimos años, el equipo de [Vercel](https://vercel.com) y contribuidores han hecho muchísimos cambios en este framework en favor de hacer la web más rápida. Esta premisa ha sido un factor importante en mi decisión, ya que la herramienta brinda de muchas implementaciones que desarrollando uno como solitario serian muy pesadas de llevar. El enfoque que tienen con mejorar la experiencia del desarrollador (DX) es parte fundamental en estos tiempos, ya que nos permite crear proyectos de frontend con mayor calidad y siguiendo buenas prácticas.
+
+### MDX
+[MDX](https://mdxjs.com/) es una herramienta que nos permite agregar componentes en JSX dentro de markdown. Esta funcionalidad hace que la herramienta sea 

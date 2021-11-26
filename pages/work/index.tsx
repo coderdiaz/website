@@ -14,10 +14,10 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
   return (
     <>
       <section className="pt-8 md:pt-20">
-        <Container className="max-w-4xl border-b border-gray-200">
+        <Container className="max-w-screen-lg border-b border-gray-200">
           <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-6 md:mb-16">Proyectos.</h1>
           <div className="grid md:grid-cols-12 gap-7 mb-14">
-            <div className="md:col-span-5 lg:col-span-5 flex flex-col space-y-8">
+            <div className="md:col-span-5 lg:col-span-5 flex flex-col space-y-8 py-6">
               <div className="flex flex-col space-y-3">
                 <CustomLink href={`/work/${firstProject.frontmatter.slug}`}>
                   <h2 className="font-bold text-2xl text-gray-800">{firstProject.frontmatter.title}</h2>
@@ -42,7 +42,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
                 <span className="font-bold inline-block uppercase text-sm tracking-widest text-gray-500">Tipo de proyecto</span>
                 <span className="inline-block">{firstProject.frontmatter.type.join(", ")}</span>
               </div>
-              <CustomLink href={`/work/${firstProject.frontmatter.slug}`} className="py-5 px-6 flex items-center justify-center space-x-3 font-semibold text-white bg-orange-600 hover:bg-orange-500 rounded-lg">
+              <CustomLink href={`/work/${firstProject.frontmatter.slug}`} className="py-5 px-6 lg:w-72 flex items-center justify-center space-x-3 font-semibold text-white bg-orange-600 hover:bg-orange-500 rounded-lg">
                 <span>Leer caso de estudio</span>
                 <ArrowRight className="w-5 h-5" />
               </CustomLink>
@@ -74,7 +74,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
           </div>
         </Container>
         <section className="py-14">
-          <Container className="max-w-4xl">
+          <Container className="max-w-screen-lg">
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
               {restProjects.map((project, index: number) => 
                 <PostWithImage
