@@ -11,13 +11,11 @@ import PostWithImage from '@components/PostWithImage'
 import Post from '@components/Post'
 import WorkPost from '@components/WorkPost'
 import CustomLink from '@components/CustomLink'
-import type { Frontmatter } from '@lib/types'
+import type { BundlerResult, Frontmatter } from '@lib/types'
 
 type Props = {
   work: Frontmatter
-  posts: [{
-    frontmatter: Frontmatter,
-  }]
+  posts: BundlerResult[]
 }
 
 export default function HomePageLayout({ work, posts }: Props) {
@@ -95,7 +93,7 @@ export default function HomePageLayout({ work, posts }: Props) {
                 thumbnail={post.frontmatter.image}
                 href={`/writing/${post.frontmatter.slug}`} />
               <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-8">
-                { otherPosts.map((post: { frontmatter: Frontmatter }) => (
+                { otherPosts.map(post => (
                   <Post
                     title={post.frontmatter.title}
                     href={`/writing/${post.frontmatter.slug}`}
