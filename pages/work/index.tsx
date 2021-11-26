@@ -19,15 +19,19 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
           <div className="grid md:grid-cols-12 gap-7 mb-14">
             <div className="md:col-span-5 lg:col-span-5 flex flex-col space-y-8">
               <div className="flex flex-col space-y-3">
-                <h2 className="font-bold text-2xl text-gray-800">{firstProject.frontmatter.title}</h2>
+                <CustomLink href={`/work/${firstProject.frontmatter.slug}`}>
+                  <h2 className="font-bold text-2xl text-gray-800">{firstProject.frontmatter.title}</h2>
+                </CustomLink>
                 <p className="text-gray-700">{firstProject?.frontmatter.excerpt}</p>
                 <div className="block md:hidden relative h-72">
-                  <Image
-                    className="rounded-lg"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="top left"
-                    src={firstProject.frontmatter.images[0]} />
+                  <CustomLink href={`/work/${firstProject.frontmatter.slug}`}>
+                    <Image
+                      className="rounded-lg"
+                      layout="fill"
+                      objectFit="cover"
+                      objectPosition="top left"
+                      src={firstProject.frontmatter.images[0]} />
+                  </CustomLink>
                 </div>
               </div>
               <div className="flex flex-col space-y-1">

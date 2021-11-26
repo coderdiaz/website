@@ -13,11 +13,15 @@ export default function WritingIndexPage({ posts }: InferGetStaticPropsType<type
     <>
       <section className="pt-8 md:pt-20">
         <Container className="max-w-4xl border-b border-gray-200">
-          <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-2">Blog.</h1>
+          <CustomLink href={`/writing/${post.frontmatter.slug}`}>
+            <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-2">Blog.</h1>
+          </CustomLink>
           <p className="leading-7 text-xl text-gray-600 mb-6 md:mb-16">Notas y reflexiones sobre lo que estoy construyendo y aprendiendo</p>
           <div className="grid md:grid-cols-2 gap-5 items-center pb-14">
             <div className="flex flex-col space-y-3">
-              <h2 className="font-bold text-3xl leading-tight">{post.frontmatter.title}</h2>
+              <CustomLink href={`/writing/${post.frontmatter.slug}`}>
+                <h2 className="font-bold text-3xl leading-tight">{post.frontmatter.title}</h2>
+              </CustomLink>
               <div className="flex space-x-4 items-center text-gray-700">
                 <time dateTime="" className="inline-block">Noviembre 19, 2021</time>
                 <div className="w-1 h-1 rounded-full bg-gray-900" />
@@ -26,11 +30,13 @@ export default function WritingIndexPage({ posts }: InferGetStaticPropsType<type
               <p className="leading-relaxed text-gray-800">{post.frontmatter.excerpt}</p>
             </div>
             <div className="relative w-full h-72 md:h-full xl:h-72">
-              <Image
-                className="rounded-lg"
-                layout="fill"
-                objectFit="cover"
-                src={post.frontmatter.image} />
+              <CustomLink href={`/writing/${post.frontmatter.slug}`}>
+                <Image
+                  className="rounded-lg"
+                  layout="fill"
+                  objectFit="cover"
+                  src={post.frontmatter.image} />
+              </CustomLink>
             </div>
           </div>
         </Container>

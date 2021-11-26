@@ -96,7 +96,7 @@ module.exports = {
     plugin(function({ addUtilities }) {
       const classes = {
         '.bg-blobs': {
-          backgroundImage: 'radial-gradient(#ededed 1px, #FFF 1px)',
+          backgroundImage: 'radial-gradient(#d9d9d9 1px, #FFF 1px)',
           backgroundSize: '20px 20px'
         }
       }

@@ -8,16 +8,21 @@ import Container from '@components/partials/Container'
 import Avatar from '@assets/images/avatar.png'
 import Video from '@components/Video'
 import PostWithImage from '@components/PostWithImage'
-// import Post from '@components/Post'
+import Post from '@components/Post'
 import WorkPost from '@components/WorkPost'
 import CustomLink from '@components/CustomLink'
 import type { Frontmatter } from '@lib/types'
 
 type Props = {
-  latestWork: Frontmatter
+  work: Frontmatter
+  posts: [{
+    frontmatter: Frontmatter,
+  }]
 }
 
-export default function HomePageLayout({ latestWork }: Props) {
+export default function HomePageLayout({ work, posts }: Props) {
+  const [post, ...otherPosts] = posts
+
   return (
     <>
       <section className="py-5 mb-4 md:mb-6 lg:mb-11">
@@ -53,7 +58,7 @@ export default function HomePageLayout({ latestWork }: Props) {
             </div>
           </RoughNotationGroup>
         </Container>
-        <section className="py-6 md:py-8 lg:py-11">
+        <section className="py-6 md:py-8 lg:py-20">
           <Container className="max-w-screen-lg">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
               <h2 className="text-2xl font-bold">Vídeos Destacados</h2>
@@ -71,7 +76,7 @@ export default function HomePageLayout({ latestWork }: Props) {
                 thumbnail="/static/images/thumbs/dimeloencodigo-thumbnail-devspace-003.jpeg"
                 href="https://www.youtube.com/watch?v=woZSVCRIQfo" />
             </div>
-            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center space-x-1 font-semibold text-lg hover:text-orange-700" target="_blank">
+            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center space-x-1 font-semibold text-lg" target="_blank">
               <span>Ver todos los vídeos</span>
               <ArrowNarrowRightIcon className="w-5 h-5" />
             </a>
@@ -85,24 +90,18 @@ export default function HomePageLayout({ latestWork }: Props) {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <PostWithImage
-                title="Como he construído mi sitio web"
-                summary="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis facere repudiandae esse iure! Deleniti, nostrum natus. Laborum, consequuntur."
-                thumbnail="/static/images/como-he-construido-mi-sitio-web.jpg"
-                href="/writing/como-he-construido-mi-sitio-web/" />
-              {/* <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-8">
-                <Post
-                  title="Verifying Your Shopify Webhooks in Next.js APIs"
-                  summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
-                <Post
-                  title="Verifying Your Shopify Webhooks in Next.js APIs"
-                  summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
-                <Post
-                  title="Verifying Your Shopify Webhooks in Next.js APIs"
-                  summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
-                <Post
-                  title="Verifying Your Shopify Webhooks in Next.js APIs"
-                  summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus" />
-              </div> */}
+                title={post.frontmatter.title}
+                summary={post.frontmatter.excerpt}
+                thumbnail={post.frontmatter.image}
+                href={`/writing/${post.frontmatter.slug}`} />
+              <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-8">
+                { otherPosts.map((post: { frontmatter: Frontmatter }) => (
+                  <Post
+                    title={post.frontmatter.title}
+                    href={`/writing/${post.frontmatter.slug}`}
+                    summary={post.frontmatter.excerpt} />)
+                ) }
+              </div>
             </div>
             <CustomLink href="/writing/" className="hidden items-center space-x-1 font-semibold text-lg hover:text-orange-700">
               <span>Ver todos las notas</span>
@@ -118,12 +117,12 @@ export default function HomePageLayout({ latestWork }: Props) {
             </div>
             <div className="relative">
               <WorkPost
-                title={latestWork.title}
-                description={latestWork.excerpt}
-                href="/work/performance-expanish-com/"
-                link={latestWork.links?.[0].href}
-                thumbnail={latestWork.images[0]}
-                tech={latestWork.tech} />
+                title={work.title}
+                description={work.excerpt}
+                href={`/work/${work.slug}`}
+                link={work.links?.[0].href}
+                thumbnail={work.images[0]}
+                tech={work.tech} />
             </div>
           </Container>
         </section>

@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer>
       <Container className="max-w-screen-lg">
-        <div className="flex flex-col space-y-6 py-4">
+        <div className="flex flex-col space-y-6 py-4 md:pt-12 md:pb-8">
           <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start space-y-6 md:space-y-0">
             <div className="flex items-center space-x-3">
               <Headphones className="w-5 h-5 text-green-600" />
@@ -30,11 +30,11 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-      <section className="bg-gray-900 text-gray-300 mt-8 md:mt-4 py-10 md:py-8">
+      <section className="bg-black text-gray-300 mt-8 md:mt-4 py-12">
         <Container className="max-w-screen-lg">
           <div className="relative">
             <div className="relative flex justify-center">
-              <span className="absolute -top-14 md:-top-12 bg-gray-900 p-2 text-gray-500 rounded-full">
+              <span className="absolute -top-14 md:-top-16 bg-black p-3 text-orange-300 rounded-full">
                 <Isotype className="w-6 h-6" />
               </span>
             </div>

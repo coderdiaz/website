@@ -17,9 +17,13 @@ export async function getPostBySlug(slug: string) {
   return await bundler(source, slug)
 }
 
-export async function getPosts() {
+export async function getPosts(size?: number) {
   const postsDirectoryContent = join(process.cwd(), 'content/posts')
-  const slugs = readdirSync(postsDirectoryContent)
+  let slugs = readdirSync(postsDirectoryContent)
+
+  if (size) {
+    slugs = slugs.slice(0, size)
+  }
 
   return await Promise.all(slugs.map(async slug => {
     // Getting fullpath to filename
@@ -33,7 +37,7 @@ export async function getPosts() {
 export function getPaths() {
   const slugs = readdirSync(join(process.cwd(), 'content/posts'))
 
-  return slugs.map(slug => ({
+  return slugs.map<PathDefinition>(slug => ({
     params: {
       slug: slug.replace('.mdx', '')
     }

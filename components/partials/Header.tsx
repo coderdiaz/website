@@ -56,7 +56,7 @@ export default function Header() {
         {/* Blobs */}
         <div className="absolute -top-16 z-0 -left-8 w-96 h-96 bg-yellow-200 rounded-full opacity-10 mix-blend-multiply filter blur-2xl animate-blob" />
         <div className="absolute -top-16 z-0 -right-8 w-96 h-96 bg-purple-500 rounded-full opacity-10 mix-blend-multiply filter blur-2xl animate-blob animation-delay-2000" />
-        <div className="absolute top-0 z-0 left-1/3 w-96 h-96 bg-pink-300 rounded-full opacity-10 mix-blend-multiply filter blur-2xl animate-blob animation-delay-4000" />
+        <div className="absolute top-10 z-0 left-1/3 w-96 h-96 bg-pink-300 rounded-full opacity-10 mix-blend-multiply filter blur-2xl animate-blob animation-delay-4000" />
       </Container>
     </header>
   );
