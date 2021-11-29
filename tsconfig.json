@@ -19,15 +19,30 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "@/*": ["src/*"],
-      "@/components/*": ["src/components/*"],
-      "@/images/*": ["src/images/*"],
-      "@/assets/*": ["src/assets/*"]
-    }
+      "@content/*": [
+        "content/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@layouts/*": [
+        "layouts/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ]
+    },
+    "incremental": true
   },
   "include": [
-    "next-env.d.ts",
     "@types/*",
+    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],

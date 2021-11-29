@@ -1,0 +1,45 @@
+import { join } from 'path'
+import { readdirSync, readFileSync } from 'fs'
+import { bundler } from '@lib/utils'
+
+type PathDefinition = {
+  params: {
+    slug: string
+  }
+}
+
+export async function getPostBySlug(slug: string) {
+  // Getting fullpath to filename
+  const postsContentDirectory = join(process.cwd(), 'content/posts', `${slug}.mdx`)
+
+  // Getting content from file
+  const source = readFileSync(postsContentDirectory, 'utf-8')
+  return await bundler(source, slug)
+}
+
+export async function getPosts(size?: number) {
+  const postsDirectoryContent = join(process.cwd(), 'content/posts')
+  let slugs = readdirSync(postsDirectoryContent)
+
+  if (size) {
+    slugs = slugs.slice(0, size)
+  }
+
+  return await Promise.all(slugs.map(async slug => {
+    // Getting fullpath to filename
+    const postFullpath = join(postsDirectoryContent, slug)
+    // Getting content from file
+    const source = readFileSync(postFullpath, 'utf-8')
+    return await bundler(source, slug)
+  }))
+}
+
+export function getPaths() {
+  const slugs = readdirSync(join(process.cwd(), 'content/posts'))
+
+  return slugs.map<PathDefinition>(slug => ({
+    params: {
+      slug: slug.replace('.mdx', '')
+    }
+  }))
+}
