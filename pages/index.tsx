@@ -12,7 +12,7 @@ export default function IndexPage(props: InferGetStaticPropsType<typeof getStati
 }
 
 export async function getStaticProps() {
-  const { frontmatter } = await getProjectBySlug('performance-expanish-com') // Getting the featured project
+  const { frontmatter } = await getProjectBySlug('mejorando-rendimiento-sitio-web-expanish-case-study') // Getting the featured project
   const posts = await getPosts(4)
 
   return {
