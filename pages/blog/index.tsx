@@ -14,7 +14,7 @@ export default function WritingIndexPage({ posts }: InferGetStaticPropsType<type
       <section className="pt-8 md:pt-20">
         <Container className="max-w-4xl border-b border-gray-200">
           <CustomLink href={`/blog/${post.frontmatter.slug}`}>
-            <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-2">Blog.</h1>
+            <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-2">Blog<span className="text-orange-600">.</span></h1>
           </CustomLink>
           <p className="leading-7 text-xl text-gray-600 mb-6 md:mb-16">Notas y reflexiones sobre lo que estoy construyendo y aprendiendo</p>
           <div className="grid md:grid-cols-2 gap-5 items-center pb-14">

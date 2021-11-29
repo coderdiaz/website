@@ -15,12 +15,12 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
     <>
       <section className="pt-8 md:pt-20">
         <Container className="max-w-screen-lg border-b border-gray-200">
-          <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-6 md:mb-16">Proyectos.</h1>
+          <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-6 md:mb-16">Proyectos<span className="text-orange-600">.</span></h1>
           <div className="grid md:grid-cols-12 gap-7 mb-14">
             <div className="md:col-span-5 lg:col-span-5 flex flex-col space-y-8 py-6">
               <div className="flex flex-col space-y-3">
                 <CustomLink href={`/work/${firstProject.frontmatter.slug}`}>
-                  <h2 className="font-bold text-2xl text-gray-800">{firstProject.frontmatter.title}</h2>
+                  <h2 className="font-bold text-2xl text-gray-900">{firstProject.frontmatter.title}</h2>
                 </CustomLink>
                 <p className="text-gray-700">{firstProject?.frontmatter.excerpt}</p>
                 <div className="block md:hidden relative h-72">
