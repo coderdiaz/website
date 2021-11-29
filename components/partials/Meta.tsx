@@ -23,6 +23,8 @@ const Meta = ({ meta }: Props) => {
   return <Head>
     <meta charSet="UTF-8" />
     <title>{meta?.title || title }</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/Favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/Favicon-16x16.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta httpEquiv="x-ua-compatible" content="ie=edge" />
     <meta content={meta?.description || description} name="description" />
