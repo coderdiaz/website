@@ -3,8 +3,9 @@ import Image from 'next/image'
 import { getMDXComponent } from 'mdx-bundler/client'
 
 import Container from '@components/partials/Container'
-import { PageProps } from '@lib/types'
+import Meta from '@components/partials/Meta'
 import components from '@components/MDXComponents'
+import type { PageProps } from '@lib/types'
 
 type Props = {} & PageProps
 
@@ -13,6 +14,10 @@ export default function SinglePage({ code, frontmatter }: Props) {
 
   return (
     <>
+      <Meta meta={{
+        title: frontmatter.meta.title,
+        description: frontmatter.meta.description,
+      }} />
       <section className="pt-6 pb-4">
         <Container className="max-w-3xl">
           <div className="flex flex-col space-y-1 mb-8">

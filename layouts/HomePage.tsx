@@ -11,6 +11,7 @@ import PostWithImage from '@components/PostWithImage'
 import Post from '@components/Post'
 import WorkPost from '@components/WorkPost'
 import CustomLink from '@components/CustomLink'
+import Meta from '@components/partials/Meta'
 import type { BundlerResult, Frontmatter } from '@lib/types'
 
 type Props = {
@@ -23,6 +24,7 @@ export default function HomePageLayout({ work, posts }: Props) {
 
   return (
     <>
+      <Meta />
       <section className="py-5 mb-4 md:mb-6 lg:mb-11">
         <Container className="max-w-screen-lg">
           <div className="mb-1">
@@ -37,7 +39,7 @@ export default function HomePageLayout({ work, posts }: Props) {
             <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-6">Hey! Soy Javier.</h1>
             <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6">
               <p className="leading-relaxed md:text-lg">
-                Un <span className="text-orange-600 font-semibold">ingeniero de software</span> que diseña y construye productos, y enseña en Ciudad de México.
+                Un <span className="text-orange-600 font-semibold">ingeniero de software</span> que diseña y construye productos digitales, y enseña en Ciudad de México.
               </p>
               <p className="leading-relaxed md:text-lg">
                 Interesado en <RainbowHighlight color="#C7D2FE">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FDE68A">usuario/dev</RainbowHighlight>. Me fascina crear herramientas que sean user-friendly, simples y encantadoras. Mi objetivo principal es crear <RainbowHighlight color="#BAE6FD">experiencias</RainbowHighlight> web rápidas, simples y accesibles.

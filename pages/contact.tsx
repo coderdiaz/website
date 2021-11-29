@@ -2,10 +2,15 @@ import { Aperture, ArrowRight, Box, Columns, Dribbble, GitHub, Linkedin, Message
 
 import Container from '@components/partials/Container'
 import BaseLayout from '@layouts/BaseLayout'
+import Meta from '@components/partials/Meta'
 
 export default function ContactPage() {
   return (
     <>
+      <Meta meta={{
+        title: 'Ponte en contacto conmigo — Javier Diaz',
+        description: 'Hagamos tu idea posible juntos. Me complace responder a tus preguntas, colaborar o chatear si tengo la oportunidad'
+      }} />
       <section className="pt-8 pb-14 md:py-14">
         <Container className="max-w-4xl">
           <div className="flex flex-col space-y-2 mb-6">

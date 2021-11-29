@@ -7,12 +7,17 @@ import { getProjects } from '@lib/mdx/projects'
 import BaseLayout from '@layouts/BaseLayout'
 import CustomLink from '@components/CustomLink'
 import PostWithImage from '@components/PostWithImage'
+import Meta from '@components/partials/Meta'
 
 export default function WorkIndexPage({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [firstProject, ...restProjects] = projects
 
   return (
     <>
+      <Meta meta={{
+        title: 'Mis proyectos — Javier Diaz',
+        description: 'Estos son algunos de los proyectos que he construído o colaborado, aquí te comparto un poco sobre el proceso y decisiones que tome a lo largo del desarrollo',
+      }} />
       <section className="pt-8 md:pt-20">
         <Container className="max-w-screen-lg border-b border-gray-200">
           <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-6 md:mb-16">Proyectos<span className="text-orange-600">.</span></h1>

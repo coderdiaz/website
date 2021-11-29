@@ -6,11 +6,16 @@ import { getPosts } from '@lib/mdx/posts'
 import BaseLayout from '@layouts/BaseLayout'
 import CustomLink from '@components/CustomLink'
 import PostWithImage from '@components/PostWithImage'
+import Meta from '@components/partials/Meta'
 
 export default function WritingIndexPage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [post, ...otherPosts] = posts
   return (
     <>
+      <Meta meta={{
+        title: 'Blog — Javier Diaz',
+        description: 'Notas y reflexiones sobre lo que estoy construyendo y aprendiendo',
+      }} />
       <section className="pt-8 md:pt-20">
         <Container className="max-w-4xl border-b border-gray-200">
           <CustomLink href={`/blog/${post.frontmatter.slug}`}>
