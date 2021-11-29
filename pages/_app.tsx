@@ -1,6 +1,7 @@
 import '@styles/global.css'
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
+import PlausibleProvider from 'next-plausible'
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: React.ReactElement) => JSX.Element
@@ -14,9 +15,9 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page)
 
   return getLayout(
-    <>
+    <PlausibleProvider domain="coderdiaz.me">
       <Component {...pageProps} />
-    </>
+    </PlausibleProvider>
   )
 }
 
