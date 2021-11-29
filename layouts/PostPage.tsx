@@ -7,6 +7,7 @@ import components from '@components/MDXComponents'
 import Container from '@components/partials/Container'
 import Avatar from '@assets/images/avatar.png'
 import Meta from '@components/partials/Meta'
+import { showDate } from '@lib/date'
 
 type Props = {} & PageProps
 
@@ -31,7 +32,9 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
                   <span className="text-gray-800 font-medium">Javier Diaz</span>
                 </div>
                 <div className="w-1 h-1 rounded-full bg-gray-900" />
-                <time dateTime="" className="inline-block">Noviembre 18, 2021</time>
+                <time
+                  dateTime={showDate(frontmatter.published).iso}
+                  className="inline-block">{showDate(frontmatter.published).formatted}</time>
               </div>
               <span className="inline-block">{Math.ceil(frontmatter.readingTime.time/1000/60)} min. de lectura</span>
             </div>

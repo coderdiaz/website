@@ -7,6 +7,7 @@ import BaseLayout from '@layouts/BaseLayout'
 import CustomLink from '@components/CustomLink'
 import PostWithImage from '@components/PostWithImage'
 import Meta from '@components/partials/Meta'
+import { showDate } from '@lib/date'
 
 export default function WritingIndexPage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [post, ...otherPosts] = posts
@@ -28,7 +29,9 @@ export default function WritingIndexPage({ posts }: InferGetStaticPropsType<type
                 <h2 className="font-bold text-3xl leading-tight">{post.frontmatter.title}</h2>
               </CustomLink>
               <div className="flex space-x-4 items-center text-gray-700">
-                <time dateTime="" className="inline-block">Noviembre 19, 2021</time>
+                <time
+                  dateTime={showDate(post.frontmatter.published).iso}
+                  className="inline-block">{showDate(post.frontmatter.published).formatted}</time>
                 <div className="w-1 h-1 rounded-full bg-gray-900" />
                 <span className="inline-block">{Math.ceil(post.frontmatter.readingTime.time/1000/60)} min. de lectura</span>
               </div>

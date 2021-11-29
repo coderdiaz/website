@@ -7,6 +7,7 @@ import type { PageProps } from '@lib/types'
 import components from '@components/MDXComponents'
 import Container from '@components/partials/Container'
 import Meta from '@components/partials/Meta'
+import { showDate } from '@lib/date'
 
 type Props = {} & PageProps
 
@@ -25,7 +26,9 @@ const ProjectPageLayout = ({ code, frontmatter }: Props) => {
           <article>
             <h1 className="font-bold text-3xl md:text-4xl leading-tight mb-4">{frontmatter.title}</h1>
             <div className="flex space-x-4 items-center text-gray-700 mb-4 md:mb-5">
-              <time dateTime="" className="inline-block">Noviembre 19, 2021</time>
+              <time
+                dateTime={showDate(frontmatter.published).iso}
+                className="inline-block">{showDate(frontmatter.published).formatted}</time>
               <div className="w-1 h-1 rounded-full bg-gray-900" />
               <span className="inline-block">{Math.ceil(frontmatter.readingTime.time/1000/60)} min. de lectura</span>
           </div>
