@@ -47,7 +47,7 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
-            <button className="outline-none hover:text-orange-600">
+            <button className="hidden outline-none hover:text-orange-600">
               <Moon className="w-5 h-5" />
             </button>
           </div>
