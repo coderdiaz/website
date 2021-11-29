@@ -57,6 +57,9 @@ module.exports = {
           },
         },
       },
+      zIndex: {
+        '-1': '-1',
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
