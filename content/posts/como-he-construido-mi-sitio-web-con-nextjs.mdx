@@ -23,7 +23,7 @@ Cuando seleccione la herramienta de trabajo en la anterior versión, tome en con
 - **Flexibilidad y escalabilidad**: Quería utilizar herramientas que me permitieran hacer un cambio rápido en caso de necesitarlo y que fuera amigable con el mantenimiento, porque al final el disfrutar hacerlo es esencial.
 - **Gestión de contenido**: Buscar la herramienta adecuada para crear contenido tomando en consideración costos de uso, implementación y mantenimiento.
 
-Al final, mi anterior sitio ya estaba construido utilizando Next.js con TypeScript y TailwindCSS, así que he decidido quedarme con estas herramientas y adicionar MDX para gestionar el contenido.
+Al final, mi anterior sitio ya estaba construido usando Next.js con TypeScript y TailwindCSS, así que he decidido quedarme con estas herramientas y adicionar MDX para gestionar el contenido.
 
 ### Next.js
 [Next.js](https://nextjs.org) es un framework en React que brinda una experiencia de desarrollo con todas las herramientas que necesitas out-the-box.
@@ -34,18 +34,57 @@ Algunas de las cosas que a mí me gustan de este framework son:
 - Relacionado con el primer punto, ofrece una experiencia increíble para desarrolladores con su filosofía zero-config tales como Fast Refresh.
 - Además, está construido con el objetivo de brindar beneficios en el rendimiento tales como code-spliting, procesamiento de images y lazy loading, optimizaciones en carga de scripts de terceros, flexibilidad al utilizar herramientas para data fetching y API routes out-the-box.
 
-Durante los últimos años, el equipo de [Vercel](https://vercel.com) y contribuidores han hecho muchísimos cambios en este framework en favor de hacer la web más rápida. Esta premisa ha sido un factor importante en mi decisión, ya que la herramienta brinda de muchas implementaciones que desarrollando uno como solitario serian muy pesadas de llevar. El enfoque que tienen con mejorar la experiencia del desarrollador (DX) es parte fundamental en estos tiempos, ya que nos permite crear proyectos de frontend con mayor calidad y siguiendo buenas prácticas.
+Durante los últimos años, el equipo de [Vercel](https://vercel.com) y contribuidores han hecho muchísimos cambios en este framework en favor de hacer la web más rápida. Esta premisa ha sido un factor importante en mi decisión, ya que la herramienta brinda de muchas implementaciones que desarrollando uno como solitario serian muy pesadas de llevar. El enfoque que tienen con mejorar la experiencia del desarrollador (DX) es parte fundamental en estos tiempos, ya que nos permite crear proyectos de front-end con mayor calidad y siguiendo buenas prácticas.
 
 ### MDX
-[MDX](https://mdxjs.com/) es una herramienta que nos permite agregar componentes creados en JSX dentro de markdown. Esta funcionalidad hace que la herramienta sea muy flexible a lo hora de estar creando blogging y a su vez crear elementos más interactivos que enriquezcan el valor al usuario.
+[MDX](https://mdxjs.com/) es una herramienta que nos permite agregar componentes creados en JSX dentro de markdown. Esta funcionalidad hace que la herramienta sea muy flexible a la hora de estar produciendo blogging y a su vez generar elementos más interactivos que enriquezcan el valor al usuario.
 
 ### TailwindCSS
-[TailwindCSS](https://tailwindcss.com) es un utility-first CSS Framework que permite crear aplicaciones y sitios web de manera muy eficiente y con rapidez, estas fueron algunas de las razones por las que adopte tailwind como herramienta.
-- **Documentación de calidad:** Esta provee todo la información necesaria para consultarla en todo momento y de facil acceso.
+[TailwindCSS](https://tailwindcss.com) es un utility-first CSS Framework que permite producir aplicaciones y sitios web de manera muy eficiente y con rapidez, estas fueron algunas de las razones por las que adopte tailwind como herramienta.
+- **Documentación de calidad:** Esta provee toda la información necesaria para consultarla en todo momento y de fácil acceso.
 - **Hay ejemplos sobre como usar Tailwind en HTML, React, etc.**
 - **TailwindCSS IntelliSense:** Su autocompletado ayuda mucho a reducir la cantidad de veces que debes consultar a la documentación para buscar la clase que necesitas.
 
 Anteriormente, al trabajar con archivos de CSS independientes o herramientas CSS-in-JS significaba:
-- Tener que nombrar las clases o incluso tener que usar una metodologia de `naming` para definirlas, por ejemplo, usando la metodología [BEM](https://en.bem.info/methodology/css/#naming).
+- Tener que nombrar las clases o incluso tener que utilizar una metodologia de `naming` para definirlas, por ejemplo, con la metodología [BEM](https://en.bem.info/methodology/css/#naming).
 - Tener estilos repetitivos en cada uno de los elementos que se crean y así tener código CSS sin usar en muchas ocasiones.
-- Como tener un tamaño de estilos muy grande y optar por herramientas como Sass para darle una mejor estructura.
+- Conservar un tamaño de estilos muy grande y optar por herramientas como Sass para darle una mejor estructura.
+
+### Vercel
+Para abordar este punto, tenemos muchas herramientas que le hacen frente para el despliegue de aplicaciones, tales como Netlify, CloudFlare Pages, GitHub Pages, solo por mencionar algunas. Sin embargo, debido a la filosofía que ha tenido de proveer herramientas a los desarrolladores para hacer la web mejor, es la herramienta perfecta para mi proyecto.
+
+He venido usándola desde antes de que cambiaran su nombre, cuando aún eran `Zeit`. Siempre brindando la mejor experiencia para desplegar tus proyectos out-the-box. Además, de que puedo publicar rápidamente cualquier cambio gracias a su integración con [GitHub](https://vercel.com/docs/git/vercel-for-github), ya que cada que haga un push, un pull request, etc., este iniciara nuevamente su despliegue.
+
+## Diseño
+El enfoque principal de mi sitio web es compartir mis experiencias como desarrollador, manager y sobre como construir en público ([#buildinpublic](https://twitter.com/hashtag/buildinpublic?src=hashtag_click)). Por lo que el contenido como tutoriales, ejercicios, etc., no son el objetivo principal en mi sitio web, para ello cuento con otro espacio para hacerlo, en este caso mi proyecto personal llamado [Dímelo en Código](https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ).
+
+<Image
+  width={976}
+  height={580}
+  src="/static/images/como-he-construido-mi-sitio-web-con-nextjs/design-proposal-thumb.png"
+  caption="Primera propuesta de diseño" />
+
+<Image
+  width={976}
+  height={580}
+  src="/static/images/como-he-construido-mi-sitio-web-con-nextjs/banner.png"
+  caption="Propuesta final de diseño" />
+
+Además, también este espacio servirá como un lugar donde publicaré mis trofeos (proyectos destacados en los que he trabajado) y experimentos con los que tuve la oportunidad de poner a prueba mis conocimientos técnicos.
+
+Cabe destacar que el diseño de interfaces no es mi rubro principal, sin embargo, durante muchos años he disfrutado aprender sobre el diseño de productos digitales que decidí incursionarme al mundo del UX/UI, por lo que este sitio web es parte de una suma de aprendizajes en estos temas. Si puedes observar, parte fundamental de mi sitio es mantenerlo limpio, claro y conciso en lo que quiero dar a conocer a diferentes espectadores, desde personas que gustan de contratar mis servicios hasta empleadores que buscan reclutarme a con sus empresas.
+
+<Image
+  width={976}
+  height={580}
+  src="/static/images/como-he-construido-mi-sitio-web-con-nextjs/coursely-platform-thumb.png"
+  caption="Interfaz para una aplicación de cursos on-demand (@coderdiaz en Dribbble)" />
+
+Técnicamente, está hecho para que el contenido pueda ser digerido por personas que tienen poco o mucho tiempo y  también he añadido algunos elementos visuales que capturen la emoción del espectador para que esto pueda hacer la diferencia.
+
+## ¿Qué sigue?
+Quiero que este sea un espacio donde pueda crecer, y con suerte ayude a muchos en su carrera. Todavía hay mucho camino por delante por hacer y espero tener algunas iteraciones más adelante.
+
+¿El sitio web está terminado? La verdad es que no. Todavía hay muchas cosas por hacer, pero por ahora estoy feliz con el resultado. Y eso es lo bonito de esto, siempre habrá algo que deba evolucionar para que logres eso que buscas que sea, recuerda, iterar es parte esencial en la construcción de un buen producto.
+
+Si tienes alguna pregunta, comentario o sugerencia, no dudes en comunicarte conmigo a través de [Twitter](https://twitter.com/coderdiaz/) o [GitHub](https://github.com/coderdiaz/website/). Me encantaría poder charlar contigo.

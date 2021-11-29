@@ -40,7 +40,7 @@ export default function HomePageLayout({ work, posts }: Props) {
                 Un <span className="text-orange-600 font-semibold">ingeniero de software</span> que diseña y construye productos, y enseña en Ciudad de México.
               </p>
               <p className="leading-relaxed md:text-lg">
-                Interesado en <RainbowHighlight color="#C7D2FE">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FDE68A">usuario/dev</RainbowHighlight>. Me fascina crear herramientas que sean user-friendly, simples y encantadoras. Trabajo como Engineering Manager en <span className="font-semibold">Bedu</span> — con un enfoque en mejorar nuestro ecosistema ed-tech y la entrega de proyectos de software. Mi objetivo principal es crear <RainbowHighlight color="#BAE6FD">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
+                Interesado en <RainbowHighlight color="#C7D2FE">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FDE68A">usuario/dev</RainbowHighlight>. Me fascina crear herramientas que sean user-friendly, simples y encantadoras. Mi objetivo principal es crear <RainbowHighlight color="#BAE6FD">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
               </p>
               <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#A7F3D0">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
             </div>
@@ -51,12 +51,12 @@ export default function HomePageLayout({ work, posts }: Props) {
               </a>
               <a href="https://twitter.com/coderdiaz/" target="_blank" rel="noopener noreferrer" className="py-5 px-6 flex items-center space-x-3 font-semibold text-gray-900 bg-gray-100 hover:bg-gray-200 md:bg-transparent md:hover:bg-gray-100 rounded-lg">
                 <Twitter className="w-5 h-5" />
-                <span>Sígueme</span>
+                <span>Sígueme en twitter</span>
               </a>
             </div>
           </RoughNotationGroup>
         </Container>
-        <section className="py-6 md:py-8 lg:py-20">
+        <section className="py-6 md:py-8 lg:pt-20 lg:pb-11">
           <Container className="max-w-screen-lg">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
               <h2 className="text-2xl font-bold">Vídeos Destacados</h2>
