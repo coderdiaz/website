@@ -6,6 +6,7 @@ import type { PageProps } from '@lib/types'
 import components from '@components/MDXComponents'
 import Container from '@components/partials/Container'
 import Avatar from '@assets/images/avatar.png'
+import Meta from '@components/partials/Meta'
 
 type Props = {} & PageProps
 
@@ -14,6 +15,11 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
 
   return (
     <>
+      <Meta meta={{
+        title: frontmatter.meta.title,
+        description: frontmatter.meta.description,
+        image: frontmatter.meta.image,
+      }} />
       <section className="pt-8 pb-14 md:py-14">
         <Container className="max-w-3xl">
           <article>
