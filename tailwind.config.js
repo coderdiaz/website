@@ -93,10 +93,12 @@ module.exports = {
               borderBottomColor: theme('colors.gray.200')
             },
             code: {
-              backgroundClip: 'text',
-              backgroundImage: 'linear-gradient(to top right, #E11D48, #EA580C)',
-              color: 'transparent',
+              color: '#E11D48',
+              background: '#f1f1f1',
+              padding: '3px 6px',
+              borderRadius: '2px'
             },
+            'code::before, code::after': { display: 'none', content: '""' },
             pre: { backgroundColor: theme('colors.gray.50') },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false

@@ -74,7 +74,7 @@ El sitio web ya se encuentra construido usando `Next.js` el cual nos brinda herr
 ### De server side a static generation
 Dado que la información de las páginas no cambia con frecuencia, todas las páginas están pre-generadas y servidas estáticamente. En ciertos intervalos, los datos se revalidan con el CMS y se actualizan en segundo plano, si es necesario.
 
-Anteriormente, al estar usando `server-side rendering` debíamos esperar a que la solicitud a nuestra API resuelva con la información antes de continuar con el proceso de rendering, lo cual provoca que la métrica `Total Blocking Time (TBT)` se vea afectada debido a esa espera.
+Anteriormente, al estar usando `Server Side Rendering` debíamos esperar a que la solicitud a nuestra API resuelva con la información antes de continuar con el proceso de rendering, lo cual provoca que la métrica `Total Blocking Time (TBT)` se vea afectada debido a esa espera.
 
 <Image
   width={976}
