@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/vue-status-indicator",
+      "destination": "https://github.com/coderdiaz/vue-status-indicator",
+      "permanent": false
+    }
+  ]
 }
