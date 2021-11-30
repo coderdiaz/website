@@ -65,17 +65,14 @@ module.exports = {
           css: {
             color: theme('colors.gray.800'),
             lineHeight: lineHeight[8],
-            '.tech-stack p': {
-              margin: 0,
-            },
+            '.tech-stack p': { margin: 0 },
             a: {
-              color: theme('colors.orange.600'),
-              boxShadow: 'inset 0 -0.125em 0 0 #f7ccb5fa, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
+              backgroundClip: 'text',
+              backgroundImage: 'linear-gradient(to top right, #E11D48, #EA580C)',
+              color: 'transparent',
+              boxShadow: 'inset 0 -0.125em 0 0 #EA580C45, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
               textDecoration: 'none',
-              '&:hover': {
-                color: theme('colors.orange.700')
-              },
-              code: { color: theme('colors.orange.400') }
+              code: { color: theme('colors.rose.400') }
             },
             'h2, h3, h4': {
               'scroll-margin-top': spacing[32],
@@ -84,7 +81,11 @@ module.exports = {
             thead: {
               borderBottomColor: theme('colors.gray.200')
             },
-            code: { color: theme('colors.orange.500') },
+            code: {
+              backgroundClip: 'text',
+              backgroundImage: 'linear-gradient(to top right, #E11D48, #EA580C)',
+              color: 'transparent',
+            },
             pre: { backgroundColor: theme('colors.gray.50') },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false
