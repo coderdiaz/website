@@ -11,9 +11,9 @@ export default function Footer() {
   const { data } = useSWR('/api/now-playing', fetcher);
 
   return (
-    <footer>
+    <footer className="py-6 md:pt-14 md:pb-8">
       <Container className="max-w-screen-lg">
-        <div className="flex flex-col space-y-6 py-4 md:pt-12 md:pb-8">
+        <div className="flex flex-col space-y-6 py-4">
           <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start space-y-6 md:space-y-0">
             <div className="flex items-center space-x-3">
               <Headphones className="w-5 h-5 text-green-600" />
@@ -28,13 +28,12 @@ export default function Footer() {
               </div>
             </div>
           </div>
-        </div>
-      </Container>
-      <section className="bg-black text-gray-300 mt-8 md:mt-4 py-12">
-        <Container className="max-w-screen-lg">
           <div className="relative">
+            <div className="absolute inset-0 flex items-center" aria-hidden="true">
+              <div className="w-full border-t border-gray-200"></div>
+            </div>
             <div className="relative flex justify-center">
-              <span className="absolute -top-14 md:-top-16 bg-black p-3 text-orange-300 rounded-full">
+              <span className="bg-white px-2 text-gray-500">
                 <Isotype className="w-6 h-6" />
               </span>
             </div>
@@ -78,8 +77,8 @@ export default function Footer() {
               </nav>
             </div>
           </div>
-        </Container>
-      </section>
+        </div>
+      </Container>
     </footer>
   )
 }

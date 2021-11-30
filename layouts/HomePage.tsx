@@ -25,7 +25,7 @@ export default function HomePageLayout({ work, posts }: Props) {
   return (
     <>
       <Meta />
-      <section className="py-5 mb-4 md:mb-6 lg:mb-11">
+      <section className="relative py-5 mb-4 md:mb-6 lg:mb-11">
         <Container className="max-w-screen-lg">
           <div className="mb-1">
             <Image
@@ -36,18 +36,18 @@ export default function HomePageLayout({ work, posts }: Props) {
               alt="Avatar de Javier Diaz" />
           </div>
           <RoughNotationGroup show={true}>
-            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-6">Hey! Me llamo Javier.</h1>
+            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-6">Hey! Soy Javier.</h1>
             <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6">
               <p className="leading-relaxed md:text-lg">
-                Soy un <span className="text-orange-600 font-semibold">ingeniero de software</span> que diseña y construye productos digitales viviendo en Ciudad de México.
+                Soy un <span className="bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-700 font-medium">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
               </p>
               <p className="leading-relaxed md:text-lg">
-                Interesado en <RainbowHighlight color="#C7D2FE">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FDE68A">usuario/dev</RainbowHighlight>. Me fascina crear herramientas que sean user-friendly, simples y encantadoras. Mi objetivo principal es crear <RainbowHighlight color="#BAE6FD">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
+                Interesado en <RainbowHighlight color="#C7D2FE">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FDE68A">usuario/dev</RainbowHighlight>. Me encanta crear productos digitales que sean amigables con el usuario, simples y visualmente atractivos. Mi principal objetivo es crear <RainbowHighlight color="#BAE6FD">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
               </p>
               <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#A7F3D0">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
             </div>
             <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
-              <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-orange-600 hover:bg-orange-500 rounded-lg">
+              <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-600 to-orange-600 rounded-lg">
                 <MailIcon className="w-5 h-5" />
                 <span>Ponte en contacto</span>
               </a>
