@@ -55,7 +55,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
             <div className="hidden md:grid grid-cols-8 lg:grid-cols-10 gap-3 md:col-span-7 lg:col-span-7">
               <div className="relative col-span-8 md:col-span-10 row-span-2">
                 <Image
-                  className="rounded-lg"
+                  className="rounded-md"
                   layout="fill"
                   objectFit="cover"
                   objectPosition="top left"
@@ -63,16 +63,18 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
               </div>
               <div className="relative col-span-10 lg:col-span-5 row-span-2">
                 <Image
-                  className="rounded-lg"
+                  className="rounded-md"
                   layout="fill"
                   objectFit="cover"
+                  objectPosition="left"
                   src={firstProject.frontmatter.images[1]} />
               </div>
               <div className="hidden lg:flex relative col-span-5 row-span-2">
                 <Image
-                  className="rounded-lg"
+                  className="rounded-md"
                   layout="fill"
                   objectFit="cover"
+                  objectPosition="left"
                   src={firstProject.frontmatter.images[2]} />
               </div>
             </div>
