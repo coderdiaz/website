@@ -21,7 +21,7 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
         description: frontmatter.meta.description,
         image: frontmatter.meta.image,
       }} />
-      <section className="pt-8 pb-14 md:py-14">
+      <section className="pt-2 pb-14 md:py-14">
         <Container className="max-w-3xl">
           <article>
             <h1 className="font-bold text-3xl md:text-4xl leading-tight mb-4">{frontmatter.title}</h1>
@@ -36,7 +36,7 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
                   dateTime={showDate(frontmatter.published).iso}
                   className="inline-block">{showDate(frontmatter.published).formatted}</time>
               </div>
-              <span className="inline-block">{Math.ceil(frontmatter.readingTime.time/1000/60)} min. de lectura</span>
+              <span className="hidden md:inline-block">{Math.ceil(frontmatter.readingTime.time/1000/60)} min. de lectura</span>
             </div>
             <div className="relative lg:-mx-10 mb-6 md:mb-10">
               <Image

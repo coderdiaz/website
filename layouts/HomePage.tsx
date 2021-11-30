@@ -42,9 +42,9 @@ export default function HomePageLayout({ work, posts }: Props) {
                 Soy un <span className="bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-700 font-medium">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
               </p>
               <p className="leading-relaxed md:text-lg">
-                Interesado en <RainbowHighlight color="#C7D2FE">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FDE68A">usuario/dev</RainbowHighlight>. Me encanta crear productos digitales que sean amigables con el usuario, simples y visualmente atractivos. Mi principal objetivo es crear <RainbowHighlight color="#BAE6FD">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
+                Interesado en <RainbowHighlight color="#818CF8">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FBBF24">usuario/dev</RainbowHighlight>. Me encanta crear productos digitales que sean amigables con el usuario, simples y visualmente atractivos. Mi principal objetivo es crear <RainbowHighlight color="#4ADE80">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
               </p>
-              <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#A7F3D0">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
+              <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#2DD4BF">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
             </div>
             <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
               <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-600 to-orange-600 rounded-lg">
