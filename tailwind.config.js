@@ -115,7 +115,10 @@ module.exports = {
         '.bg-blobs': {
           backgroundImage: 'radial-gradient(#ededed 1px, #FFF 1px)',
           backgroundSize: '20px 20px'
-        }
+        },
+        '.rough-annotation': {
+          zIndex: '-1',
+        },
       }
 
       addUtilities(classes)
