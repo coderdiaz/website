@@ -1,4 +1,4 @@
-import { Aperture, ArrowRight, Box, Columns, Dribbble, GitHub, Linkedin, MessageSquare, Twitter, Users } from 'react-feather'
+import { Aperture, ArrowRight, Box, Columns, Dribbble, GitHub, Linkedin, MessageSquare, Twitter } from 'react-feather'
 
 import Container from '@components/partials/Container'
 import BaseLayout from '@layouts/BaseLayout'
