@@ -15,17 +15,17 @@ article a[href*="//"]::after {
 }
 
 .token.comment {
-  @apply text-gray-500;
+  @apply text-gray-400;
 }
 
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  @apply text-gray-900 dark:text-gray-300;
+  @apply text-gray-200;
 }
 
 .token.punctuation {
-  @apply text-gray-900 dark:text-gray-300;
+  @apply text-gray-200;
 }
 
 .token.property,
@@ -35,7 +35,7 @@ article a[href*="//"]::after {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  @apply text-green-600;
+  @apply text-green-400;
 }
 
 .token.selector,
@@ -44,7 +44,7 @@ article a[href*="//"]::after {
 .token.char,
 .token.builtin,
 .token.inserted {
-  @apply text-purple-600;
+  @apply text-purple-400;
 }
 
 .token.operator,
@@ -52,29 +52,29 @@ article a[href*="//"]::after {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  @apply text-yellow-600;
+  @apply text-yellow-400;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  @apply text-blue-700;
+  @apply text-blue-300;
 }
 
 .token.function,
 .token.class-name {
-  @apply text-pink-600;
+  @apply text-rose-400 font-semibold;
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-  @apply text-yellow-600;
+  @apply text-yellow-400;
 }
 
 code[class*='language-'],
 pre[class*='language-'] {
-  @apply text-gray-900;
+  @apply text-gray-200;
 }
 
 pre::-webkit-scrollbar {
@@ -84,11 +84,11 @@ pre::-webkit-scrollbar {
 pre {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  @apply border-2 border-gray-600;
+  @apply border-2 border-gray-700;
 }
 
 .rehype-code-title {
-  @apply px-7 py-4 font-mono text-sm font-bold text-gray-100 bg-gray-600 border border-b-0 border-gray-600 rounded-t-lg;
+  @apply px-7 py-2 font-mono text-sm font-bold text-gray-100 bg-gray-700 border border-b-0 border-gray-700 rounded-t-lg;
 }
 
 .rehype-code-title + pre {
