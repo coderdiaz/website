@@ -44,7 +44,8 @@ export default function WorkPost(props: Props) {
           className="w-full h-full rounded-lg"
           src={props.thumbnail}
           layout="fill"
-          objectFit="cover" />
+          objectFit="cover"
+          objectPosition="left" />
       </div>
     </div>
   )
