@@ -2,10 +2,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    {
-      "source": "/vue-status-indicator",
-      "destination": "https://github.com/coderdiaz/vue-status-indicator",
-      "permanent": false
-    }
+    { "source": "/vue-status-indicator", "destination": "https://github.com/coderdiaz/vue-status-indicator", "permanent": false },
+    { "source": "/contact", "destination": "/hire-me", "permanent": true }
   ]
 }
