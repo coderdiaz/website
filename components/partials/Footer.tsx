@@ -56,7 +56,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact/">
+                    <Link href="/hire-me/">
                       <a>Contacto</a>
                     </Link>
                   </li>
