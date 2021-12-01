@@ -74,7 +74,7 @@ article a[href*="//"]::after {
 
 code[class*='language-'],
 pre[class*='language-'] {
-  @apply text-gray-900 dark:text-gray-50;
+  @apply text-gray-900;
 }
 
 pre::-webkit-scrollbar {
@@ -88,7 +88,7 @@ pre {
 }
 
 .rehype-code-title {
-  @apply px-5 py-3 font-mono text-sm font-bold text-gray-100 bg-gray-600 border border-b-0 border-gray-600 rounded-t-lg;
+  @apply px-7 py-4 font-mono text-sm font-bold text-gray-100 bg-gray-600 border border-b-0 border-gray-600 rounded-t-lg;
 }
 
 .rehype-code-title + pre {
@@ -96,5 +96,5 @@ pre {
 }
 
 .highlight-line {
-  @apply block px-4 -mx-4 bg-gray-100 border-l-4 border-blue-500 dark:bg-gray-800;
+  @apply block px-4 -mx-4 bg-gray-100 border-l-4 border-blue-500;
 }

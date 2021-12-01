@@ -99,7 +99,7 @@ module.exports = {
               borderRadius: '2px'
             },
             'code::before, code::after': { display: 'none', content: '""' },
-            pre: { backgroundColor: theme('colors.gray.50') },
+            pre: { padding: '24px 28px' },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false
           }
