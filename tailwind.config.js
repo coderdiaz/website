@@ -13,6 +13,8 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
+        116: '29rem',
+        120: '30rem',
         144: '36rem',
       },
       boxShadow: {
@@ -93,8 +95,8 @@ module.exports = {
               borderBottomColor: theme('colors.gray.200')
             },
             code: {
-              color: '#E11D48',
-              background: '#f1f1f1',
+              color: theme('colors.rose.700'),
+              background: theme('colors.gray.100'),
               padding: '3px 6px',
               borderRadius: '2px'
             },

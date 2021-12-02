@@ -18,10 +18,10 @@ export const formatDate = (date: string | number | Date, formatStyle: string) =>
   }
 }
 
-export const showDate = (date: string) => {
+export const showDate = (date: string, format: string = 'LLLL dd, yyyy') => {
   // https://stackoverflow.com/questions/48172772/time-zone-issue-involving-date-fns-format
   const dt = new Date(date)
   const dtDateOnly = new Date(dt.valueOf() + dt.getTimezoneOffset() * 60 * 1000)
 
-  return formatDate(dtDateOnly, 'LLLL dd, yyyy')
+  return formatDate(dtDateOnly, format)
 }
