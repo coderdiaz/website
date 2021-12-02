@@ -95,8 +95,8 @@ module.exports = {
               borderBottomColor: theme('colors.gray.200')
             },
             code: {
-              color: theme('colors.rose.700'),
-              background: theme('colors.gray.100'),
+              color: '#cd4045',
+              background: 'rgba(255, 116, 116, 0.075)',
               padding: '3px 6px',
               borderRadius: '2px'
             },

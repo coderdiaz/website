@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
-import { ArrowUpRight } from 'react-feather'
 
 import type { PageProps } from '@lib/types'
 import components from '@components/MDXComponents'
