@@ -52,7 +52,7 @@ const ProjectPageLayout = ({ code, frontmatter }: Props) => {
               </div>
               <div className="flex flex-col space-y-2">
                 <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Enlaces</span>
-                { frontmatter.links.map((item: { label: string, href: string }, index: number) => <a key={index} href={item.href} className="bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-700 font-medium mb-6 items-center shadow-link" target="_blank" rel="noopener noreferrer">
+                { frontmatter.links.map((item: { label: string, href: string }, index: number) => <a key={index} href={item.href} className="bg-clip-text text-transparent bg-gradient-to-br from-rose-700 to-orange-700 font-medium mb-6 items-center shadow-link" target="_blank" rel="noopener noreferrer">
                   {item.label}
                 </a>) }
               </div>

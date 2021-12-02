@@ -39,7 +39,7 @@ export default function HomePageLayout({ work, posts }: Props) {
             <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-6">Hey! Soy Javier.</h1>
             <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6">
               <p className="leading-relaxed md:text-lg">
-                Soy un <span className="bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-700 font-medium">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
+                Soy un <span className="bg-clip-text text-transparent bg-gradient-to-br from-rose-700 to-orange-700 font-medium">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
               </p>
               <p className="leading-relaxed md:text-lg">
                 Interesado en <RainbowHighlight color="#A7F3D0">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FEF08A">usuario/dev</RainbowHighlight>. Me encanta crear productos digitales que sean amigables con el usuario, simples y visualmente atractivos. Mi objetivo es crear <RainbowHighlight color="#D9F99D">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
@@ -47,7 +47,7 @@ export default function HomePageLayout({ work, posts }: Props) {
               <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#FEF08A">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
             </div>
             <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
-              <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-600 to-orange-600 hover:to-orange-500 rounded-lg">
+              <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-gradient-to-br from-rose-600 to-orange-600 hover:to-orange-500 rounded-lg">
                 <MailIcon className="w-5 h-5" />
                 <span>Ponte en contacto</span>
               </a>
