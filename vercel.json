@@ -4,7 +4,7 @@
   "redirects": [
     { "source": "/vue-status-indicator", "destination": "https://github.com/coderdiaz/vue-status-indicator", "permanent": false },
     { "source": "/vue-tiny-pagination", "destination": "https://github.com/coderdiaz/vue-tiny-pagination", "permanent": false },
-    { "source": "/contact", "destination": "/hire-me", "permanent": true },
+    { "source": "/contact", "destination": "/contacto", "permanent": true },
     { "source": "/hire-me", "destination": "/contacto", "permanent": true },
     { "source": "/about", "destination": "/sobre-mi", "permanent": true },
     { "source": "/uses", "destination": "/que-uso", "permanent": true }
