@@ -31,7 +31,7 @@ export default function Header() {
                   <div className="w-1 h-1 rounded-full bg-gray-900" />
                 </li>
                 <li>
-                  <Link href="/about/">
+                  <Link href="/sobre-mi/">
                     <a>Acerca de</a>
                   </Link>
                 </li>

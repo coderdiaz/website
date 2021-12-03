@@ -46,7 +46,7 @@ export default function Footer() {
               <nav className="hidden md:inline-block">
                 <ul className="flex items-center space-x-6">
                   <li>
-                    <Link href="/uses/">
+                    <Link href="/que-uso/">
                       <a>Uses</a>
                     </Link>
                   </li>
@@ -56,7 +56,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/hire-me/">
+                    <Link href="/contacto/">
                       <a>Contacto</a>
                     </Link>
                   </li>
