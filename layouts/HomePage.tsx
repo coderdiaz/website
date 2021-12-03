@@ -64,7 +64,7 @@ export default function HomePageLayout({ work, posts }: Props) {
               <h2 className="text-2xl font-bold">Vídeos Destacados</h2>
               <p className="leading-relaxed text-gray-600">Vídeos sobre lo que estoy construyendo y aprendiendo</p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6 mb-4 md:mb-6">
+            <div className="grid md:grid-cols-2 gap-8 mb-4 md:mb-6">
               <Video
                 title="Rediseñando mi portafolio con Figma | Parte 1"
                 summary="En este vídeo, aprenderás junto conmigo a crear tu portafolio usando Figma, donde además te compartiré algunos tips y consideraciones al momento de decidir como diseñarlo."
