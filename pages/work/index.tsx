@@ -15,12 +15,12 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
   return (
     <>
       <Meta meta={{
-        title: 'Mis proyectos — Javier Diaz',
+        title: 'Mis trabajos y proyectos — Javier Diaz',
         description: 'Estos son algunos de los proyectos que he construído o colaborado, aquí te comparto un poco sobre el proceso y decisiones que tome a lo largo del desarrollo',
       }} />
       <section className="pt-8 md:pt-20">
         <Container className="max-w-screen-lg border-b border-gray-200">
-          <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-6 md:mb-16">Proyectos.</h1>
+          <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-6 md:mb-16">Mis trabajos y proyectos.</h1>
           <div className="grid md:grid-cols-12 gap-7 mb-14">
             <div className="md:col-span-5 lg:col-span-5 flex flex-col space-y-8 py-6">
               <div className="flex flex-col space-y-3">
