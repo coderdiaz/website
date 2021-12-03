@@ -8,15 +8,15 @@ export default function HireMePage() {
   return (
     <>
       <Meta meta={{
-        title: 'Contrátame — Javier Diaz',
+        title: 'Ponte en contacto conmigo — Javier Diaz',
         description: 'Hagamos tu idea posible juntos. Me complace responder a tus preguntas, colaborar o chatear si tengo la oportunidad'
       }} />
       <section className="pt-8 pb-14 md:py-14">
         <Container className="max-w-4xl">
           <div className="flex flex-col space-y-2 mb-6">
             <span className="inline-block font-semibold text-gray-600">Haz tu idea posible</span>
-            <h1 className="text-5xl leading-snug font-bold">Contrátame.</h1>
-            <p className="md:text-lg leading-relaxed text-gray-600">No dudes en comunicarte conmigo a través de cualquier medio que encuentres mejor. Me complace responder a tus preguntas, colaborar o chatear si tengo la oportunidad.</p>
+            <h1 className="text-5xl leading-snug font-bold">Ponte en contacto conmigo.</h1>
+            <p className="md:text-lg leading-relaxed text-gray-600">No dudes en comunicarte a través de cualquier medio que encuentres mejor. Me complace responder a tus preguntas, colaborar o chatear si tengo la oportunidad.</p>
           </div>
           <div className="relative mb-12">
             <div className="grid md:grid-cols-2 gap-5">
