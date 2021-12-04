@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { ArrowNarrowRightIcon, MailIcon } from '@heroicons/react/solid'
 import { Twitter } from 'react-feather'
 import { RoughNotationGroup } from 'react-rough-notation'
+import { useKBar } from 'kbar'
 
 import { RainbowHighlight } from '@components/RainbowHighlight'
 import Container from '@components/partials/Container'
@@ -20,6 +21,7 @@ type Props = {
 }
 
 export default function HomePageLayout({ work, posts }: Props) {
+  const { query } = useKBar()
   const [post, ...otherPosts] = posts
 
   return (
@@ -46,7 +48,7 @@ export default function HomePageLayout({ work, posts }: Props) {
               </p>
               <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#FEF08A">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
             </div>
-            <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
+            <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 mb-4 md:mb-6">
               <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-600 to-orange-600 hover:to-orange-500 rounded-lg">
                 <MailIcon className="w-5 h-5" />
                 <span>Ponte en contacto</span>
@@ -55,6 +57,9 @@ export default function HomePageLayout({ work, posts }: Props) {
                 <Twitter className="w-5 h-5" />
                 <span>Sígueme en twitter</span>
               </a>
+            </div>
+            <div className="text-gray-600 hidden md:block">
+              Utiliza <button onClick={query.toggle} style={{ opacity: 1 }} className="inline text-gray-500 hover:text-gray-600 text-sm leading-5 py-0.5 px-1.5 border border-gray-400 hover:border-gray-500 rounded-md"><kbd className="font-sans no-underline">⌘</kbd> <kbd className="font-sans">K</kbd></button> para una mejor experiencia
             </div>
           </RoughNotationGroup>
         </Container>

@@ -1,14 +1,16 @@
 import Link from 'next/link'
-import { Moon, GitHub, Twitter } from 'react-feather'
+import { Moon, GitHub, Twitter, Command } from 'react-feather'
 
 import Container from '@components/partials/Container'
 import Isotype from '@components/partials/Isotype'
+import { useKBar } from 'kbar'
 
 export default function Header() {
+  const { query } = useKBar()
   return (
     <header className="py-8">
       <Container className="relative max-w-screen-lg">
-        <div className="relative z-10 flex justify-between">
+        <div className="relative z-10 items-center flex justify-between">
           <Link href="/">
             <a>
               <Isotype className="w-7 h-7" />
@@ -47,8 +49,11 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
+            <button className="md:hidden outline-none text-gray-600 hover:text-gray-900 p-2 hover:bg-gray-200 focus:bg-gray-200 rounded-lg" onClick={query.toggle}>
+              <Command className="w-6 h-6" />
+            </button>
             <button className="hidden outline-none hover:text-orange-600">
-              <Moon className="w-5 h-5" />
+              <Moon className="w-6 h-6" />
             </button>
           </div>
         </div>
