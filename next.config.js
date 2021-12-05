@@ -1,5 +1,3 @@
-const { withPlausibleProxy } = require('next-plausible')
-
-module.exports = withPlausibleProxy()({
+module.exports = {
   reactStrictMode: true,
-});
+};
