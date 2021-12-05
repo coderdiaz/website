@@ -1,11 +1,11 @@
 import '@styles/global.css'
-import PlausibleProvider from 'next-plausible'
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { KBarProvider } from 'kbar'
 import { FileText, Home, Box, User, Tool, AtSign, Twitter, GitHub, Linkedin, Instagram } from 'react-feather'
 
+import { useAnalytics } from '@lib/analytics'
 import KBarMenu from '@components/KBarMenu'
 
 type NextPageWithLayout = NextPage & {
@@ -17,6 +17,7 @@ type AppPropsWithLayout = AppProps & {
 }
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+  useAnalytics() // Loading fathom-analytics
   const router = useRouter()
   const getLayout = Component.getLayout ?? ((page) => page)
 
@@ -101,12 +102,10 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   ]
   return (
     <>
-      <PlausibleProvider domain="coderdiaz.me">
-        <KBarProvider actions={initialActions}>
-          <KBarMenu />
-          { getLayout(<Component {...pageProps} />) }
-        </KBarProvider>
-      </PlausibleProvider>
+      <KBarProvider actions={initialActions}>
+        <KBarMenu />
+        { getLayout(<Component {...pageProps} />) }
+      </KBarProvider>
     </>
   )
 }
