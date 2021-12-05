@@ -53,11 +53,11 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
                 </div>
               </div>
             </div>
-            <div className="relative lg:-mx-10 mb-6 md:mb-10">
+            <div className="relative lg:-mx-20 mb-6 md:mb-10">
               <Image
                 className="w-full h-full rounded-lg"
-                width={784}
-                height={472}
+                width={976}
+                height={580}
                 src={frontmatter.image} />
             </div>
             <p className="leading-loose italic mb-6 md:mb-10">
