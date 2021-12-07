@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { ArrowRight } from 'react-feather'
+import { ArrowUpRight } from 'react-feather'
+import { ArrowNarrowRightIcon } from '@heroicons/react/solid'
 import type { InferGetStaticPropsType } from 'next'
 
 import Container from '@components/partials/Container'
@@ -21,41 +22,38 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
       <section className="pt-8 md:pt-20">
         <Container className="max-w-4xl border-b border-gray-200">
           <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-2">Proyectos.</h1>
-          <p className="leading-7 text-xl text-gray-600 mb-6 md:mb-16">Estos son algunos de los proyectos que he construído o colaborado.</p>
-          <div className="grid md:grid-cols-12 gap-10 mb-14">
-            <div className="md:col-span-6 flex flex-col space-y-5 lg:mr-4">
-              <div className="flex flex-col space-y-3">
-                <CustomLink href={`/work/${firstProject.frontmatter.slug}`}>
-                  <h2 className="font-bold text-2xl text-gray-900">{firstProject.frontmatter.title}</h2>
+          <p className="leading-7 text-xl text-gray-600 mb-6 md:mb-16">Estos son algunos de los proyectos que he construído o en los que he colaborado.</p>
+          <div className="grid lg:grid-cols-9 gap-5 mb-16">
+            <div className="lg:col-span-5 flex flex-col space-y-5">
+              <div className="flex flex-col space-y-2">
+                <CustomLink href={firstProject.frontmatter.href}>
+                  <h3 className="font-bold text-2xl">{firstProject.frontmatter.title}</h3>
                 </CustomLink>
-                <p className="text-gray-700 leading-7">{firstProject?.frontmatter.excerpt}</p>
-                {/* Featured mobile image */}
-                <div className="block md:hidden relative h-64">
-                  <CustomLink href={`/work/${firstProject.frontmatter.slug}`}>
-                    <Image
-                      className="rounded-lg"
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
-                      src={firstProject.frontmatter.images[0]} />
-                  </CustomLink>
+                <div className="flex space-x-2">
+                  {firstProject.frontmatter.tech.map((item, i: number) => (
+                    <span key={i} className="bg-gray-200 text-sm px-3 py-1 rounded-md">{item}</span>
+                  ))}
                 </div>
-                {/* End featured mobile image */}
               </div>
-              <CustomLink href={`/work/${firstProject.frontmatter.slug}`} className="py-5 px-6 lg:w-72 flex items-center justify-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-600 to-orange-600 hover:to-orange-500 rounded-lg">
-                <span>Leer caso de estudio</span>
-                <ArrowRight className="w-5 h-5" />
-              </CustomLink>
+              <p className="leading-7 text-gray-800">{firstProject.frontmatter.excerpt}</p>
+              <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
+                <CustomLink className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-600 to-orange-600 hover:to-orange-500 rounded-lg" href={`/work/${firstProject.frontmatter.slug}`}>
+                  <span>Leer caso de estudio</span>
+                  <ArrowNarrowRightIcon className="w-6 h-6" />
+                </CustomLink>
+                {firstProject.frontmatter.links[0]?.href ? <a href={firstProject.frontmatter.links[0].href} target="_blank" className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-lg">
+                  <span>Ver en vivo</span>
+                  <ArrowUpRight className="w-6 h-6" />
+                </a> : null}
+              </div>
             </div>
-            <div className="hidden md:flex md:items-center md:col-span-6">
-              <div className="relative w-full h-full">
-                <Image
-                  className="rounded-md"
-                  layout="fill"
-                  objectFit="cover"
-                  objectPosition="top left"
-                  src={firstProject.frontmatter.images[0]} />
-              </div>
+            <div className="hidden md:inline-block lg:col-span-4 relative w-full h-64 md:h-96 lg:h-full">
+              <Image
+                className="w-full h-full rounded-lg"
+                src={firstProject.frontmatter.images[0]}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="left" />
             </div>
           </div>
         </Container>
