@@ -48,7 +48,7 @@ export default function WritingIndexPage({ posts }: InferGetStaticPropsType<type
         </Container>
       </section>
       <section className="py-14">
-        <Container className="max-w-screen-lg">
+        <Container className="max-w-4xl">
           <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
             {otherPosts.map((post, index: number) => 
               <PostWithImage

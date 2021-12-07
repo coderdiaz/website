@@ -25,7 +25,7 @@ export async function bundler(source: string, slug: string): Promise<BundlerResu
       wordCount: source.split(/\s+/gu).length,
       readingTime: readingTime(source),
       slug: slug.replace('.mdx', ''),
-      excerpt: truncate(frontmatter.summary, 180),
+      excerpt: truncate(frontmatter.summary, 160),
       ...frontmatter,
     },
   }

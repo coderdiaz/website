@@ -33,8 +33,8 @@ export default function HomePageLayout({ work, posts }: Props) {
             <Image
               className="rounded-full"
               src={Avatar}
-              width={56}
-              height={56}
+              width={64}
+              height={64}
               quality={100}
               alt="Avatar de Javier Diaz"
               priority />

@@ -39,6 +39,7 @@ module.exports = {
       colors: {
         rose: colors.rose,
         orange: colors.orange,
+        cyan: colors.cyan,
       },
       animation: {
         blob: 'blob 10s infinite',
