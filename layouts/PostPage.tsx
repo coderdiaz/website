@@ -28,7 +28,7 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
             <div className="hidden md:flex justify-between">
               <div className="flex space-x-4 items-center text-gray-700 mb-6 md:mb-10">
                 <div className="flex items-center space-x-2">
-                  <Image width={24} height={24} src={Avatar} alt="Avatar de Javier Diaz" />
+                  <Image className="rounded-full" width={24} height={24} src={Avatar} alt="Avatar de Javier Diaz" />
                   <span className="text-gray-800 font-medium">Javier Diaz</span>
                 </div>
                 <div className="w-1 h-1 rounded-full bg-gray-900" />
@@ -53,6 +53,9 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
                 </div>
               </div>
             </div>
+            <p className="leading-loose italic mb-6 md:mb-10">
+              <span className="pr-1 md:pr-2 uppercase text-sm tracking-widest not-italic font-bold bg-clip-text text-transparent bg-gradient-to-br from-rose-600 to-orange-600">Resumen »</span> {frontmatter.summary}
+            </p>
             <div className="relative lg:-mx-20 mb-6 md:mb-10">
               <Image
                 className="w-full h-full rounded-lg"
@@ -60,9 +63,6 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
                 height={580}
                 src={frontmatter.image} />
             </div>
-            <p className="leading-loose italic mb-6 md:mb-10">
-              <span className="pr-1 md:pr-2 uppercase text-sm tracking-widest not-italic font-bold bg-clip-text text-transparent bg-gradient-to-br from-rose-600 to-orange-600">Resumen »</span> {frontmatter.summary}
-            </p>
             <div className="prose max-w-none">
               <Component components={{
                 ...components
