@@ -35,7 +35,9 @@ export default function HomePageLayout({ work, posts }: Props) {
               src={Avatar}
               width={56}
               height={56}
-              alt="Avatar de Javier Diaz" />
+              quality={100}
+              alt="Avatar de Javier Diaz"
+              priority />
           </div>
           <RoughNotationGroup show={true}>
             <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-6">Hey! Soy Javier.</h1>
