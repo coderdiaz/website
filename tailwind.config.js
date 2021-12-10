@@ -3,13 +3,12 @@ const plugin = require('tailwindcss/plugin')
 const { spacing, lineHeight } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [
+  content: [
     './pages/**/*.{ts,tsx,mdx}',
     './components/**/*.{ts,tsx,mdx}',
     './layouts/*.{ts,tsx,mdx}',
     './content/**/*.mdx'
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       spacing: {
