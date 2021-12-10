@@ -11,7 +11,6 @@
   "dependencies": {
     "@heroicons/react": "^1.0.5",
     "@tailwindcss/typography": "^0.5.0",
-    "classnames": "^2.3.1",
     "clsx": "^1.1.1",
     "date-fns": "^2.26.0",
     "date-fns-tz": "^1.1.6",
@@ -30,7 +29,6 @@
     "swr": "^1.0.1"
   },
   "devDependencies": {
-    "@types/classnames": "^2.3.1",
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.34",
     "autoprefixer": "^10.4.0",
