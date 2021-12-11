@@ -1,3 +1,6 @@
+import Image from 'next/image'
+
+import Background from '@assets/images/background.png'
 import Container from '@components/partials/Container'
 import Footer from '@components/partials/Footer'
 import Header from '@components/partials/Header'
@@ -10,13 +13,12 @@ export default function BaseLayout({ children }: LayoutProps) {
   return (
     <>
       <Header />
+      <div className="absolute -z-1 -top-14 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
+        <div className="w-[108rem] flex-none flex justify-end opacity-80 mr-[-24rem]">
+          <Image className="w-[71.75rem] flex-none max-w-none" src={Background} />
+        </div>
+      </div>
       <main className="relative">
-        <Container className="hidden md:block relative top-0 max-w-screen-lg overflow-x-none opacity-90 -z-1">
-          {/* Blobs */}
-          <div className="absolute -top-16 z-0 -left-8 w-20 h-20 md:w-96 md:h-96 bg-yellow-200 rounded-full opacity-10 mix-blend-multiply filter blur-2xl animate-blob" />
-          <div className="absolute -top-16 z-0 -right-8 w-20 h-20 md:w-96 md:h-96 bg-purple-500 rounded-full opacity-10 mix-blend-multiply filter blur-2xl animate-blob animation-delay-2000" />
-          <div className="absolute top-10 -ml-48 z-0 left-1/2 w-20 h-20 md:w-96 md:h-96 bg-pink-300 rounded-full opacity-10 mix-blend-multiply filter blur-2xl animate-blob animation-delay-4000" />
-        </Container>
         {children}
       </main>
       <Footer />
