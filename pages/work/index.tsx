@@ -23,7 +23,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
         <Container className="max-w-4xl border-b border-gray-200">
           <h1 className="font-extrabold text-4xl md:text-5xl leading-tight mb-2">Proyectos.</h1>
           <p className="leading-7 text-xl text-gray-600 mb-6 md:mb-16">Estos son algunos de los proyectos que he construído o en los que he colaborado.</p>
-          <div className="grid lg:grid-cols-9 gap-5 mb-16">
+          <div className="grid lg:grid-cols-9 gap-7 mb-16">
             <div className="lg:col-span-5 flex flex-col space-y-5">
               <div className="flex flex-col space-y-2">
                 <CustomLink href={firstProject.frontmatter.href}>
@@ -41,7 +41,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
                   <span>Leer caso de estudio</span>
                   <ArrowNarrowRightIcon className="w-6 h-6" />
                 </CustomLink>
-                {firstProject.frontmatter.links[0]?.href ? <a href={firstProject.frontmatter.links[0].href} target="_blank" className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-lg">
+                {firstProject.frontmatter.links[0]?.href ? <a href={firstProject.frontmatter.links[0].href} target="_blank" className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold bg-gray-100 hover:bg-gray-50 text-black rounded-lg">
                   <span>Ver en vivo</span>
                   <ArrowUpRight className="w-6 h-6" />
                 </a> : null}

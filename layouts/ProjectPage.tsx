@@ -41,23 +41,23 @@ const ProjectPageLayout = ({ code, frontmatter }: Props) => {
             <p className="leading-loose mb-6 md:mb-10">{frontmatter.summary}</p>
             <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-20 mb-6 md:mb-10">
               <div className="flex flex-col space-y-2">
-                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Tipo de proyecto</span>
+                <span className="inline-block font-semibold text-black">Tipo de proyecto</span>
                 <nav>
-                  <ul className="flex flex-col space-y-2">
+                  <ul className="flex flex-col space-y-2 text-gray-800">
                     { frontmatter.type.map((item: string, index: number) => <li key={index}>{item}</li>) }
                   </ul>
                 </nav>
               </div>
               <div className="flex flex-col space-y-2">
-                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Stack Tecnológico</span>
+                <span className="inline-block font-semibold text-black">Stack Tecnológico</span>
                 <nav>
-                  <ul className="flex flex-col space-y-2">
+                  <ul className="flex flex-col space-y-2 text-gray-800">
                     { frontmatter.tech.map((item: string, index: string) => <li key={index}>{item}</li>) }
                   </ul>
                 </nav>
               </div>
               <div className="flex flex-col space-y-2">
-                <span className="inline-block font-semibold uppercase text-sm tracking-widest text-gray-500">Enlaces</span>
+                <span className="inline-block font-semibold text-black">Enlaces</span>
                 <div className="flex">
                   { frontmatter.links.map((item: { label: string, href: string }, index: number) => <a key={index} href={item.href} className="bg-clip-text text-transparent bg-gradient-to-br from-rose-700 to-orange-700 font-medium mb-6 items-center shadow-link" target="_blank" rel="noopener noreferrer">
                     {item.label}
