@@ -27,7 +27,7 @@ export default function WorkPost(props: Props) {
             ))}
           </div>
         </div>
-        <p className="leading-7 text-gray-800">{props.description}</p>
+        <p className="leading-7 text-gray-700">{props.description}</p>
         <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
           <CustomLink className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-600 to-orange-600 hover:to-orange-500 rounded-lg" href={props.href}>
             <span>Leer caso de estudio</span>

@@ -41,9 +41,9 @@ export default function HomePageLayout({ work, posts }: Props) {
           </div>
           <RoughNotationGroup show={true}>
             <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-4">Hey! Soy Javier.</h1>
-            <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6">
+            <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6 text-gray-700">
               <p className="leading-relaxed md:text-lg">
-                Soy un <span className="font-semibold">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
+                Soy un <span className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-600 to-orange-600 hover:to-orange-500">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
               </p>
               <p className="leading-relaxed md:text-lg">
                 Interesado en <RainbowHighlight color="#cffafe">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#fef3c7">usuario/dev</RainbowHighlight>. Me encanta crear productos digitales que sean amigables con el usuario, simples y visualmente atractivos. Mi objetivo es crear <RainbowHighlight color="#ffe4e6">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
@@ -69,7 +69,7 @@ export default function HomePageLayout({ work, posts }: Props) {
           <Container className="max-w-screen-lg">
             <div className="flex flex-col space-y-0 mb-4 md:mb-6">
               <h2 className="text-2xl font-semibold">Vídeos Destacados</h2>
-              <p className="leading-relaxed text-gray-600">Mira lo que estoy construyendo y aprendiendo en Youtube</p>
+              <p className="leading-relaxed text-gray-700">Mira lo que estoy construyendo y aprendiendo en Youtube</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8 mb-4 md:mb-6">
               <Video
@@ -83,7 +83,7 @@ export default function HomePageLayout({ work, posts }: Props) {
                 thumbnail="/static/images/thumbs/dimeloencodigo-thumbnail-devspace-003.jpeg"
                 href="https://www.youtube.com/watch?v=woZSVCRIQfo" />
             </div>
-            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center space-x-1 font-semibold hover:text-red-700" target="_blank">
+            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center space-x-1 font-semibold" target="_blank">
               <span>Ver todos los vídeos</span>
               <ArrowNarrowRightIcon className="w-5 h-5" />
             </a>
@@ -91,9 +91,9 @@ export default function HomePageLayout({ work, posts }: Props) {
         </section>
         <section className="py-11">
           <Container className="max-w-screen-lg">
-            <div className="flex flex-col space-y-1 mb-4 md:mb-6">
+            <div className="flex flex-col space-y-0 mb-4 md:mb-6">
               <h2 className="text-2xl font-semibold">Publicaciones Destacadas</h2>
-              <p className="leading-7 text-gray-600">Notas y reflexiones sobre lo que estoy construyendo y aprendiendo</p>
+              <p className="leading-7 text-gray-700">Notas y reflexiones sobre lo que estoy construyendo y aprendiendo</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <PostWithImage
@@ -118,9 +118,9 @@ export default function HomePageLayout({ work, posts }: Props) {
         </section>
         <section className="pt-11 pb-4">
           <Container className="max-w-screen-lg">
-            <div className="flex flex-col space-y-1 mb-4 md:mb-6">
+            <div className="flex flex-col space-y-0 mb-4 md:mb-6">
               <h2 className="text-2xl font-semibold">Último Proyecto</h2>
-              <p className="leading-relaxed text-gray-600">Algunas cosas que he construido, échale un vistazo a mi trabajo</p>
+              <p className="leading-relaxed text-gray-700">Algunas cosas que he construido, échale un vistazo a mi trabajo</p>
             </div>
             <div className="relative">
               <WorkPost

@@ -65,7 +65,7 @@ const ProjectPageLayout = ({ code, frontmatter }: Props) => {
                 </div>
               </div>
             </div>
-            <div className="relative lg:-mx-20 mb-6 md:mb-10">
+            <div className="relative lg:-mx-5 mb-6 md:mb-10">
               <Image
                 className="w-full h-full rounded-lg"
                 width={976}

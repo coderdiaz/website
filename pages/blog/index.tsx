@@ -55,7 +55,7 @@ export default function WritingIndexPage({ posts }: InferGetStaticPropsType<type
                 title={post.frontmatter.title}
                 summary={post.frontmatter.excerpt}
                 thumbnail={post.frontmatter.image}
-                href={`/work/${post.frontmatter.slug}`}
+                href={`/blog/${post.frontmatter.slug}`}
                 key={index} />
             )}
           </div>
