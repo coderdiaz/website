@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { KBarProvider } from 'kbar'
 import { FileText, Home, Box, User, Tool, AtSign, Twitter, GitHub, Linkedin } from 'react-feather'
+import PlausibleProvider from 'next-plausible'
 
 import KBarMenu from '@components/KBarMenu'
 
@@ -100,10 +101,12 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   ]
   return (
     <>
-      <KBarProvider actions={initialActions}>
-        <KBarMenu />
-        { getLayout(<Component {...pageProps} />) }
-      </KBarProvider>
+      <PlausibleProvider domain="coderdiaz.me">
+        <KBarProvider actions={initialActions}>
+          <KBarMenu />
+          { getLayout(<Component {...pageProps} />) }
+        </KBarProvider>
+      </PlausibleProvider>
     </>
   )
 }
