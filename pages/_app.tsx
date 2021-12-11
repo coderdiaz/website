@@ -3,9 +3,8 @@ import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { KBarProvider } from 'kbar'
-import { FileText, Home, Box, User, Tool, AtSign, Twitter, GitHub, Linkedin, Instagram } from 'react-feather'
+import { FileText, Home, Box, User, Tool, AtSign, Twitter, GitHub, Linkedin } from 'react-feather'
 
-import { useAnalytics } from '@lib/analytics'
 import KBarMenu from '@components/KBarMenu'
 
 type NextPageWithLayout = NextPage & {
@@ -17,7 +16,6 @@ type AppPropsWithLayout = AppProps & {
 }
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
-  useAnalytics() // Loading fathom-analytics
   const router = useRouter()
   const getLayout = Component.getLayout ?? ((page) => page)
 
