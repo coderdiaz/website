@@ -25,9 +25,9 @@ export default function Video({ title, summary, thumbnail, href }: Props) {
       </div>
       <div className="flex flex-col space-y-1">
         <CustomLink href={href}>
-          <h3 className="text-lg font-bold">{title}</h3>
+          <h3 className="text-lg font-semibold">{title}</h3>
         </CustomLink>
-        <p className="leading-7 text-gray-700">{summary}</p>
+        <p className="leading-7 text-gray-600">{summary}</p>
       </div>
     </div>
   )

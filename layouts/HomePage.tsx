@@ -43,12 +43,12 @@ export default function HomePageLayout({ work, posts }: Props) {
             <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-6">Hey! Soy Javier.</h1>
             <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6">
               <p className="leading-relaxed md:text-lg">
-                Soy un <span className="bg-clip-text text-transparent bg-gradient-to-br from-rose-700 to-orange-700 font-medium">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
+                Soy un <span className="font-semibold">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
               </p>
               <p className="leading-relaxed md:text-lg">
-                Interesado en <RainbowHighlight color="#A7F3D0">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#FEF08A">usuario/dev</RainbowHighlight>. Me encanta crear productos digitales que sean amigables con el usuario, simples y visualmente atractivos. Mi objetivo es crear <RainbowHighlight color="#D9F99D">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
+                Interesado en <RainbowHighlight color="#cffafe">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#fef3c7">usuario/dev</RainbowHighlight>. Me encanta crear productos digitales que sean amigables con el usuario, simples y visualmente atractivos. Mi objetivo es crear <RainbowHighlight color="#fecdd3">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
               </p>
-              <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#FEF08A">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
+              <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#e0e7ff">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
             </div>
             <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 mb-4 md:mb-6">
               <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-600 to-orange-600 hover:to-orange-500 rounded-lg">
@@ -67,9 +67,9 @@ export default function HomePageLayout({ work, posts }: Props) {
         </Container>
         <section className="py-6 md:py-8 lg:pt-20 lg:pb-11">
           <Container className="max-w-screen-lg">
-            <div className="flex flex-col space-y-1 mb-4 md:mb-6">
-              <h2 className="text-2xl font-bold">Vídeos Destacados</h2>
-              <p className="leading-relaxed text-gray-600">Vídeos sobre lo que estoy construyendo y aprendiendo</p>
+            <div className="flex flex-col space-y-0 mb-4 md:mb-6">
+              <h2 className="text-2xl font-semibold">Vídeos Destacados</h2>
+              <p className="leading-relaxed text-gray-600">Mira lo que estoy construyendo y aprendiendo en Youtube</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8 mb-4 md:mb-6">
               <Video
@@ -83,7 +83,7 @@ export default function HomePageLayout({ work, posts }: Props) {
                 thumbnail="/static/images/thumbs/dimeloencodigo-thumbnail-devspace-003.jpeg"
                 href="https://www.youtube.com/watch?v=woZSVCRIQfo" />
             </div>
-            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center space-x-1 font-semibold text-lg" target="_blank">
+            <a href="https://www.youtube.com/channel/UCMcn-dkjGbCCdnos9416ZhQ" className="inline-flex items-center space-x-1 font-semibold hover:text-red-700" target="_blank">
               <span>Ver todos los vídeos</span>
               <ArrowNarrowRightIcon className="w-5 h-5" />
             </a>

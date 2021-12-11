@@ -23,7 +23,7 @@ const ProjectPageLayout = ({ code, frontmatter }: Props) => {
       <section className="pt-8 pb-14 md:py-14">
         <Container className="max-w-3xl">
           <article>
-            <h1 className="font-bold text-3xl md:text-4xl leading-tight mb-4">{frontmatter.title}</h1>
+            <h1 className="font-extrabold text-3xl md:text-4xl leading-tight mb-4">{frontmatter.title}</h1>
             <div className="hidden md:flex space-x-4 items-center text-gray-700 mb-4 md:mb-5">
               <time
                 dateTime={showDate(frontmatter.published).iso}

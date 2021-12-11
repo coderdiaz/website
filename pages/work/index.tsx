@@ -21,7 +21,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
       }} />
       <section className="pt-8 md:pt-20">
         <Container className="max-w-4xl border-b border-gray-200">
-          <h1 className="font-bold text-4xl md:text-5xl leading-tight mb-2">Proyectos.</h1>
+          <h1 className="font-extrabold text-4xl md:text-5xl leading-tight mb-2">Proyectos.</h1>
           <p className="leading-7 text-xl text-gray-600 mb-6 md:mb-16">Estos son algunos de los proyectos que he construído o en los que he colaborado.</p>
           <div className="grid lg:grid-cols-9 gap-5 mb-16">
             <div className="lg:col-span-5 flex flex-col space-y-5">

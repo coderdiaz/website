@@ -1,6 +1,6 @@
 const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
-const { spacing, lineHeight } = require('tailwindcss/defaultTheme')
+const { spacing, lineHeight, fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
@@ -17,7 +17,10 @@ module.exports = {
         144: '36rem',
       },
       boxShadow: {
-        'link': 'inset 0 -0.125em 0 0 #EA580C45, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
+        link: 'inset 0 -0.125em 0 0 #EA580C45, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
+      },
+      fontFamily: {
+        sans: ['Inter var', ...fontFamily.sans],
       },
       fontSize: {
         xs: '.75rem',
@@ -77,7 +80,7 @@ module.exports = {
               code: { color: theme('colors.rose.400') }
             },
             'a[href*="//"]:after': {
-              content: '""',
+              content: '" "',
               color: '#E11D48',
               display: 'inline-block',
               verticalAlign: 'middle',
@@ -114,6 +117,9 @@ module.exports = {
     require('@tailwindcss/typography'),
     plugin(function({ addUtilities }) {
       const classes = {
+        html: {
+          fontFeatureSettings: `"cv02","cv03","cv04","cv11"`,
+        },
         '.bg-blobs': {
           backgroundImage: 'radial-gradient(#dbdbdb 1px, #FFF 1px)',
           backgroundSize: '20px 20px'
@@ -124,6 +130,20 @@ module.exports = {
       }
 
       addUtilities(classes)
-    })
+    }),
+    function({ addBase }) {
+      addBase([
+        {
+          '@font-face': {
+            fontFamily: `Inter var`,
+            fontWeight: `100 900`,
+            fontDisplay: `swap`,
+            fontStyle: `normal`,
+            fontNamedInstance: `Regular`,
+            src: `url("/fonts/Inter-roman-latin.var.woff2?v=3.19") format("woff2")`,
+          }
+        }
+      ])
+    },
   ],
 };
