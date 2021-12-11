@@ -7,7 +7,7 @@ const RoundedImage = (props: ImageProps) => {
     <Image
       width={props.width}
       height={props.height}
-      alt={props.alt} className="rounded-lg block shadow-md"
+      alt={props.caption} className="rounded-lg block shadow-md"
       src={props.src} />
     { props.caption ? <figcaption className="block text-center">{props.caption}</figcaption> : null }
   </figure>
