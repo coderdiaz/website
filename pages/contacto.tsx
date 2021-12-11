@@ -15,7 +15,7 @@ export default function HireMePage() {
         <Container className="max-w-4xl">
           <div className="flex flex-col space-y-2 mb-6">
             <span className="inline-block font-semibold text-gray-600">Haz tu idea posible</span>
-            <h1 className="text-5xl leading-snug font-bold">Comunícate conmigo.</h1>
+            <h1 className="text-5xl leading-snug font-extrabold">Comunícate conmigo.</h1>
             <p className="md:text-lg leading-relaxed text-gray-600">No dudes en comunicarte a través de cualquier medio que encuentres mejor. Me complace responder a tus preguntas, colaborar o chatear si tengo la oportunidad.</p>
           </div>
           <div className="relative mb-12">
@@ -96,7 +96,7 @@ export default function HireMePage() {
           </div>
           <div className="relative">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
-              <h2 className="text-2xl font-bold">Como puedo ayudarte</h2>
+              <h2 className="text-2xl font-semibold">Como puedo ayudarte</h2>
               <p className="leading-relaxed text-gray-600">Estos son algunos de los servicios que puedo ofrecerte</p>
             </div>
             <div className="grid md:grid-cols-2 gap-5">

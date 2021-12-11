@@ -21,7 +21,7 @@ export default function PostWithImage({ title, summary, thumbnail, href }: Props
         </div>
         <div className="flex flex-col space-y-1">
           <CustomLink href={href}>
-            <h3 className="font-bold md:text-lg">{title}</h3>
+            <h3 className="font-semibold md:text-lg">{title}</h3>
           </CustomLink>
           <p className="leading-7 text-gray-700">{summary}</p>
         </div>
