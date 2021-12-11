@@ -27,7 +27,7 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
             <div className="lg:col-span-5 flex flex-col space-y-5">
               <div className="flex flex-col space-y-2">
                 <CustomLink href={firstProject.frontmatter.href}>
-                  <h3 className="font-bold text-2xl">{firstProject.frontmatter.title}</h3>
+                  <h3 className="font-semibold text-2xl">{firstProject.frontmatter.title}</h3>
                 </CustomLink>
                 <div className="flex space-x-2">
                   {firstProject.frontmatter.tech.map((item, i: number) => (

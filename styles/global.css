@@ -76,7 +76,7 @@ pre {
 }
 
 .rehype-code-title {
-  @apply px-7 py-2 font-mono text-sm font-bold text-gray-100 bg-gray-700 border border-b-0 border-gray-700 rounded-t-lg;
+  @apply px-7 py-2 font-mono text-sm font-semibold text-gray-100 bg-gray-700 border border-b-0 border-gray-700 rounded-t-lg;
 }
 
 .rehype-code-title + pre {

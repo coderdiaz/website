@@ -68,7 +68,7 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
               </div>
             </div>
             <p className="leading-loose italic mb-6 md:mb-10">
-              <span className="pr-1 md:pr-2 uppercase text-sm tracking-widest not-italic font-bold bg-clip-text text-transparent bg-gradient-to-br from-rose-600 to-orange-600">Resumen »</span> {frontmatter.summary}
+              <span className="pr-1 md:pr-2 uppercase text-sm tracking-widest not-italic font-semibold bg-clip-text text-transparent bg-gradient-to-br from-rose-600 to-orange-600">Resumen »</span> {frontmatter.summary}
             </p>
             <div className="relative lg:-mx-20 mb-6 md:mb-10">
               <Image

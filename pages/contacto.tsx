@@ -96,7 +96,7 @@ export default function HireMePage() {
           </div>
           <div className="relative">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
-              <h2 className="text-2xl font-bold">Como puedo ayudarte</h2>
+              <h2 className="text-2xl font-semibold">Como puedo ayudarte</h2>
               <p className="leading-relaxed text-gray-600">Estos son algunos de los servicios que puedo ofrecerte</p>
             </div>
             <div className="grid md:grid-cols-2 gap-5">

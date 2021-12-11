@@ -40,7 +40,7 @@ export default function HomePageLayout({ work, posts }: Props) {
               priority />
           </div>
           <RoughNotationGroup show={true}>
-            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-6">Hey! Soy Javier.</h1>
+            <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-4">Hey! Soy Javier.</h1>
             <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6">
               <p className="leading-relaxed md:text-lg">
                 Soy un <span className="font-semibold">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
@@ -60,7 +60,7 @@ export default function HomePageLayout({ work, posts }: Props) {
                 <span>Sígueme en twitter</span>
               </a>
             </div>
-            <div className="text-gray-600 hidden lg:block">
+            <div className="text-gray-700 hidden lg:block">
               Utiliza <button onClick={query.toggle} style={{ opacity: 1 }} className="inline text-gray-500 hover:text-gray-600 text-sm leading-5 py-0.5 px-1.5 border border-gray-400 hover:border-gray-500 rounded-md"><kbd className="font-sans no-underline">⌘</kbd> <kbd className="font-sans">K</kbd></button> para una mejor experiencia
             </div>
           </RoughNotationGroup>
@@ -92,7 +92,7 @@ export default function HomePageLayout({ work, posts }: Props) {
         <section className="py-11">
           <Container className="max-w-screen-lg">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
-              <h2 className="text-2xl font-bold">Publicaciones Destacadas</h2>
+              <h2 className="text-2xl font-semibold">Publicaciones Destacadas</h2>
               <p className="leading-7 text-gray-600">Notas y reflexiones sobre lo que estoy construyendo y aprendiendo</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -119,7 +119,7 @@ export default function HomePageLayout({ work, posts }: Props) {
         <section className="pt-11 pb-4">
           <Container className="max-w-screen-lg">
             <div className="flex flex-col space-y-1 mb-4 md:mb-6">
-              <h2 className="text-2xl font-bold">Último Proyecto</h2>
+              <h2 className="text-2xl font-semibold">Último Proyecto</h2>
               <p className="leading-relaxed text-gray-600">Algunas cosas que he construido, échale un vistazo a mi trabajo</p>
             </div>
             <div className="relative">

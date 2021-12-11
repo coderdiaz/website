@@ -19,7 +19,7 @@ export default function WorkPost(props: Props) {
       <div className="lg:col-span-5 flex flex-col space-y-5">
         <div className="flex flex-col space-y-2">
           <CustomLink href={props.href}>
-            <h3 className="font-bold text-2xl">{props.title}</h3>
+            <h3 className="font-semibold text-2xl">{props.title}</h3>
           </CustomLink>
           <div className="flex space-x-2">
             {props.tech.map((item, i: number) => (

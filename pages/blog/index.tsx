@@ -24,7 +24,7 @@ export default function WritingIndexPage({ posts }: InferGetStaticPropsType<type
           <div className="grid md:grid-cols-2 gap-5 items-center pb-14">
             <div className="flex flex-col space-y-3">
               <CustomLink href={`/blog/${post.frontmatter.slug}`}>
-                <h2 className="font-bold text-3xl leading-tight">{post.frontmatter.title}</h2>
+                <h2 className="font-semibold text-3xl leading-tight">{post.frontmatter.title}</h2>
               </CustomLink>
               <div className="flex space-x-4 items-center text-gray-700">
                 <time
