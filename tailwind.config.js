@@ -123,7 +123,7 @@ module.exports = {
           fontFeatureSettings: `"cv02","cv03","cv04","cv11"`,
         },
         '.bg-blobs': {
-          backgroundImage: 'radial-gradient(#dbdbdb 1px, #FFF 1px)',
+          backgroundImage: 'radial-gradient(#f1f1f1 1px, #FFF 1px)',
           backgroundSize: '20px 20px'
         },
         '.rough-annotation': {

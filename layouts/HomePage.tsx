@@ -46,7 +46,7 @@ export default function HomePageLayout({ work, posts }: Props) {
                 Soy un <span className="font-semibold">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
               </p>
               <p className="leading-relaxed md:text-lg">
-                Interesado en <RainbowHighlight color="#cffafe">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#fef3c7">usuario/dev</RainbowHighlight>. Me encanta crear productos digitales que sean amigables con el usuario, simples y visualmente atractivos. Mi objetivo es crear <RainbowHighlight color="#fecdd3">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
+                Interesado en <RainbowHighlight color="#cffafe">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#fef3c7">usuario/dev</RainbowHighlight>. Me encanta crear productos digitales que sean amigables con el usuario, simples y visualmente atractivos. Mi objetivo es crear <RainbowHighlight color="#ffe4e6">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
               </p>
               <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#e0e7ff">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
             </div>
