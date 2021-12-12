@@ -101,7 +101,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   ]
   return (
     <>
-      <PlausibleProvider domain="coderdiaz.me">
+      <PlausibleProvider domain="coderdiaz.dev">
         <KBarProvider actions={initialActions}>
           <KBarMenu />
           { getLayout(<Component {...pageProps} />) }
