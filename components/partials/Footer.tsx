@@ -16,13 +16,13 @@ export default function Footer() {
         <div className="flex flex-col space-y-6 py-4">
           <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start space-y-6 md:space-y-0">
             <div className="flex items-center space-x-3">
-              <Headphones className="w-5 h-5 text-green-600" />
-              <div className="inline-block text-gray-600 text-sm">
+              <Headphones className="w-5 h-5 text-emerald-700" />
+              <div className="inline-block text-gray-700 text-sm">
                 {data?.songUrl ? <span>{data.title}</span> : <span>Nada sonando</span>} — {data?.artist ?? 'Spotify'}
               </div>
             </div>
             <div className="flex">
-              <div className="text-gray-600 text-sm flex items-center space-x-2">
+              <div className="text-gray-700 text-sm flex items-center space-x-2">
                 <span className="inline-block">Desde 2015. Hecho en México</span>
                 <Flag className="rounded-sm" />
               </div>
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center justify-center md:justify-between">
             <div className="block text-sm leading-none">
-              Hecho con Next.js, MDX, Vercel y TailwindCSS
+              Hecho con <a className="after:content-['_↗'] font-semibold" href="https://nextjs.org/" target="_blank">Next.js</a>, <a className="after:content-['_↗'] font-semibold" href="https://mdxjs.com/" target="_blank">MDX</a>, <a className="after:content-['_↗'] font-semibold" href="https://vercel.com/" target="_blank">Vercel</a> y <a className="after:content-['_↗'] font-semibold" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>.
             </div>
             <div className="relative">
               <nav className="hidden md:inline-block">

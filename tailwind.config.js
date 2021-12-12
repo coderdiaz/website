@@ -17,7 +17,7 @@ module.exports = {
         144: '36rem',
       },
       boxShadow: {
-        link: 'inset 0 -0.125em 0 0 #EA580C45, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
+        link: 'inset 0 -0.125em 0 0 #E11D4845, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
       },
       fontFamily: {
         sans: ['Inter var', ...fontFamily.sans],
@@ -53,26 +53,26 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.gray.800'),
-            lineHeight: lineHeight[8],
+            lineHeight: lineHeight[7],
             '.tech-stack p': { margin: 0 },
             a: {
+              display: 'inline',
               backgroundClip: 'text',
               backgroundImage: 'linear-gradient(to top right, #E11D48, #EA580C)',
               color: 'transparent',
-              boxShadow: 'inset 0 -0.125em 0 0 #EA580C45, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
+              boxShadow: 'inset 0 -0.125em 0 0 #E11D4845, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
               textDecoration: 'none',
               code: { color: theme('colors.rose.400') }
             },
             'a[href*="//"]::after': {
-              content: '" "',
-              color: '#ec3335',
-              display: 'inline-block',
-              verticalAlign: 'middle',
+              content: '"↗"',
+              color: theme('colors.orange.600'),
+              display: 'inline-flex',
               width: '16px',
               height: '16px',
-              transform: 'translateY(0px) translateX(1px) scale(1.2)',
+              verticalAlign: 'middle',
+              transform: 'translateY(-1px) scale(1.1)',
               backgroundColor: 'currentcolor',
-              '-webkit-mask': `url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.6928 18.3072C5.30227 17.9167 5.30227 17.2835 5.69279 16.893L15.9857 6.6001L9.5999 6.6001C9.04762 6.6001 8.5999 6.15238 8.5999 5.6001C8.5999 5.04781 9.04762 4.6001 9.59991 4.6001L18.3999 4.6001C18.6651 4.6001 18.9195 4.70545 19.107 4.89299C19.2945 5.08053 19.3999 5.33488 19.3999 5.6001L19.3999 14.4001C19.3999 14.9524 18.9522 15.4001 18.3999 15.4001C17.8476 15.4001 17.3999 14.9524 17.3999 14.4001L17.3999 8.01432L7.10701 18.3072C6.71649 18.6977 6.08332 18.6977 5.6928 18.3072Z' fill='currentColor'/%3E%3C/svg%3E%0A") no-repeat`
             },
             'h2, h3, h4': {
               fontWeight: 600,
@@ -85,12 +85,15 @@ module.exports = {
             code: {
               color: '#cd4045',
               background: 'rgba(255, 116, 116, 0.075)',
-              padding: '3px 6px',
+              padding: '4px 8px',
               borderRadius: '2px'
             },
             'code::before': { display: 'none', content: '""' },
             'code::after': { display: 'none', content: '""' },
-            pre: { padding: '24px 28px' },
+            pre: {
+              padding: '24px 28px',
+              background: theme('colors.gray.50')
+            },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false,
             blockquote: {

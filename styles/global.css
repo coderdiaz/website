@@ -9,11 +9,11 @@
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  @apply text-gray-200;
+  @apply text-gray-700;
 }
 
 .token.punctuation {
-  @apply text-gray-200;
+  @apply text-gray-700;
 }
 
 .token.property,
@@ -23,7 +23,7 @@
 .token.constant,
 .token.symbol,
 .token.deleted {
-  @apply text-green-400;
+  @apply text-teal-600;
 }
 
 .token.selector,
@@ -32,7 +32,7 @@
 .token.char,
 .token.builtin,
 .token.inserted {
-  @apply text-purple-400;
+  @apply text-purple-500;
 }
 
 .token.operator,
@@ -40,18 +40,18 @@
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  @apply text-yellow-400;
+  @apply text-orange-600;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  @apply text-blue-300;
+  @apply text-sky-800;
 }
 
 .token.function,
 .token.class-name {
-  @apply text-rose-400 font-semibold;
+  @apply text-rose-600 font-semibold;
 }
 
 .token.regex,
@@ -62,21 +62,19 @@
 
 code[class*='language-'],
 pre[class*='language-'] {
-  @apply text-gray-200;
+  @apply text-gray-800;
 }
 
-pre::-webkit-scrollbar {
-  display: none;
-}
+pre::-webkit-scrollbar { display: none; }
 
 pre {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  @apply border-2 border-gray-700;
+  @apply border border-gray-200;
 }
 
 .rehype-code-title {
-  @apply px-7 py-2 font-mono text-sm font-semibold text-gray-100 bg-gray-700 border border-b-0 border-gray-700 rounded-t-lg;
+  @apply px-7 py-2 font-mono text-sm font-semibold text-gray-700 bg-gray-100 border border-b-0 border-gray-200 rounded-t-lg;
 }
 
 .rehype-code-title + pre {

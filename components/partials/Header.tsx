@@ -20,12 +20,12 @@ export default function Header() {
             <nav className="hidden md:inline-block">
               <ul className="flex items-center space-x-6">
                 <li>
-                  <a className="hover:text-rose-600" rel="noreferrer" href="https://github.com/coderdiaz/" target="_blank">
+                  <a className="hover:text-amber-600" rel="noreferrer" href="https://github.com/coderdiaz/" target="_blank">
                     <GitHub className="w-5 h-5" />
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-rose-600" rel="noreferrer" href="https://twitter.com/coderdiaz/" target="_blank">
+                  <a className="hover:text-amber-600" rel="noreferrer" href="https://twitter.com/coderdiaz/" target="_blank">
                     <Twitter className="w-5 h-5" />
                   </a>
                 </li>

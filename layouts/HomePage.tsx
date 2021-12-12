@@ -45,7 +45,7 @@ export default function HomePageLayout({ work, posts }: Props) {
             <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-4">Hey! Soy Javier.</h1>
             <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6 text-gray-700">
               <p className="leading-relaxed md:text-lg">
-                Soy un <span className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-600 to-orange-600 hover:to-orange-500">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
+                Soy un <span className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-700 to-orange-700 hover:to-orange-500">ingeniero de software</span>, creador y aspirante a diseñador UX/UI que construye productos digitales y vive en Ciudad de México.
               </p>
               <p className="leading-relaxed md:text-lg">
                 Interesado en <RainbowHighlight color="#cffafe">sistemas de diseño</RainbowHighlight>, jamstack y experiencia de <RainbowHighlight color="#fef3c7">usuario/dev</RainbowHighlight>. Me encanta crear productos digitales que sean amigables con el usuario, simples y visualmente atractivos. Mi objetivo es crear <RainbowHighlight color="#ffe4e6">experiencias</RainbowHighlight> web rápidas, simples y accesibles.
@@ -104,8 +104,9 @@ export default function HomePageLayout({ work, posts }: Props) {
                 thumbnail={post.frontmatter.image}
                 href={`/blog/${post.frontmatter.slug}`} />
               <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-8">
-                { otherPosts.map(post => (
+                { otherPosts.map((post, index) => (
                   <Post
+                    key={index}
                     title={post.frontmatter.title}
                     href={`/blog/${post.frontmatter.slug}`}
                     summary={post.frontmatter.excerpt} />)
