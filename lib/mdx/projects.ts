@@ -1,5 +1,5 @@
 import { join } from 'path'
-import { readdirSync, readFileSync } from 'fs'
+import { readdirSync } from 'fs'
 import { bundler } from '@lib/utils'
 
 export async function getProjectBySlug(slug: string) {
