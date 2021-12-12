@@ -4,11 +4,8 @@ import { bundler } from '@lib/utils'
 
 export async function getProjectBySlug(slug: string) {
   // Getting fullpath to filename
-  const projectContentDirectory = join(process.cwd(), 'content/projects', `${slug}.mdx`)
-
-  // Getting content from file
-  const source = readFileSync(projectContentDirectory, 'utf-8')
-  return await bundler(source, slug)
+  const filePath = join(process.cwd(), 'content/projects', `${slug}.mdx`)
+  return await bundler(filePath, slug)
 }
 
 export async function getProjects() {
@@ -16,10 +13,8 @@ export async function getProjects() {
 
   return await Promise.all(slugs.map(async slug => {
     // Getting fullpath to filename
-    const projectContentDirectory = join(process.cwd(), 'content/projects', slug)
-    // Getting content from file
-    const source = readFileSync(projectContentDirectory, 'utf-8')
-    return await bundler(source, slug)
+    const filePath = join(process.cwd(), 'content/projects', slug)
+    return await bundler(filePath, slug)
   }))
 }
 

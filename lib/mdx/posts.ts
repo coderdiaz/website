@@ -1,5 +1,5 @@
 import { join } from 'path'
-import { readdirSync, readFileSync } from 'fs'
+import { readdirSync } from 'fs'
 import { bundler } from '@lib/utils'
 
 type PathDefinition = {
@@ -10,11 +10,8 @@ type PathDefinition = {
 
 export async function getPostBySlug(slug: string) {
   // Getting fullpath to filename
-  const postsContentDirectory = join(process.cwd(), 'content/posts', `${slug}.mdx`)
-
-  // Getting content from file
-  const source = readFileSync(postsContentDirectory, 'utf-8')
-  return await bundler(source, slug)
+  const filePath = join(process.cwd(), 'content/posts', `${slug}.mdx`)
+  return await bundler(filePath, slug)
 }
 
 export async function getPosts(size?: number) {
@@ -28,9 +25,7 @@ export async function getPosts(size?: number) {
   return await Promise.all(slugs.map(async slug => {
     // Getting fullpath to filename
     const postFullpath = join(postsDirectoryContent, slug)
-    // Getting content from file
-    const source = readFileSync(postFullpath, 'utf-8')
-    return await bundler(source, slug)
+    return await bundler(postFullpath, slug)
   }))
 }
 

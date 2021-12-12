@@ -5,8 +5,9 @@ import rehypeCodeTitles from 'rehype-code-titles'
 import rehypePrism from 'rehype-prism-plus'
 import type { BundlerResult } from '@lib/types'
 
-export async function bundler(source: string, slug: string): Promise<BundlerResult> {
-  const { code, frontmatter } = await bundleMDX(source, {
+export async function bundler(file: string, slug: string): Promise<BundlerResult> {
+  const { code, frontmatter } = await bundleMDX({
+    file,
     xdmOptions(options) {
       options.remarkPlugins = [...(options?.remarkPlugins ?? [])];
       options.rehypePlugins = [
@@ -22,8 +23,8 @@ export async function bundler(source: string, slug: string): Promise<BundlerResu
   return {
     code,
     frontmatter: {
-      wordCount: source.split(/\s+/gu).length,
-      readingTime: readingTime(source),
+      wordCount: code.split(/\s+/gu).length,
+      readingTime: readingTime(code),
       slug: slug.replace('.mdx', ''),
       excerpt: truncate(frontmatter.summary, 160),
       ...frontmatter,
@@ -33,7 +34,7 @@ export async function bundler(source: string, slug: string): Promise<BundlerResu
 
 function truncate(input: string, size: number) {
   if (input.length > size) {
-     return input.substring(0, size) + '...'
+    return input.substring(0, size) + '...'
   }
   return input
 };
