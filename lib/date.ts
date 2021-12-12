@@ -1,6 +1,6 @@
 import { format } from 'date-fns-tz'
 const getLocale = () => require('date-fns/locale/es/index.js')
-const formatISO = (date) => require('date-fns/formatISO/index')(date)
+const formatISO = (date: string | number | Date) => require('date-fns/formatISO/index')(date)
 
 function capitalizeFirstLetter(value: string) {
   return value.charAt(0).toUpperCase() + value.slice(1);
