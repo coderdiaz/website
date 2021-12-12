@@ -4,6 +4,7 @@ import { Twitter } from 'react-feather'
 import { RoughNotationGroup } from 'react-rough-notation'
 import { useKBar } from 'kbar'
 
+import { useIsFontReady } from '@lib/useIsFontReady'
 import { RainbowHighlight } from '@components/RainbowHighlight'
 import Container from '@components/partials/Container'
 import Avatar from '@assets/images/avatar.png'
@@ -23,6 +24,7 @@ type Props = {
 export default function HomePageLayout({ work, posts }: Props) {
   const { query } = useKBar()
   const [post, ...otherPosts] = posts
+  const isFontReady = useIsFontReady()
 
   return (
     <>
@@ -39,7 +41,7 @@ export default function HomePageLayout({ work, posts }: Props) {
               alt="Avatar de Javier Diaz"
               priority />
           </div>
-          <RoughNotationGroup show={true}>
+          <RoughNotationGroup show={isFontReady}>
             <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 md:mb-4">Hey! Soy Javier.</h1>
             <div className="flex flex-col space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6 text-gray-700">
               <p className="leading-relaxed md:text-lg">
