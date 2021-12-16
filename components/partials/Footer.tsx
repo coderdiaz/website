@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center justify-center md:justify-between">
             <div className="block text-sm leading-none">
-              Hecho con <a className="after:content-['_↗'] font-semibold" href="https://nextjs.org/" target="_blank">Next.js</a>, <a className="after:content-['_↗'] font-semibold" href="https://mdxjs.com/" target="_blank">MDX</a>, <a className="after:content-['_↗'] font-semibold" href="https://vercel.com/" target="_blank">Vercel</a> y <a className="after:content-['_↗'] font-semibold" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>.
+              Hecho con <a className="after:content-['_↗'] font-semibold" href="https://nextjs.org/" target="_blank">Next.js</a>, <a className="after:content-['_↗'] font-semibold" href="https://mdxjs.com/" target="_blank">MDX</a>, <a className="after:content-['_↗'] font-semibold" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a> y potenciado por <a className="after:content-['_↗'] font-semibold" href="https://vercel.com/" target="_blank">Vercel</a>.
             </div>
             <div className="relative">
               <nav className="hidden md:inline-block">
