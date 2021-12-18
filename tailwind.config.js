@@ -60,7 +60,7 @@ module.exports = {
               backgroundClip: 'text',
               backgroundImage: 'linear-gradient(to top right, #E11D48, #EA580C)',
               color: 'transparent',
-              boxShadow: 'inset 0 -0.125em 0 0 #E11D4835, inset 0 -0.375em 0 0 rgb(177 56 111 / 6%)',
+              boxShadow: 'inset 0 -0.125em 0 0 #E11D4850, inset 0 -0.375em 0 0 rgb(177 56 111 / 6%)',
               textDecoration: 'none',
               code: { color: theme('colors.rose.400') },
             },
