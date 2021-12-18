@@ -47,14 +47,14 @@ const PostPageLayout = ({ code, frontmatter }: Props) => {
             </div>
             <div className="flex md:hidden space-x-3 items-center mb-6">
               <div className="w-10 h-10 flex-shrink-0">
-              <Image
-                className="rounded-full"
-                width={48}
-                height={48}
-                src={Avatar}
-                quality={100}
-                alt="Avatar de Javier Diaz"
-                priority />
+                <Image
+                  className="rounded-full"
+                  width={48}
+                  height={48}
+                  src={Avatar}
+                  quality={100}
+                  alt="Avatar de Javier Diaz"
+                  priority />
               </div>
               <div className="flex flex-col">
                 <span className="inline-block text-gray-800 font-medium">Javier Diaz</span>

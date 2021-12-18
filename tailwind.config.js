@@ -64,15 +64,15 @@ module.exports = {
               textDecoration: 'none',
               code: { color: theme('colors.rose.400') }
             },
-            'a[href*="//"]::after': {
+            ':where(a[href*="//"]):not(:where([class~="not-prose"] *))::after': {
               content: '"↗"',
               color: theme('colors.orange.600'),
               display: 'inline-flex',
               width: '16px',
               height: '16px',
               verticalAlign: 'middle',
-              transform: 'translateY(-1px) scale(1.1)',
-              backgroundColor: 'currentcolor',
+              transform: 'translateY(-6px) translateX(2px) scale(1)',
+              backgroundColor: 'inherit',
             },
             'h2, h3, h4': {
               fontWeight: 600,
