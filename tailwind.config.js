@@ -17,7 +17,8 @@ module.exports = {
         144: '36rem',
       },
       boxShadow: {
-        link: 'inset 0 -0.125em 0 0 #E11D4845, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
+        link: 'inset 0 -0.125em 0 0 #E11D4850, inset 0 -0.375em 0 0 rgb(177 56 111 / 6%)',
+        linkHover: 'inset 0 -0.125em 0 0 #E11D4880, inset 0 -0.375em 0 0 rgb(177 56 111 / 10%)',
       },
       fontFamily: {
         sans: ['Inter var', ...fontFamily.sans],
@@ -53,7 +54,7 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.gray.800'),
-            lineHeight: lineHeight[7],
+            lineHeight: lineHeight[8],
             '.tech-stack p': { margin: 0 },
             a: {
               display: 'inline',

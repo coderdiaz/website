@@ -20,13 +20,13 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
         description: 'Estos son algunos de los proyectos que he construído o colaborado, aquí te comparto un poco sobre el proceso y decisiones que tome a lo largo del desarrollo',
       }} />
       <section className="pt-8 md:pt-20">
-        <Container className="max-w-4xl border-b border-gray-200">
+        <Container className="max-w-screen-lg border-b border-gray-200">
           <h1 className="font-extrabold text-4xl md:text-5xl leading-tight mb-2">Proyectos.</h1>
           <p className="leading-7 text-xl text-gray-600 mb-6 md:mb-16">Estos son algunos de los proyectos que he construído o en los que he colaborado.</p>
           <div className="grid lg:grid-cols-9 gap-7 mb-16">
             <div className="lg:col-span-5 flex flex-col space-y-5">
               <div className="flex flex-col space-y-2">
-                <CustomLink href={firstProject.frontmatter.href}>
+                <CustomLink href={`/work/${firstProject.frontmatter.slug}`}>
                   <h3 className="font-semibold text-2xl">{firstProject.frontmatter.title}</h3>
                 </CustomLink>
                 <div className="flex space-x-2">
@@ -48,17 +48,19 @@ export default function WorkIndexPage({ projects }: InferGetStaticPropsType<type
               </div>
             </div>
             <div className="hidden md:inline-block lg:col-span-4 relative w-full h-64 md:h-96 lg:h-full">
-              <Image
-                className="w-full h-full rounded-lg"
-                src={firstProject.frontmatter.images[0]}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="left" />
+              <CustomLink href={`/work/${firstProject.frontmatter.slug}`}>
+                <Image
+                  className="w-full h-full rounded-lg"
+                  src={firstProject.frontmatter.images[0]}
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="left" />
+              </CustomLink>
             </div>
           </div>
         </Container>
         <section className="py-14">
-          <Container className="max-w-4xl">
+          <Container className="max-w-screen-lg">
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
               {restProjects.map((project, index: number) => 
                 <PostWithImage

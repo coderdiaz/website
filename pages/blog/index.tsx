@@ -18,7 +18,7 @@ export default function WritingIndexPage({ posts }: InferGetStaticPropsType<type
         description: 'Notas y reflexiones sobre lo que estoy construyendo y aprendiendo',
       }} />
       <section className="pt-8 md:pt-20">
-        <Container className="max-w-4xl border-b border-gray-200">
+        <Container className="max-w-screen-lg border-b border-gray-200">
           <h1 className="font-extrabold text-4xl md:text-5xl leading-tight mb-2">Blog.</h1>
           <p className="leading-7 text-xl text-gray-600 mb-6 md:mb-16">Notas y reflexiones sobre lo que estoy construyendo y aprendiendo</p>
           <div className="grid md:grid-cols-2 gap-5 items-center pb-14">
@@ -48,7 +48,7 @@ export default function WritingIndexPage({ posts }: InferGetStaticPropsType<type
         </Container>
       </section>
       <section className="py-14">
-        <Container className="max-w-4xl">
+        <Container className="max-w-screen-lg">
           <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
             {otherPosts.map((post, index: number) => 
               <PostWithImage

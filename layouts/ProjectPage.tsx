@@ -23,7 +23,7 @@ const ProjectPageLayout = ({ code, frontmatter }: Props) => {
       <section className="pt-8 pb-14 md:py-14">
         <Container className="max-w-3xl">
           <article>
-            <h1 className="font-extrabold text-3xl md:text-4xl leading-tight mb-4">{frontmatter.title}</h1>
+            <h1 className="font-extrabold text-3xl md:text-4xl leading-tight mb-3">{frontmatter.title}</h1>
             <div className="hidden md:flex space-x-4 items-center text-gray-700 mb-4 md:mb-5">
               <time
                 dateTime={showDate(frontmatter.published).iso}
@@ -59,7 +59,7 @@ const ProjectPageLayout = ({ code, frontmatter }: Props) => {
               <div className="flex flex-col space-y-2">
                 <span className="inline-block font-semibold text-black">Enlaces</span>
                 <div className="flex">
-                  { frontmatter.links.map((item: { label: string, href: string }, index: number) => <a key={index} href={item.href} className="bg-clip-text text-transparent bg-gradient-to-tr from-rose-600 to-orange-600 font-medium mb-6 items-center shadow-link after:content-['_↗']" target="_blank" rel="noopener noreferrer">
+                  { frontmatter.links.map((item: { label: string, href: string }, index: number) => <a key={index} href={item.href} className="inline leading-tight bg-clip-text text-transparent bg-gradient-to-tr from-rose-600 to-orange-600 font-medium mb-6 items-center shadow-link hover:shadow-linkHover after:content-['_↗']" target="_blank" rel="noopener noreferrer">
                     {item.label}
                   </a>) }
                 </div>
