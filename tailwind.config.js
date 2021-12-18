@@ -60,18 +60,21 @@ module.exports = {
               backgroundClip: 'text',
               backgroundImage: 'linear-gradient(to top right, #E11D48, #EA580C)',
               color: 'transparent',
-              boxShadow: 'inset 0 -0.125em 0 0 #E11D4845, inset 0 -0.375em 0 0 rgb(177 56 111 / 12%)',
+              boxShadow: 'inset 0 -0.125em 0 0 #E11D4835, inset 0 -0.375em 0 0 rgb(177 56 111 / 6%)',
               textDecoration: 'none',
-              code: { color: theme('colors.rose.400') }
+              code: { color: theme('colors.rose.400') },
+            },
+            'a:hover': {
+              boxShadow: 'inset 0 -0.125em 0 0 #E11D4880, inset 0 -0.375em 0 0 rgb(177 56 111 / 10%) !important',
             },
             ':where(a[href*="//"]):not(:where([class~="not-prose"] *))::after': {
               content: '"↗"',
-              color: theme('colors.orange.600'),
+              color: '#EA580C',
               display: 'inline-flex',
               width: '16px',
               height: '16px',
               verticalAlign: 'middle',
-              transform: 'translateY(-6px) translateX(2px) scale(1)',
+              transform: 'translateY(-7px) translateX(3px) scale(1.1)',
               backgroundColor: 'inherit',
             },
             'h2, h3, h4': {
