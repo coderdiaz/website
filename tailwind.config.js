@@ -102,9 +102,9 @@ module.exports = {
             blockquote: {
               margin: '0 -24px',
               padding: '2px 20px',
-              color: theme('colors.amber.900'),
-              borderColor: theme('colors.yellow.500'),
-              background: '#fbf9f0',
+              color: theme('colors.orange.900'),
+              borderColor: theme('colors.orange.400'),
+              background: theme('colors.orange.50'),
             }
           }
         },
