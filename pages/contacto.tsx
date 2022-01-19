@@ -32,7 +32,7 @@ export default function HireMePage() {
                   </div>
                 </div>
               </a>
-              <a href="mailto: hey@coderdiaz.me" className="flex space-x-3 bg-gray-50 hover:bg-orange-50 p-6 rounded-lg items-center transition ease-in">
+              <a href="mailto: hey@coderdiaz.dev" className="flex space-x-3 bg-gray-50 hover:bg-orange-50 p-6 rounded-lg items-center transition ease-in">
                 <div className="flex items-center align-center p-4 rounded-full text-purple-600">
                   <MessageSquare className="w-10 h-10" />
                 </div>
@@ -108,7 +108,7 @@ export default function HireMePage() {
                   <span className="inline-block text-xl font-semibold">Desarrollo de software</span>
                   <p className="leading-7 text-gray-700">Construyo increibles experiencias de software utilizando las mejores herramientas y tecnologías de acuerdo a tu producto.</p>
                 </div>
-                <a href="mailto: hey@coderdiaz.me" className="flex space-x-1 items-center uppercase font-semibold text-sm tracking-wider text-purple-600">
+                <a href="mailto: hey@coderdiaz.dev" className="flex space-x-1 items-center uppercase font-semibold text-sm tracking-wider text-purple-600">
                   <span>Obtener cotización</span>
                   <ArrowRight className="w-5 h-5" />
                 </a>

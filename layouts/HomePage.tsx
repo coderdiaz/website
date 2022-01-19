@@ -53,7 +53,7 @@ export default function HomePageLayout({ work, posts }: Props) {
               <p className="leading-relaxed md:text-lg">Estoy disponible para <RainbowHighlight color="#e0e7ff">freelance</RainbowHighlight> y abierto a nuevos retos.</p>
             </div>
             <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 mb-4 md:mb-6">
-              <a href="mailto: hey@coderdiaz.me" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-600 to-orange-600 hover:to-orange-500 rounded-lg">
+              <a href="mailto: hey@coderdiaz.dev" className="py-5 px-6 flex items-center space-x-3 font-semibold text-white bg-gradient-to-tr from-rose-600 to-orange-600 hover:to-orange-500 rounded-lg">
                 <MailIcon className="w-5 h-5" />
                 <span>Ponte en contacto</span>
               </a>
