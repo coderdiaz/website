@@ -1907,11 +1907,6 @@ nanoid@^3.1.20, nanoid@^3.1.22, nanoid@^3.1.30:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.1.tgz#6347a18cac88af88f58af0b3594b723d5e99bb35"
   integrity sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==
 
-next-plausible@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-3.1.4.tgz#a386ff4e2327995cb4a1307e53e1b4af70817b52"
-  integrity sha512-NMLKJ0AKlKuvYU//RytyqSES5NtLRoH/ym3fCC02w2Ed1SrTgNRUrgpxyJrcguY/DYGPncQ3a0/nQ358vUTAwQ==
-
 next@^12.0.10:
   version "12.0.10"
   resolved "https://registry.yarnpkg.com/next/-/next-12.0.10.tgz#fcc4584177418bd777ce157f3165b7ba5e7708f7"
