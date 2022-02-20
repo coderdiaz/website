@@ -1,10 +1,10 @@
 import '@styles/global.css'
+import Head from 'next/head'
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { KBarProvider } from 'kbar'
 import { FileText, Home, Box, User, Tool, AtSign, Twitter, GitHub, Linkedin } from 'react-feather'
-import PlausibleProvider from 'next-plausible'
 
 import KBarMenu from '@components/KBarMenu'
 
@@ -101,12 +101,18 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   ]
   return (
     <>
-      <PlausibleProvider domain="coderdiaz.dev">
-        <KBarProvider actions={initialActions}>
-          <KBarMenu />
-          { getLayout(<Component {...pageProps} />) }
-        </KBarProvider>
-      </PlausibleProvider>
+      <Head>
+        <script async defer
+          data-website-id="86a0659c-25c1-4b6e-b58f-ff7ce77afeb4"
+          src="https://analytics.coderdiaz.dev/umami.js"
+          data-do-not-track="true"
+          data-domains="coderdiaz.dev"
+        />
+      </Head>
+      <KBarProvider actions={initialActions}>
+        <KBarMenu />
+        { getLayout(<Component {...pageProps} />) }
+      </KBarProvider>
     </>
   )
 }
