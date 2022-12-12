@@ -103,10 +103,8 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     <>
       <Head>
         <script async defer
-          data-website-id="86a0659c-25c1-4b6e-b58f-ff7ce77afeb4"
-          src="https://analytics.coderdiaz.dev/umami.js"
-          data-do-not-track="true"
-          data-domains="coderdiaz.dev"
+          data-website-id="00ea94e8-4a34-4109-a085-0a15cd10b17c"
+          src="/stats/umami.js"
         />
       </Head>
       <KBarProvider actions={initialActions}>
