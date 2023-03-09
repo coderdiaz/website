@@ -103,7 +103,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     <>
       <Head>
         <script async defer
-          data-website-id="00ea94e8-4a34-4109-a085-0a15cd10b17c"
+          data-website-id="cc3ced36-f4d4-4f7a-b5f1-718010fe56b1"
           src="/stats/umami.js"
         />
       </Head>
